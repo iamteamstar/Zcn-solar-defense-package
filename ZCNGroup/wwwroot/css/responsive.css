@@ -1,0 +1,543 @@
+/*****************************************************************
+    Template Name    : Suntrix - Solar And Renewable Energy Website Template
+    Author           : Barakah Themes
+    Version          : 1.0
+    Created          : 2022
+    File Description : Main Responsive file of the template
+*****************************************************************/
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.navbar-light .navbar-brand {
+		margin-left: 0;
+		margin-right: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		position: relative;
+		top: -5px;
+		left: -10px;
+	}
+
+	.navbar-area.is-sticky .navbar-light .navbar-brand {
+		margin-left: 0;
+		margin-right: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+
+	.suntrix-nav .navbar .navbar-nav .nav-item a {
+		font-size: 15px;
+	}
+	.suntrix-nav .navbar .option-item {
+		margin-right: 0px;
+	}
+	.suntrix-nav .navbar .other-option {
+		margin-left: 0;
+		margin-top: 0;
+		display: none;
+	}
+
+	.home-slider-content {
+		padding-bottom: 70px;
+	}
+
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.other-option {
+		display: none;
+	}
+
+	.navbar-area {
+		background-color: #ffffff;
+		position: fixed;
+		z-index: 999;
+		-webkit-box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+		box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+	}
+
+	.navbar-area.is-sticky .suntrix-responsive-nav .mean-container a.meanmenu-reveal {
+		color: #000000;
+	}
+
+	.navbar-area.is-sticky .suntrix-responsive-nav .mean-container a.meanmenu-reveal span {
+		background: #333;
+	}
+
+	.mean-container .mean-nav {
+		margin-top: 43px;
+	}
+
+	.suntrix-responsive-nav .mean-container a.meanmenu-reveal {
+		color: #333;
+	}
+
+	.suntrix-responsive-nav .mean-container a.meanmenu-reveal span {
+		background: #333;
+	}
+	.home-slider-content {
+		width: 100%;
+		max-width: 550px;
+		padding-bottom: 0px;
+		text-align: center;
+		margin: auto;
+	}
+	.home-slider-title {
+		font-size: 44px;
+	}
+	.home-area {
+		height: 750px;
+	}
+	.main-banner-content h1 {
+		font-size: 50px;
+	}
+	.about-content h2 {
+		font-size: 33px;
+	}
+	.about-image {
+		text-align: center;
+		margin-top: 35px;
+	}
+	.counter-item {
+		margin-bottom: 35px;
+	}
+	.counter-item:nth-last-child(-n + 2) {
+		margin-bottom: 0px;
+	}
+	.hire-content {
+		padding: 0px 30px;
+	}
+	.hire-content h2 {
+		color: #fff;
+		font-size: 38px;
+	}
+	.faq-accordion.first-faq {
+		margin-bottom: 20px;
+	}
+	.whychoose-content h2 {
+		font-size: 33px;
+	}
+	.whychoose-image {
+		margin-top: 35px;
+		margin-left: 0;
+	}
+	.services-widget {
+		margin-top: 40px;
+	}
+	.contact-form {
+		margin-top: 45px;
+	}
+	.page-title-content {
+		text-align: left;
+		margin-top: 65px;
+	}
+	.page-title-content ul {
+		margin-top: 6px;
+	}
+
+	.widget-area .widget_suntrix_posts_thumb .item .info .title {
+		font-size: 16px;
+	}
+
+	.widget-area {
+		margin-top: 50px;
+	}
+
+	.tagcloud.section-top {
+		margin-bottom: 35px;
+	}
+
+	.tagcloud.section-bottom {
+		margin-bottom: 0;
+	}
+	.blog-details-desc .article-content .wp-block-gallery.columns-3 li {
+		-ms-flex: 50%;
+		-webkit-box-flex: 0;
+		flex: 50%;
+		max-width: 50%;
+		padding-right: 10px;
+		padding-left: 10px;
+		margin-bottom: 35px;
+	}
+	.blog-details-desc .article-content .wp-block-gallery.columns-3 li:last-child {
+		margin-bottom: 0px;
+	}
+	.comments-area .comment-respond .comment-form-author {
+		float: left;
+		width: 100%;
+		padding-right: 0;
+		margin-bottom: 20px;
+	}
+	.comments-area .comment-respond .comment-form-email {
+		float: none;
+		width: 100%;
+		padding-left: 0;
+		margin-bottom: 20px;
+	}
+	.projects-details-desc .project-details-info .single-info-box {
+		-ms-flex: 0 0 50%;
+		-webkit-box-flex: 0;
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 35px;
+	}
+	.projects-details-desc .project-details-info .single-info-box:last-child {
+		margin-bottom: 0px;
+	}
+
+	.footer-box-item {
+		margin-bottom: 35px;
+	}
+	.footer-box-item:nth-last-child(-n + 2) {
+		margin-bottom: 0px;
+	}
+	.single-footer-widget-2-last-child {
+		margin-top: 35px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	.section-title h2 {
+		font-size: 30px;
+	}
+	.btn .btn-primary-one {
+		margin-right: 0;
+	}
+
+	.other-option {
+		display: none;
+	}
+	.suntrix-responsive-nav .suntrix-responsive-menu.mean-container .navbar-nav {
+		overflow-y: scroll;
+		height: 250px;
+	}
+	.navbar-area {
+		background-color: #ffffff;
+		position: fixed;
+		z-index: 999;
+		-webkit-box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+		box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+	}
+
+	.navbar-area.is-sticky .suntrix-responsive-nav .mean-container a.meanmenu-reveal {
+		padding-top: 0;
+		color: #333;
+	}
+
+	.navbar-area.is-sticky .suntrix-responsive-nav .mean-container a.meanmenu-reveal span {
+		background: #333;
+	}
+
+	.mean-container .mean-nav {
+		margin-top: 43px;
+	}
+
+	.suntrix-responsive-nav .mean-container a.meanmenu-reveal {
+		color: #333;
+	}
+
+	.suntrix-responsive-nav .mean-container a.meanmenu-reveal span {
+		background: #333;
+	}
+	
+	.main-banner-content h1 {
+		font-size: 40px;
+	}
+	.home-slider-content {
+		width: 100%;
+		max-width: unset;
+		padding-bottom: 0px;
+		text-align: center;
+		margin: auto;
+	}
+	.home-slider-title {
+		color: #333;
+		font-size: 35px;
+		font-weight: 800;
+		margin-bottom: 20px;
+	}
+	.about-content h2 {
+		font-size: 30px;
+	}
+	
+	.flickity-prev-next-button {
+		display: none;
+	}
+	.whychoose-content .features-list li {
+		-ms-flex: 0 0 100%;
+		-webkit-box-flex: 0;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.whychoose-content h2 {
+		font-size: 31px;
+	}
+	.whychoose-image {
+		margin-top: 35px;
+		margin-left: 0;
+	}
+	.single-testimonial .testimonial-avatar-img .quote {
+		opacity: .02;
+	}
+	.copyright-area {
+		text-align: center;
+	}
+	.copyright-area ul {
+		text-align: center;
+		margin-top: 10px;
+	}
+	.counter-item {
+		margin-bottom: 35px;
+	}
+	.counter-item:last-child {
+		margin-bottom: 0px;
+	}
+	.about-image {
+		text-align: center;
+		margin-top: 35px;
+	}
+	.hire-content {
+		padding: 0px 30px;
+	}
+	.hire-content h2 {
+		color: #fff;
+		font-size: 33px;
+	}
+	.faq-accordion.first-faq {
+		margin-bottom: 20px;
+	}
+	.page-title-content {
+		text-align: left;
+		margin-top: 65px;
+	}
+	.services-widget {
+		margin-top: 40px;
+	}
+	
+	.contact-form {
+		margin-top: 45px;
+	}
+	
+	.page-title-area {
+		background: #29c367;
+		background: linear-gradient(to right,#29c367 0,rgba(58,67,74,0) 70%);
+	}
+
+	.page-title-content ul {
+		margin-top: 6px;
+	}
+
+	.woocommerce-result-count {
+		margin-bottom: 20px;
+	}
+	.pagination-area .page-numbers {
+		width: 40px;
+		height: 40px;
+		margin: 10px 5px;
+		line-height: 40px;
+		font-size: 15px;
+	}
+	.blog-details-desc .article-content .wp-block-gallery.columns-3 li {
+		-ms-flex: 100%;
+		-webkit-box-flex: 0;
+		flex: 100%;
+		max-width: 100%;
+		padding-right: 10px;
+		padding-left: 10px;
+		margin-bottom: 35px;
+	}
+	.blog-details-desc .article-content .wp-block-gallery.columns-3 li:last-child {
+		margin-bottom: 0px;
+	}
+	.comments-area .comment-respond .comment-form-author {
+		float: left;
+		width: 100%;
+		padding-right: 0;
+		margin-bottom: 20px;
+	}
+	.comments-area .comment-respond .comment-form-email {
+		float: none;
+		width: 100%;
+		padding-left: 0;
+		margin-bottom: 20px;
+	}
+	.coming-soon-area {
+		height: 100%;
+		padding-top: 160px;
+		padding-bottom: 150px;
+	}
+
+	.coming-soon-content h1 {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	.coming-soon-content #timer div {
+		margin-bottom: 35px;
+	}
+
+	.widget-area .widget_suntrix_posts_thumb .item .info .title {
+		font-size: 16px;
+	}
+
+	.widget-area {
+		margin-top: 50px;
+	}
+
+	.tagcloud.section-top {
+		margin-bottom: 35px;
+	}
+
+	.tagcloud.section-bottom {
+		margin-bottom: 0;
+	}
+
+	.blog-details-desc .article-content h3 {
+		font-size: 20px;
+	}
+
+	blockquote, .blockquote {
+		padding: 18px !important;
+	}
+
+	blockquote p, .blockquote p {
+		font-size: 16px !important;
+	}
+	.faq-accordion .accordion .accordion-item .accordion-title {
+		padding: 20px;
+		padding-left: 0px;
+		padding-right: 35px;
+	}
+	.faq-accordion .accordion .accordion-item .accordion-title i {
+		position: absolute;
+		right: 15px;
+	}
+	.single-contact-box-2 h3 {
+		font-size: 26px;
+	}
+	.subscribe-form .submit-btn {
+		padding: 8px 30px;
+	}
+	.project-flip-area .project-flip-list .nav li {
+		margin: 10px 5px;
+	}
+	.projects-details-desc .project-details-info .single-info-box {
+		-ms-flex: 0 0 50%;
+		-webkit-box-flex: 0;
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 35px;
+	}
+	.projects-details-desc .project-details-info .single-info-box:last-child {
+		margin-bottom: 0px;
+	}
+	.project-area-3 .project-list-3 .nav li {
+		margin: 10px 5px;
+	}
+	.footer-box-item {
+		margin-bottom: 35px;
+	}
+	.footer-box-item:last-child {
+		margin-bottom: 0px;
+	}
+	.footer-box-item-2 {
+		margin-bottom: 35px;
+	}
+	.footer-box-item-2:last-child {
+		margin-bottom: 0px;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+	.newsletter-form .btn-primary {
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+	.btn-primary {
+		margin-top: 15px;
+		margin-right: 15px;
+	}
+	.home-area {
+		padding-top: 150px;
+	}
+	.main-banner-content h1 {
+		font-size: 30px;
+	}
+	.home-slider-title {
+		font-size: 28px;
+	}
+	.about-content h2 {
+		font-size: 28px;
+	}
+	.services-category-box {
+		text-align: center;
+	}
+	.services-category-box a {
+		margin-right: 10px;
+		margin-bottom: 15px;
+	}
+	.single-footer-widget-2 .footer-download-btn-2 .app-link-btn-1 {
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+	.whychoose-content h2 {
+		font-size: 28px;
+	}
+	.hire-content {
+		padding: 0px 20px;
+	}
+	.hire-content h2 {
+		font-size: 26px;
+	}
+	.single-testimonial {
+		padding: 30px 30px;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+	.blog-details-desc .article-footer .article-tags {
+		-ms-flex: 0 0 100%;
+		-webkit-box-flex: 0;
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
+	.blog-details-desc .article-footer .article-share .social {
+		padding-left: 0;
+		list-style-type: none;
+		text-align: left;
+		margin-bottom: 0;
+	}
+	.blog-details-desc .article-footer .article-share {
+		-ms-flex: 0 0 100%;
+		-webkit-box-flex: 0;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.single-testimonial2 {
+		padding: 30px 25px;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+	.faq-accordion .accordion .accordion-item .accordion-title {
+		padding: 20px;
+		padding-left: 0px;
+		padding-right: 35px;
+	}
+	.faq-accordion .accordion .accordion-item .accordion-title i {
+		position: absolute;
+		right: 15px;
+	}
+	.single-contact-box-2 h3 {
+		font-size: 26px;
+	}
+	.subscribe-form .submit-btn {
+		padding: 8px 20px;
+	}
+}

@@ -1,0 +1,1154 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <link rel="stylesheet" href="~/css/package.css" />
+
+</head>
+<style>
+    .single-services-box .services-btn a i {
+        background: #5c787c;
+    }
+
+    .section-title h6 {
+        color: #5c787c;
+    }
+
+    .button-lighter:hover {
+        border-color: #5c787c;
+    }
+
+    .rd-navbar-fullwidth .rd-navbar-nav > li.opened > a, .rd-navbar-fullwidth .rd-navbar-nav > li.active > a, .rd-navbar-fullwidth .rd-navbar-nav > li.focus > a, .rd-navbar-fullwidth .rd-navbar-nav > li > a:hover, .rd-navbar-static .rd-navbar-nav > li.opened > a, .rd-navbar-static .rd-navbar-nav > li.active > a, .rd-navbar-static .rd-navbar-nav > li.focus > a, .rd-navbar-static .rd-navbar-nav > li > a:hover {
+        color: #5c787c;
+    }
+
+    .button-lighter::before {
+        background: #5c787c;
+    }
+
+    .object-decorated__divider {
+        background: #5c787c;
+    }
+
+    .ui-to-top, .ui-to-top:active, .ui-to-top:focus {
+        background: #5c787c;
+    }
+
+    .heading-bordered {
+        border-left: 3px solid #5c787c;
+    }
+
+    .bg-gray-dark .post-light__title a:hover, .bg-gray-3 .post-light__title a:hover, .bg-gray-7 .post-light__title a:hover, .bg-gray-8 .post-light__title a:hover, .bg-gray-10 .post-light__title a:hover, .breadcrumbs-custom .post-light__title a:hover {
+        color: #5c787c;
+    }
+</style>
+
+<!-- Swiper-->
+<!-- Start Home Slider Area -->
+<div class="home-slider-area">
+	<div class="home-slider flickity-dots-absolute" data-flickity='{ "bgLazyLoad": 1, "bgLazyLoad": true, "wrapAround": true, "fade": false, "prevNextButtons": false, "autoPlay": 7000, "pauseAutoPlayOnHover": true }'>
+		<div class="home-slider-single-item" data-overlay-dark="5" data-flickity-bg-lazyload="@Url.Content("~/images/image-1-1200x803_original.jpg")">
+			<div class="container">
+				<div class="row d-flex align-items-center">
+					<div class="col">
+						<div class="home-slider-content">
+							<h1 class="home-slider-title">Ambalaj</h1>
+							<div class="home-slider-description">
+                                <p>Ürünlere özel tasarımlarıyla en uygun, verimli ve ekonomik seçenekler sunarak sizlere katma değer kazandırmayı hedeflemektedir.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Experience since 1999-->
+<section class="section section-md bg-default">
+	<div class="bg-gray-4">
+		<div class="container-fluid container-condensed">
+			<div class="row row-30 flex-lg-row-reverse">
+				<div class="col-md-12 col-lg-6">
+					<div class="section-md container-fluid-cell">
+						<div class="box-centered box-width-1">
+							<h2><span>Hakkımızda</span><span class="object-decorated object-decorated_inline" style="max-width: 125px;"><span class="object-decorated__divider"></span><span class="heading-5"></span></span></h2>
+                            <p>Ürünlere özel tasarımlarıyla en uygun, verimli ve ekonomik seçenekler sunarak sizlere katma değer kazandırmayı hedeflemektedir.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 col-lg-6 d-flex">
+					<div class="thumb-video">
+                        <img class="thumb-video__image" src="/images/image-1-1200x803_original.jpg" alt="" width="962" height="465" />
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="showcase-section">
+    <h2 class="section-title">Hizmetlerimiz</h2>
+    <p class="section-subtitle">Ambalaj sektöründe yenilik olan petek paneller, hafif, yüksek performanslı, ekonomik ve tamamen atık kağıt geri dönüşümden elde edilmeleri bakımından da çevre dostu ürünlerdir.</p>
+
+    <div class="showcase-container">
+        <nav class="service-nav">
+            <button class="service-nav-item active" data-service="0">OLUKLU PETEK</button>
+            <button class="service-nav-item" data-service="1">POLİETİLEN/POLİÜRETAN/POLİSTİREN</button>
+            <button class="service-nav-item" data-service="2">KARTONPLAST</button>
+            <button class="service-nav-item" data-service="3">STOKLAMA KASASI</button>
+        </nav>
+
+        <div class="service-display">
+            <div class="service-image-container">
+                <!-- Oluklu Petek Gallery -->
+                <div class="image-gallery" data-service="0" style="display: flex;">
+                    <button class="gallery-nav prev" onclick="changeImage(0, -1)">
+                        <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" /></svg>
+                    </button>
+                    <div class="gallery-images">
+                        <img src="/images/OlukluPetek/Resim1.png" alt="Oluklu Petek 1" class="service-image active">
+                        <img src="/images/OlukluPetek/2.png" alt="Oluklu Petek 2" class="service-image">
+                        <img src="/images/OlukluPetek/3.png" alt="Oluklu Petek 3" class="service-image">
+                        <img src="/images/OlukluPetek/4.png" alt="Oluklu Petek 4" class="service-image">
+                        <img src="/images/OlukluPetek/5.png" alt="Oluklu Petek 5" class="service-image">
+                        <img src="/images/OlukluPetek/6.png" alt="Oluklu Petek 6" class="service-image">
+                        <img src="/images/OlukluPetek/7.png" alt="Oluklu Petek 7" class="service-image">
+                        <img src="/images/OlukluPetek/8.png" alt="Oluklu Petek 8" class="service-image">
+                    </div>
+                    <button class="gallery-nav next" onclick="changeImage(0, 1)">
+                        <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" /></svg>
+                    </button>
+                    <div class="gallery-dots">
+                        <span class="gallery-dot active" onclick="goToImage(0, 0)"></span>
+                        <span class="gallery-dot" onclick="goToImage(0, 1)"></span>
+                        <span class="gallery-dot" onclick="goToImage(0, 2)"></span>
+                        <span class="gallery-dot" onclick="goToImage(0, 3)"></span>
+                        <span class="gallery-dot" onclick="goToImage(0, 4)"></span>
+                        <span class="gallery-dot" onclick="goToImage(0, 5)"></span>
+                        <span class="gallery-dot" onclick="goToImage(0, 6)"></span>
+                        <span class="gallery-dot" onclick="goToImage(0, 7)"></span>
+                    </div>
+                </div>
+
+                <!-- Polietilen/Poliüretan/Polistiren Gallery -->
+                <div class="image-gallery" data-service="1" style="display: none;">
+                    <button class="gallery-nav prev" onclick="changeImage(1, -1)">
+                        <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" /></svg>
+                    </button>
+                    <div class="gallery-images">
+                        <img src="/images/polietilen/1.png" alt="Polietilen 1" class="service-image active">
+                        <img src="/images/polietilen/2.png" alt="Polietilen 2" class="service-image">
+                        <img src="/images/polietilen/3.png" alt="Polietilen 3" class="service-image">
+                        <img src="/images/polietilen/4.png" alt="Polietilen 4" class="service-image">
+                        <img src="/images/polietilen/5.png" alt="Polietilen 5" class="service-image">
+                        <img src="/images/polietilen/6.png" alt="Polietilen 6" class="service-image">
+                        <img src="/images/polietilen/7.png" alt="Polietilen 7" class="service-image">
+                        <img src="/images/polietilen/8.png" alt="Polietilen 8" class="service-image">
+                    </div>
+                    <button class="gallery-nav next" onclick="changeImage(1, 1)">
+                        <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" /></svg>
+                    </button>
+                    <div class="gallery-dots">
+                        <span class="gallery-dot active" onclick="goToImage(1, 0)"></span>
+                        <span class="gallery-dot" onclick="goToImage(1, 1)"></span>
+                        <span class="gallery-dot" onclick="goToImage(1, 2)"></span>
+                        <span class="gallery-dot" onclick="goToImage(1, 3)"></span>
+                        <span class="gallery-dot" onclick="goToImage(1, 4)"></span>
+                        <span class="gallery-dot" onclick="goToImage(1, 5)"></span>
+                        <span class="gallery-dot" onclick="goToImage(1, 6)"></span>
+                        <span class="gallery-dot" onclick="goToImage(1, 7)"></span>
+                    </div>
+                </div>
+
+                <!-- Kartonplast Gallery -->
+                <div class="image-gallery" data-service="2" style="display: none;">
+                    <button class="gallery-nav prev" onclick="changeImage(2, -1)">
+                        <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" /></svg>
+                    </button>
+                    <div class="gallery-images">
+                        <img src="/images/Kartonplast/1.png" alt="Kartonplast 1" class="service-image active">
+                        <img src="/images/Kartonplast/2.png" alt="Kartonplast 2" class="service-image">
+                        <img src="/images/Kartonplast/3.png" alt="Kartonplast 3" class="service-image">
+                        <img src="/images/Kartonplast/4.png" alt="Kartonplast 4" class="service-image">
+                        <img src="/images/Kartonplast/5.png" alt="Kartonplast 5" class="service-image">
+                        <img src="/images/Kartonplast/6.png" alt="Kartonplast 6" class="service-image">
+                        <img src="/images/Kartonplast/7.png" alt="Kartonplast 7" class="service-image">
+                        <img src="/images/Kartonplast/8.png" alt="Kartonplast 8" class="service-image">
+                    </div>
+                    <button class="gallery-nav next" onclick="changeImage(2, 1)">
+                        <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" /></svg>
+                    </button>
+                    <div class="gallery-dots">
+                        <span class="gallery-dot active" onclick="goToImage(2, 0)"></span>
+                        <span class="gallery-dot" onclick="goToImage(2, 1)"></span>
+                        <span class="gallery-dot" onclick="goToImage(2, 2)"></span>
+                        <span class="gallery-dot" onclick="goToImage(2, 3)"></span>
+                        <span class="gallery-dot" onclick="goToImage(2, 4)"></span>
+                        <span class="gallery-dot" onclick="goToImage(2, 5)"></span>
+                        <span class="gallery-dot" onclick="goToImage(2, 6)"></span>
+                        <span class="gallery-dot" onclick="goToImage(2, 7)"></span>
+                    </div>
+                </div>
+
+                <!-- Stoklama Kasası Gallery -->
+                <div class="image-gallery" data-service="3" style="display: none;">
+                    <button class="gallery-nav prev" onclick="changeImage(3, -1)">
+                        <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" /></svg>
+                    </button>
+                    <div class="gallery-images">
+                        <img src="~/images/Stoklama/1.jpg" alt="Stoklama Kasası 1" class="service-image active">
+                        <img src="~/images/Stoklama/2.png" alt="Stoklama Kasası 2" class="service-image">
+                        <img src="~/images/Stoklama/3.png" alt="Stoklama Kasası 3" class="service-image">
+                        <img src="~/images/Stoklama/4.png" alt="Stoklama Kasası 4" class="service-image">
+                        <img src="~/images/Stoklama/5.png" alt="Stoklama Kasası 5" class="service-image">
+                        <img src="~/images/Stoklama/6.png" alt="Stoklama Kasası 6" class="service-image">
+                        <img src="~/images/Stoklama/7.jpeg" alt="Stoklama Kasası 7" class="service-image">
+                        @*<img src="~/images/Stoklama/1.jpg" alt="Stoklama Kasası 8" class="service-image">*@
+                    </div>
+                    <button class="gallery-nav next" onclick="changeImage(3, 1)">
+                        <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" /></svg>
+                    </button>
+                    <div class="gallery-dots">
+                        <span class="gallery-dot active" onclick="goToImage(3, 0)"></span>
+                        <span class="gallery-dot" onclick="goToImage(3, 1)"></span>
+                        <span class="gallery-dot" onclick="goToImage(3, 2)"></span>
+                        <span class="gallery-dot" onclick="goToImage(3, 3)"></span>
+                        <span class="gallery-dot" onclick="goToImage(3, 4)"></span>
+                        <span class="gallery-dot" onclick="goToImage(3, 5)"></span>
+                        <span class="gallery-dot" onclick="goToImage(3, 6)"></span>
+                        <span class="gallery-dot" onclick="goToImage(3, 7)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-content">
+                <div class="service-info" data-service="0">
+                    <h3 class="service-title">Petek Panel</h3>
+                    <div class="service-description active">
+                        <p>Ambalaj sektöründe yenilik olan petek paneller, hafif, yüksek performanslı, ekonomik ve tamamen atık kağıt geri dönüşümden elde edilmeleri bakımından da çevre dostu ürünlerdir.</p>
+                        <p>Ürünlerinize hitap edecek tasarımlar oluşturup özel kesim kutuları ve seperatörleri hazırlamaktayız. Ürünleriniz en az hacimde zarar görmeden hesaplı gönderimini sağlamak hedefimizdir.</p>
+                    </div>
+                </div>
+
+                <div class="service-info" data-service="1" style="display: none;">
+                    <h3 class="service-title">POLİETİLEN</h3>
+                    <div class="service-description">
+                        <p>Farklı yoğunluk ve dirençte ürün gamı mevcut olup kullanıma özel işlemeler sunmaktayız.</p>
+                        <p>Birim maliyetin azaltılması için gerekli çözümlerin yanında kıymetli ve hassas ürünlerin hasar görmeden muhafaza edilerek taşınmasını sağlamaktayız. Parçaların şeklince tasarımları yapılır, yuvalarına girmesi sağlanarak her türlü taşıma şartlarına uygun hale getirilebilir.</p>
+                    </div>
+                </div>
+
+                <div class="service-info" data-service="2" style="display: none;">
+                    <h3 class="service-title">KartonPlast</h3>
+                    <div class="service-description">
+                        <p>Karton plast, yapısından dolayı hafif, mukavettli, Özel ölçü, renk ve yoğunlukğa sahip olması farklı endüstriyellerde yaygın olarak kullanılmaktadır.</p>
+                        <p>Ürüne özel taşıma kutuları ve seperatör tasarım çözümleri yanı sıra UV ve alev geciktirici özelliği ile güneşe maruz kalan ve kıvılcımlı üretim alanlarında özellikle tercih edilmektedir.</p>
+                    </div>
+                </div>
+
+                <div class="service-info" data-service="3" style="display: none;">
+                    <h3 class="service-title">Stoklama Kasası</h3>
+                    <div class="service-description">
+                        <p>Dayanıklı ve uzun ömürlü stoklama kasaları ile depolama ve organizasyon ihtiyaçlarınıza profesyonel çözümler sunuyoruz.</p>
+                        <p>Farklı boyut ve kapasitelerde üretilen kasalarımız, endüstriyel kullanım için özel olarak tasarlanmıştır. İstifleme özelliği sayesinde alan tasarrufu sağlar.</p>
+                    </div>
+                </div>
+
+                <div class="slider-indicators">
+                    <span class="indicator active" data-service="0"></span>
+                    <span class="indicator" data-service="1"></span>
+                    <span class="indicator" data-service="2"></span>
+                    <span class="indicator" data-service="3"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const navItems = document.querySelectorAll('.service-nav-item');
+    const serviceInfos = document.querySelectorAll('.service-info');
+    const imageGalleries = document.querySelectorAll('.image-gallery');
+    const descriptions = document.querySelectorAll('.service-description');
+    const indicators = document.querySelectorAll('.indicator');
+
+    // Track current image index for each service
+    const currentImageIndex = [0, 0, 0, 0];
+
+    function switchService(index) {
+        // Update nav items
+        navItems.forEach(item => item.classList.remove('active'));
+        navItems[index].classList.add('active');
+
+        // Update indicators
+        indicators.forEach(ind => ind.classList.remove('active'));
+        indicators[index].classList.add('active');
+
+        // Fade out current description
+        descriptions.forEach(desc => desc.classList.remove('active'));
+
+        // Hide all service infos and galleries
+        serviceInfos.forEach(info => info.style.display = 'none');
+        imageGalleries.forEach(gallery => gallery.style.display = 'none');
+
+        // Show selected service after a brief delay
+        setTimeout(() => {
+            serviceInfos[index].style.display = 'block';
+            imageGalleries[index].style.display = 'flex';
+
+            setTimeout(() => {
+                serviceInfos[index].querySelector('.service-description').classList.add('active');
+            }, 100);
+        }, 150);
+    }
+
+    function changeImage(serviceIndex, direction) {
+        const gallery = imageGalleries[serviceIndex];
+        const images = gallery.querySelectorAll('.service-image');
+        const dots = gallery.querySelectorAll('.gallery-dot');
+
+        // Remove active class from current image and dot
+        images[currentImageIndex[serviceIndex]].classList.remove('active');
+        dots[currentImageIndex[serviceIndex]].classList.remove('active');
+
+        // Calculate new index
+        currentImageIndex[serviceIndex] += direction;
+
+        // Wrap around
+        if (currentImageIndex[serviceIndex] < 0) {
+            currentImageIndex[serviceIndex] = images.length - 1;
+        } else if (currentImageIndex[serviceIndex] >= images.length) {
+            currentImageIndex[serviceIndex] = 0;
+        }
+
+        // Add active class to new image and dot
+        images[currentImageIndex[serviceIndex]].classList.add('active');
+        dots[currentImageIndex[serviceIndex]].classList.add('active');
+    }
+
+    function goToImage(serviceIndex, imageIndex) {
+        const gallery = imageGalleries[serviceIndex];
+        const images = gallery.querySelectorAll('.service-image');
+        const dots = gallery.querySelectorAll('.gallery-dot');
+
+        // Remove active class from current image and dot
+        images[currentImageIndex[serviceIndex]].classList.remove('active');
+        dots[currentImageIndex[serviceIndex]].classList.remove('active');
+
+        // Set new index
+        currentImageIndex[serviceIndex] = imageIndex;
+
+        // Add active class to new image and dot
+        images[currentImageIndex[serviceIndex]].classList.add('active');
+        dots[currentImageIndex[serviceIndex]].classList.add('active');
+    }
+
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const serviceIndex = parseInt(item.dataset.service);
+            switchService(serviceIndex);
+        });
+    });
+
+    indicators.forEach(indicator => {
+        indicator.addEventListener('click', () => {
+            const serviceIndex = parseInt(indicator.dataset.service);
+            switchService(serviceIndex);
+        });
+    });
+
+    // Auto-rotate through services every 7 seconds (optional)
+    /*let currentServiceIndex = 0;
+    setInterval(() => {
+        currentServiceIndex = (currentServiceIndex + 1) % 4;
+        switchService(currentServiceIndex);
+    }, 7000);*/
+
+    // Auto-rotate images within current gallery every 3 seconds (optional)
+    setInterval(() => {
+        // Find which gallery is currently visible
+        imageGalleries.forEach((gallery, index) => {
+            if (gallery.style.display === 'flex') {
+                changeImage(index, 1);
+            }
+        });
+    }, 3000);
+</script>
+@* <section class="services-section pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <h6>Ambalaj Çözümlerimiz</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-services-box">
+                    <div class="services-icon">
+                        <img src="~/images/icons/services-icon-4.svg" alt="svg icon">
+                    </div>
+                    <h3>Oluklu / Petek Karton</h3>
+                    <p>Kısa açıklama buraya gelecek.</p>
+                    <div class="services-btn">
+                        <a href="#"
+                           class="services-btn-one open-service-modal"
+                           data-title="Oluklu / Petek Karton"
+                           data-desc="PETEK PANEL
+
+​
+
+Ambalaj sektöründe yenilik olan petek paneller, hafif, yüksek performanslı, ekonomik ve tamamen atık kağıt geri dönüşümden elde edilmeleri bakımından da çevre dostu ürünlerdir.
+
+​
+
+OLUKLU KARTON / KUTU/ KOLİ
+
+​
+
+Ürünlerinize hitap edecek tasarımlar oluşturup özel kesim kutuları ve seperatörleri hazırlamaktayız.  Ürünleriniz en az hacimde zarar görmeden hesaplı gönderimini sağlamak hedefimizdir.
+
+​
+
+KARTON KÖŞEBANT ​
+
+​
+
+Karton köşebent, nakliye sektöründe taşımacılık hususlarında herhangi bir zararla karşılaşılmaması adına alınan koruyucu önlemler adına üretilen bir üründür. Aynı zamanda stoklanacak ürünlerin de muhafaza edildikleri koli vb. ürünlerde de şeklin korunmasını ve zarar görmeden istifçilik yapılabilmesine olanak sağlamaktadır."
+                           data-img="~/images/services/garage.jpg">
+                            <i class="fa fa-arrow-right"></i> Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-services-box">
+                    <div class="services-icon">
+                        <img src="~/images/icons/services-icon-4.svg" alt="svg icon">
+                    </div>
+                    <h3>Polietilen / Poliüretan</h3>
+                    <p>Kısa açıklama buraya gelecek.</p>
+                    <div class="services-btn">
+                        <a href="#"
+                           class="services-btn-one open-service-modal"
+                           data-title="Polietilen / Poliüretan"
+                           data-desc="Farklı yoğunluk ve dirençte ürün gamı mevcut olup kullanıma özel işlemeler sunmaktayız.
+
+​
+
+Birim maliyetin azaltılması için gerekli çözümlerin yanında kıymetli ve hassas ürünlerin hasar görmeden muhafaza edilerek taşınmasını sağlamaktayız.
+
+​
+
+Kutu/box içi ambalaj, özel kesim seperatörler ve taşıma seperatörlerimiz ile sizlere en iyi şekilde hizmet vermekteyiz."
+                           data-img="~/images/services/garage.jpg">
+                            <i class="fa fa-arrow-right"></i> Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-services-box">
+                    <div class="services-icon">
+                        <img src="~/images/icons/services-icon-4.svg" alt="svg icon">
+                    </div>
+                    <h3>Kartonplast</h3>
+                    <p>Kısa açıklama buraya gelecek.</p>
+                    <div class="services-btn">
+                        <a href="#"
+                           class="services-btn-one open-service-modal"
+                           data-title="Kartonplast"
+                           data-desc="Karton plast, yapısından dolayı hafif, mukavetli, Özel ölçü, renk ve yoğunlukğa sahip olması farklı endüstriyellerde yaygın olarak kullanılmaktadır.
+
+​
+
+ Ürüne özel taşıma kutuları ve seperatör tasarım çözümleri yanı sıra UV ve alev geciktirici özelliği ile güneşe maruz kalan ve kıvılcımlı üretim alanlarında özellikle tercih edilmektedir."
+                           data-img="~/images/services/garage.jpg">
+                            <i class="fa fa-arrow-right"></i> Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-services-box">
+                    <div class="services-icon">
+                        <img src="~/images/icons/services-icon-4.svg" alt="svg icon">
+                    </div>
+                    <h3>Stoklama ve Taşıma Kasası</h3>
+                    <p>Kısa açıklama buraya gelecek.</p>
+                    <div class="services-btn">
+                        <a href="#"
+                           class="services-btn-one open-service-modal"
+                           data-title="Stoklama ve Taşıma Kasası"
+                           data-desc="
+Kit Modül 
+
+Özellikle yurtdışı sevkiyatlarında  standart veya özel ölçü ve kalitede müşteriye özel çözümler ile stok alanı ve maliyet tasarrufu sağlamaktadır.
+
+​
+
+Plastik ve Akıllı Kasa
+
+Katlanabilir Akıllı Plastik Kasa ideal paketleme yoğunluğuna ve taşıma sırasında darbeleri emen yapıya sahiptir. Kullanım kolaylığı ve %80  tasarruf sağlayan istiflenebilir özelliği ve geri dönüşümlü olarak kullanılmaktadır.
+
+​
+
+Optimum paketleme yoğunluğunu elde etmek için kutunun yüksekliği ayarlanabilir. 
+
+ 
+
+Ahşap Kasa
+
+Fabrika içi stoklama ve müşteri sevkiyatları için özel tasarlanmış malzeme içerikli kasalar.
+
+​
+
+Metal Kasa
+
+Fabrika içi taşıma/stoklama ve müşterisevkiyatları için özel tasarımlar."
+                           data-img="~/images/services/garage.jpg">
+                            <i class="fa fa-arrow-right"></i> Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-services-box">
+                    <div class="services-icon">
+                        <img src="~/images/icons/services-icon-4.svg" alt="svg icon">
+                    </div>
+                    <h3>Özel Seperetörler</h3>
+                    <p>Kısa açıklama buraya gelecek.</p>
+                    <div class="services-btn">
+                        <a href="#"
+                           class="services-btn-one open-service-modal"
+                           data-title="Özel Seperetörler"
+                           data-desc="
+Tekstil seperatörlerin üretildiği kumaşlar, mükemmel proses kabiliyeti, geniş uygulama değişkenliği, mükemmel koruyucu özelliği ve düşük ağırlık gibi büyük avantajlara sahiptir. İster dış ambalaj, isterse de ayrı kılıflar veya metal yapılar için örtü kapaklar için olsun, büyük miktarda özgün tekstil ambalajı tasarlıyor ve üretiyoruz."
+                           data-img="~/images/services/garage.jpg">
+                            <i class="fa fa-arrow-right"></i> Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> *@
+
+<!-- About Our Company-->
+@* <section class="section section-xl bg-default text-md-start">
+    <div class="container">
+        <div class="tabs-custom row row-50 align-items-center flex-xl-row-reverse text-center text-md-start" id="tabs-6">
+            <div class="col-xl-3">
+                <h5 class="text-spacing-200">Hizmetlerimiz</h5>
+                <ul class="nav list-category list-category-down-lg-inline-block">
+                    <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s">
+                        <a class="active" href="#tabs-6-1" data-bs-toggle="tab">Oluklu Petek</a>
+                    </li>
+                    <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s">
+                        <a href="#tabs-6-2" data-bs-toggle="tab">POLİETİLEN/POLİÜRETAN/POLİSTİREN</a>
+                    </li>
+                    <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s">
+                        <a href="#tabs-6-3" data-bs-toggle="tab">Kartonplast</a>
+                    </li>
+                    <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".3s">
+                        <a href="#tabs-6-4" data-bs-toggle="tab">Stoklama Kasası</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xl-9">
+                <!-- Tab panes-->
+                <div class="tab-content tab-content-1 wow fadeInLeft" data-wow-delay="0s">
+
+                    <!-- TAB 1 -->
+                    <div class="tab-pane fade show active" id="tabs-6-1">
+                        <div class="row row-40 align-items-center justify-content-center justify-content-md-start">
+                            <div class="col-sm-11 col-md-6 col-lg-5">
+                                <h3>Petek Panel</h3>
+                                <div class="title-decor-left">
+                                    Ambalaj sektöründe yenilik olan petek paneller, hafif, yüksek performanslı, ekonomik ve tamamen atık kağıt geri dönüşümden elde edilmeleri bakımından da çevre dostu ürünlerdir.
+                                </div>
+                                <p>
+                                    Ürünlerinize hitap edecek tasarımlar oluşturup özel kesim kutuları ve seperatörleri hazırlamaktayız. Ürünleriniz en az hacimde zarar görmeden hesaplı gönderimini sağlamak hedefimizdir.
+                                </p>
+                            </div>
+                            <div class="col-sm-9 col-md-6 col-xl-7">
+                                <!-- Owl Carousel-->
+                                <div class="owl-style-1">
+                                    <div class="owl-carousel"
+                                         data-items="1"
+                                         data-dots="true"
+                                         data-pagination-class=".dots-custom-1"
+                                         data-numbering="#owl-numbering-1"
+                                         data-animation-in="fadeIn"
+                                         data-animation-out="fadeOut"
+                                         data-margin="1">
+                                        <img src="~/images/OlukluPetek/2.png" alt="" width="370" height="436" />
+                                        <img src="~/images/OlukluPetek/3.png" alt="" width="370" height="436" />
+                                        <img src="~/images/OlukluPetek/4.png" alt="" width="370" height="436" />
+                                        <img src="~/images/OlukluPetek/6.png" alt="" width="370" height="436" />
+                                        <img src="~/images/OlukluPetek/7.png" alt="" width="370" height="436" />
+                                        <img src="~/images/OlukluPetek/8.png" alt="" width="370" height="436" />
+                                        <img src="~/images/OlukluPetek/9.png" alt="" width="370" height="436" />
+                                    </div>
+                                    <div class="dots-custom-wrap">
+                                        <div class="dots-custom-1"></div>
+                                        <div class="owl-numbering" id="owl-numbering-1">
+                                            <div class="numbering-current"></div>
+                                            <div class="numbering-separator">/</div>
+                                            <div class="numbering-count"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 2 -->
+                    <div class="tab-pane fade" id="tabs-6-2">
+                        <div class="row row-40 align-items-center justify-content-center justify-content-md-start">
+                            <div class="col-sm-11 col-md-6 col-lg-5">
+                                <h5>POLİETİLEN/POLİÜRETAN/POLİSTİREN</h5>
+                                <div class="title-decor-left">
+                                    Farklı yoğunluk ve dirençte ürün gamı mevcut olup kullanıma özel işlemeler sunmaktayız.
+                                </div>
+                                <p>
+                                    Birim maliyetin azaltılması için gerekli çözümlerin yanında kıymetli ve hassas ürünlerin hasar görmeden muhafaza edilerek taşınmasını sağlamaktayız.
+                                    Parçaların şeklince tasarımları yapılır, yuvalarına girmesi sağlanarak her türlü taşıma şartlarına uygun hale getirilebilir.
+                                </p>
+                            </div>
+                            <div class="col-sm-9 col-md-6 col-xl-7">
+                                <!-- Owl Carousel-->
+                                <div class="owl-style-1">
+                                    <div class="owl-carousel"
+                                         data-items="1"
+                                         data-dots="true"
+                                         data-pagination-class=".dots-custom-2"
+                                         data-numbering="#owl-numbering-2"
+                                         data-animation-in="fadeIn"
+                                         data-animation-out="fadeOut"
+                                         data-margin="1">
+                                        <img src="~/images/tasima/1.png" alt="" width="370" height="436" />
+                                        <img src="~/images/tasima/2.png" alt="" width="370" height="436" />
+                                        <img src="~/images/tasima/3.png" alt="" width="370" height="436" />
+                                        <img src="~/images/tasima/4.png" alt="" width="370" height="436" />
+                                        <img src="~/images/tasima/5.png" alt="" width="370" height="436" />
+                                        <img src="~/images/tasima/6.png" alt="" width="370" height="436" />
+                                        <img src="~/images/tasima/7.png" alt="" width="370" height="436" />
+                                        <img src="~/images/tasima/8.png" alt="" width="370" height="436" />
+                                        <img src="~/images/tasima/9.png" alt="" width="370" height="436" />
+                                    </div>
+                                    <div class="dots-custom-wrap">
+                                        <div class="dots-custom-2"></div>
+                                        <div class="owl-numbering" id="owl-numbering-2">
+                                            <div class="numbering-current"></div>
+                                            <div class="numbering-separator">/</div>
+                                            <div class="numbering-count"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 3 -->
+                    <div class="tab-pane fade" id="tabs-6-3">
+                        <div class="row row-40 align-items-center justify-content-center justify-content-md-start">
+                            <div class="col-sm-11 col-md-6 col-lg-5">
+                                <h3>KartonPlast</h3>
+                                <div class="title-decor-left">
+                                    Karton plast, yapısından dolayı hafif, mukavetli, Özel ölçü, renk ve yoğunlukğa sahip olması farklı endüstriyellerde yaygın olarak kullanılmaktadır.
+                                </div>
+                                <p>Ürüne özel taşıma kutuları ve seperatör tasarım çözümleri yanı sıra UV ve alev geciktirici özelliği ile güneşe maruz kalan ve kıvılcımlı üretim alanlarında özellikle tercih edilmektedir.</p>
+                            </div>
+                            <div class="col-sm-9 col-md-6 col-xl-7">
+                                <!-- Owl Carousel-->
+                                <div class="owl-style-1">
+                                    <div class="owl-carousel"
+                                         data-items="1"
+                                         data-dots="true"
+                                         data-pagination-class=".dots-custom-3"
+                                         data-numbering="#owl-numbering-3"
+                                         data-animation-in="fadeIn"
+                                         data-animation-out="fadeOut"
+                                         data-margin="1">
+                                        <img src="~/images/Kartonplast/1.png" alt="" width="370" height="436" />
+                                        <img src="~/images/Kartonplast/2.png" alt="" width="370" height="436" />
+                                        <img src="~/images/Kartonplast/3.png" alt="" width="370" height="436" />
+                                        <img src="~/images/Kartonplast/4.png" alt="" width="370" height="436" />
+                                        <img src="~/images/Kartonplast/6.png" alt="" width="370" height="436" />
+                                        <img src="~/images/Kartonplast/7.png" alt="" width="370" height="436" />
+                                        <img src="~/images/Kartonplast/8.png" alt="" width="370" height="436" />
+                                        <img src="~/images/Kartonplast/9.png" alt="" width="370" height="436" />
+                                    </div>
+                                    <div class="dots-custom-wrap">
+                                        <div class="dots-custom-3"></div>
+                                        <div class="owl-numbering" id="owl-numbering-3">
+                                            <div class="numbering-current"></div>
+                                            <div class="numbering-separator">/</div>
+                                            <div class="numbering-count"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 4 -->
+                    <div class="tab-pane fade" id="tabs-6-4">
+                        <div class="row row-40 align-items-center justify-content-center justify-content-md-start">
+                            <div class="col-sm-11 col-md-6 col-lg-5">
+                                <h3>Stoklama Kasası</h3>
+                                <p style="font-size:12px;"> 
+                                    Kit Modül; Özellikle yurtdışı sevkiyatlarında  standart veya özel ölçü ve kalitede müşteriye özel çözümler ile stok alanı ve maliyet tasarrufu sağlamaktadır.
+                                </p >
+                                <p style="font-size:12px;">
+                                    Plastik ve Akıllı Kasa; Katlanabilir Akıllı Plastik Kasa ideal paketleme yoğunluğuna ve taşıma sırasında darbeleri emen yapıya sahiptir. Kullanım kolaylığı ve %80  tasarruf sağlayan istiflenebilir özelliği ve geri dönüşümlü olarak kullanılmaktadır.
+                                    Optimum paketleme yoğunluğunu elde etmek için kutunun yüksekliği ayarlanabilir.
+                                </p>
+                                <p style="font-size:12px;">Ahşap kasa:Fabrika içi stoklama ve müşteri sevkiyatları için özel tasarlanmış malzeme içerikli kasalar</p>
+                                <p style="font-size:12px;">
+                                    Metal Kasa: Fabrika içi taşıma/stoklama ve müşteri sevkiyatları için özel tasarımlar
+                                </p>
+                            </div>
+                            <div class="col-sm-9 col-md-6 col-xl-7">
+                                <!-- Owl Carousel-->
+                                <div class="owl-style-1">
+                                    <div class="owl-carousel"
+                                         data-items="1"
+                                         data-dots="true"
+                                         data-pagination-class=".dots-custom-4"
+                                         data-numbering="#owl-numbering-4"
+                                         data-animation-in="fadeIn"
+                                         data-animation-out="fadeOut"
+                                         data-margin="1">
+                                        <img src="~/images/Stoklama/1.jpg" alt="" width="370" height="400" />
+                                        <img src="~/images/Stoklama/2.png" alt="" width="370" height="400" />
+                                        <img src="~/images/Stoklama/3.png" alt="" width="370" height="400" />
+                                        <img src="~/images/Stoklama/4.png" alt="" width="370" height="400" />
+                                        <img src="~/images/Stoklama/6.png" alt="" width="370" height="400" />
+                                        <img src="~/images/Stoklama/7.jpeg" alt="" width="370" height="400" />
+                                    </div>
+                                    <div class="dots-custom-wrap">
+                                        <div class="dots-custom-4"></div>
+                                        <div class="owl-numbering" id="owl-numbering-4">
+                                            <div class="numbering-current"></div>
+                                            <div class="numbering-separator">/</div>
+                                            <div class="numbering-count"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section section-xl bg-default text-md-start">
+    <div class="container">
+        <!-- ÜST TAB -->
+        <ul class="nav nav-tabs mb-4" id="mainTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#energy" role="tab">Energy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#construction" role="tab">Construction</a>
+            </li>
+        </ul>
+
+        <!-- ÜST TAB CONTENT -->
+        <div class="tab-content" id="mainTabsContent">
+
+            <!-- ENERGY TAB -->
+            <div class="tab-pane fade show active" id="energy" role="tabpanel">
+                <div class="row">
+
+                    <div class="col-xl-9">
+                        <!-- ALT TAB CONTENT -->
+                        <div class="container">
+                            <div class="tabs-custom row row-50 align-items-center flex-xl-row-reverse text-center text-md-start" id="tabs-6">
+                                <div class="col-xl-3">
+                                    <h5 class="text-spacing-200">What we can offer</h5>
+                                    <ul class="nav list-category list-category-down-lg-inline-block">
+                                        <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s">
+                                            <a class="active" href="#tabs-6-1" data-bs-toggle="tab">Exploration and production</a>
+                                        </li>
+                                        <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s">
+                                            <a href="#tabs-6-2" data-bs-toggle="tab">Transformation</a>
+                                        </li>
+                                        <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s">
+                                            <a href="#tabs-6-3" data-bs-toggle="tab">Development</a>
+                                        </li>
+                                        <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".3s">
+                                            <a href="#tabs-6-4" data-bs-toggle="tab">Shipping</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xl-9">
+                                    <!-- Tab panes-->
+                                    <div class="tab-content tab-content-1 wow fadeInLeft" data-wow-delay="0s">
+
+                                        <!-- TAB 1 -->
+                                        <div class="tab-pane fade show active" id="tabs-6-1">
+                                            <div class="row row-40 align-items-center justify-content-center justify-content-md-start">
+                                                <div class="col-sm-11 col-md-6 col-lg-5">
+                                                    <h3>About our company</h3>
+                                                    <div class="title-decor-left">Working since 1990</div>
+                                                    <p>Our company provides sustainable exploration and production solutions that respond to our future energy challenges.</p>
+                                                    <a class="button button-lg button-width-auto button-outline button-default-outline-2 button-winona" href="about-us.html">Read more</a>
+                                                </div>
+                                                <div class="col-sm-9 col-md-6 col-xl-7">
+                                                    <!-- Owl Carousel-->
+                                                    <div class="owl-style-1">
+                                                        <div class="owl-carousel"
+                                                             data-items="1"
+                                                             data-dots="true"
+                                                             data-pagination-class=".dots-custom-1"
+                                                             data-numbering="#owl-numbering-1"
+                                                             data-animation-in="fadeIn"
+                                                             data-animation-out="fadeOut"
+                                                             data-margin="1">
+                                                            <img src="images/index-1-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-2-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-3-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-4-370x436.jpg" alt="" width="370" height="436" />
+                                                        </div>
+                                                        <div class="dots-custom-wrap">
+                                                            <div class="dots-custom-1"></div>
+                                                            <div class="owl-numbering" id="owl-numbering-1">
+                                                                <div class="numbering-current"></div>
+                                                                <div class="numbering-separator">/</div>
+                                                                <div class="numbering-count"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- TAB 2 -->
+                                        <div class="tab-pane fade" id="tabs-6-2">
+                                            <div class="row row-40 align-items-center justify-content-center justify-content-md-start">
+                                                <div class="col-sm-11 col-md-6 col-lg-5">
+                                                    <h3>About our company</h3>
+                                                    <div class="title-decor-left">Working since 1995</div>
+                                                    <p>We offer transformation solutions for enterprises worldwide that are designed to improve oil & gas production efficiency.</p>
+                                                    <a class="button button-lg button-width-auto button-outline button-default-outline-2 button-winona" href="about-us.html">Read more</a>
+                                                </div>
+                                                <div class="col-sm-9 col-md-6 col-xl-7">
+                                                    <!-- Owl Carousel-->
+                                                    <div class="owl-style-1">
+                                                        <div class="owl-carousel"
+                                                             data-items="1"
+                                                             data-dots="true"
+                                                             data-pagination-class=".dots-custom-2"
+                                                             data-numbering="#owl-numbering-2"
+                                                             data-animation-in="fadeIn"
+                                                             data-animation-out="fadeOut"
+                                                             data-margin="1">
+                                                            <img src="images/index-2-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-3-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-4-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-1-370x436.jpg" alt="" width="370" height="436" />
+                                                        </div>
+                                                        <div class="dots-custom-wrap">
+                                                            <div class="dots-custom-2"></div>
+                                                            <div class="owl-numbering" id="owl-numbering-2">
+                                                                <div class="numbering-current"></div>
+                                                                <div class="numbering-separator">/</div>
+                                                                <div class="numbering-count"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- TAB 3 -->
+                                        <div class="tab-pane fade" id="tabs-6-3">
+                                            <div class="row row-40 align-items-center justify-content-center justify-content-md-start">
+                                                <div class="col-sm-11 col-md-6 col-lg-5">
+                                                    <h3>About our company</h3>
+                                                    <div class="title-decor-left">Working since 2000</div>
+                                                    <p>To improve the development phase of oil & gas production, our company uses top-notch engineering solutions.</p>
+                                                    <a class="button button-lg button-width-auto button-outline button-default-outline-2 button-winona" href="about-us.html">Read more</a>
+                                                </div>
+                                                <div class="col-sm-9 col-md-6 col-xl-7">
+                                                    <!-- Owl Carousel-->
+                                                    <div class="owl-style-1">
+                                                        <div class="owl-carousel"
+                                                             data-items="1"
+                                                             data-dots="true"
+                                                             data-pagination-class=".dots-custom-3"
+                                                             data-numbering="#owl-numbering-3"
+                                                             data-animation-in="fadeIn"
+                                                             data-animation-out="fadeOut"
+                                                             data-margin="1">
+                                                            <img src="images/index-3-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-4-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-1-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-2-370x436.jpg" alt="" width="370" height="436" />
+                                                        </div>
+                                                        <div class="dots-custom-wrap">
+                                                            <div class="dots-custom-3"></div>
+                                                            <div class="owl-numbering" id="owl-numbering-3">
+                                                                <div class="numbering-current"></div>
+                                                                <div class="numbering-separator">/</div>
+                                                                <div class="numbering-count"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- TAB 4 -->
+                                        <div class="tab-pane fade" id="tabs-6-4">
+                                            <div class="row row-40 align-items-center justify-content-center justify-content-md-start">
+                                                <div class="col-sm-11 col-md-6 col-lg-5">
+                                                    <h3>About our company</h3>
+                                                    <div class="title-decor-left">Working since 2005</div>
+                                                    <p>Blue Energy offers reliable oil & gas supply solutions to clients worldwide to ensure the fastest petroleum shipping.</p>
+                                                    <a class="button button-lg button-width-auto button-outline button-default-outline-2 button-winona" href="about-us.html">Read more</a>
+                                                </div>
+                                                <div class="col-sm-9 col-md-6 col-xl-7">
+                                                    <!-- Owl Carousel-->
+                                                    <div class="owl-style-1">
+                                                        <div class="owl-carousel"
+                                                             data-items="1"
+                                                             data-dots="true"
+                                                             data-pagination-class=".dots-custom-4"
+                                                             data-numbering="#owl-numbering-4"
+                                                             data-animation-in="fadeIn"
+                                                             data-animation-out="fadeOut"
+                                                             data-margin="1">
+                                                            <img src="images/index-4-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-1-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-2-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-3-370x436.jpg" alt="" width="370" height="436" />
+                                                        </div>
+                                                        <div class="dots-custom-wrap">
+                                                            <div class="dots-custom-4"></div>
+                                                            <div class="owl-numbering" id="owl-numbering-4">
+                                                                <div class="numbering-current"></div>
+                                                                <div class="numbering-separator">/</div>
+                                                                <div class="numbering-count"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONSTRUCTION TAB -->
+            <div class="tab-pane fade" id="construction" role="tabpanel">
+                <div class="row">
+
+                    <div class="col-xl-9">
+                        <!-- ALT TAB CONTENT -->
+                        <div class="container">
+                            <div class="tabs-custom row row-50 align-items-center flex-xl-row-reverse text-center text-md-start" id="tabs-6">
+                                <div class="col-xl-3">
+                                    <h5 class="text-spacing-200">What we can offer</h5>
+                                    <ul class="nav list-category list-category-down-lg-inline-block">
+                                        <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s">
+                                            <a class="active" href="#tabs-6-1" data-bs-toggle="tab">Exploration and production</a>
+                                        </li>
+                                        <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s">
+                                            <a href="#tabs-6-2" data-bs-toggle="tab">Transformation</a>
+                                        </li>
+                                        <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s">
+                                            <a href="#tabs-6-3" data-bs-toggle="tab">Development</a>
+                                        </li>
+                                        <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".3s">
+                                            <a href="#tabs-6-4" data-bs-toggle="tab">Shipping</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xl-9">
+                                    <!-- Tab panes-->
+                                    <div class="tab-content tab-content-1 wow fadeInLeft" data-wow-delay="0s">
+
+                                        <!-- TAB 1 -->
+                                        <div class="tab-pane fade show active" id="tabs-6-1">
+                                            <div class="row row-40 align-items-center justify-content-center justify-content-md-start">
+                                                <div class="col-sm-11 col-md-6 col-lg-5">
+                                                    <h3>About our company</h3>
+                                                    <div class="title-decor-left">Working since 1990</div>
+                                                    <p>Our company provides sustainable exploration and production solutions that respond to our future energy challenges.</p>
+                                                    <a class="button button-lg button-width-auto button-outline button-default-outline-2 button-winona" href="about-us.html">Read more</a>
+                                                </div>
+                                                <div class="col-sm-9 col-md-6 col-xl-7">
+                                                    <!-- Owl Carousel-->
+                                                    <div class="owl-style-1">
+                                                        <div class="owl-carousel"
+                                                             data-items="1"
+                                                             data-dots="true"
+                                                             data-pagination-class=".dots-custom-1"
+                                                             data-numbering="#owl-numbering-1"
+                                                             data-animation-in="fadeIn"
+                                                             data-animation-out="fadeOut"
+                                                             data-margin="1">
+                                                            <img src="images/index-1-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-2-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-3-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-4-370x436.jpg" alt="" width="370" height="436" />
+                                                        </div>
+                                                        <div class="dots-custom-wrap">
+                                                            <div class="dots-custom-1"></div>
+                                                            <div class="owl-numbering" id="owl-numbering-1">
+                                                                <div class="numbering-current"></div>
+                                                                <div class="numbering-separator">/</div>
+                                                                <div class="numbering-count"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- TAB 2 -->
+                                        <div class="tab-pane fade" id="tabs-6-2">
+                                            <div class="row row-40 align-items-center justify-content-center justify-content-md-start">
+                                                <div class="col-sm-11 col-md-6 col-lg-5">
+                                                    <h3>About our company</h3>
+                                                    <div class="title-decor-left">Working since 1995</div>
+                                                    <p>We offer transformation solutions for enterprises worldwide that are designed to improve oil & gas production efficiency.</p>
+                                                    <a class="button button-lg button-width-auto button-outline button-default-outline-2 button-winona" href="about-us.html">Read more</a>
+                                                </div>
+                                                <div class="col-sm-9 col-md-6 col-xl-7">
+                                                    <!-- Owl Carousel-->
+                                                    <div class="owl-style-1">
+                                                        <div class="owl-carousel"
+                                                             data-items="1"
+                                                             data-dots="true"
+                                                             data-pagination-class=".dots-custom-2"
+                                                             data-numbering="#owl-numbering-2"
+                                                             data-animation-in="fadeIn"
+                                                             data-animation-out="fadeOut"
+                                                             data-margin="1">
+                                                            <img src="images/index-2-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-3-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-4-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-1-370x436.jpg" alt="" width="370" height="436" />
+                                                        </div>
+                                                        <div class="dots-custom-wrap">
+                                                            <div class="dots-custom-2"></div>
+                                                            <div class="owl-numbering" id="owl-numbering-2">
+                                                                <div class="numbering-current"></div>
+                                                                <div class="numbering-separator">/</div>
+                                                                <div class="numbering-count"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- TAB 3 -->
+                                        <div class="tab-pane fade" id="tabs-6-3">
+                                            <div class="row row-40 align-items-center justify-content-center justify-content-md-start">
+                                                <div class="col-sm-11 col-md-6 col-lg-5">
+                                                    <h3>About our company</h3>
+                                                    <div class="title-decor-left">Working since 2000</div>
+                                                    <p>To improve the development phase of oil & gas production, our company uses top-notch engineering solutions.</p>
+                                                    <a class="button button-lg button-width-auto button-outline button-default-outline-2 button-winona" href="about-us.html">Read more</a>
+                                                </div>
+                                                <div class="col-sm-9 col-md-6 col-xl-7">
+                                                    <!-- Owl Carousel-->
+                                                    <div class="owl-style-1">
+                                                        <div class="owl-carousel"
+                                                             data-items="1"
+                                                             data-dots="true"
+                                                             data-pagination-class=".dots-custom-3"
+                                                             data-numbering="#owl-numbering-3"
+                                                             data-animation-in="fadeIn"
+                                                             data-animation-out="fadeOut"
+                                                             data-margin="1">
+                                                            <img src="images/index-3-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-4-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-1-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-2-370x436.jpg" alt="" width="370" height="436" />
+                                                        </div>
+                                                        <div class="dots-custom-wrap">
+                                                            <div class="dots-custom-3"></div>
+                                                            <div class="owl-numbering" id="owl-numbering-3">
+                                                                <div class="numbering-current"></div>
+                                                                <div class="numbering-separator">/</div>
+                                                                <div class="numbering-count"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- TAB 4 -->
+                                        <div class="tab-pane fade" id="tabs-6-4">
+                                            <div class="row row-40 align-items-center justify-content-center justify-content-md-start">
+                                                <div class="col-sm-11 col-md-6 col-lg-5">
+                                                    <h3>About our company</h3>
+                                                    <div class="title-decor-left">Working since 2005</div>
+                                                    <p>Blue Energy offers reliable oil & gas supply solutions to clients worldwide to ensure the fastest petroleum shipping.</p>
+                                                    <a class="button button-lg button-width-auto button-outline button-default-outline-2 button-winona" href="about-us.html">Read more</a>
+                                                </div>
+                                                <div class="col-sm-9 col-md-6 col-xl-7">
+                                                    <!-- Owl Carousel-->
+                                                    <div class="owl-style-1">
+                                                        <div class="owl-carousel"
+                                                             data-items="1"
+                                                             data-dots="true"
+                                                             data-pagination-class=".dots-custom-4"
+                                                             data-numbering="#owl-numbering-4"
+                                                             data-animation-in="fadeIn"
+                                                             data-animation-out="fadeOut"
+                                                             data-margin="1">
+                                                            <img src="images/index-4-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-1-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-2-370x436.jpg" alt="" width="370" height="436" />
+                                                            <img src="images/index-3-370x436.jpg" alt="" width="370" height="436" />
+                                                        </div>
+                                                        <div class="dots-custom-wrap">
+                                                            <div class="dots-custom-4"></div>
+                                                            <div class="owl-numbering" id="owl-numbering-4">
+                                                                <div class="numbering-current"></div>
+                                                                <div class="numbering-separator">/</div>
+                                                                <div class="numbering-count"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section> *@
+
+

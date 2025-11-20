@@ -1,0 +1,351 @@
+﻿const systemData = {
+    arazi: {
+        title: 'Arazi Sistemleri',
+        headerDesc: 'Geniş arazilerde yüksek kapasiteli güneş enerjisi üretimi',
+        heroImage: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&h=600&fit=crop',
+        content: `
+                    <h2>Arazi Tipi Solar Sistemler</h2>
+                    <p>Geniş arazilerde kurulum yapılan güneş enerjisi sistemleri, büyük ölçekli enerji üretimi için ideal çözümlerdir. Düz veya hafif eğimli arazilerde, sabit veya takip sistemli kurulumlar ile maksimum verimlilik sağlanır.</p>
+
+                    <h2 style="margin-top: 40px;">Uygulama Alanları</h2>
+                    <ul>
+                        <li>Tarım arazileri</li>
+                        <li>Endüstriyel tesisler</li>
+                        <li>Serbest bölgeler</li>
+                        <li>Organize sanayi bölgeleri</li>
+                        <li>Büyük ölçekli yatırım projeleri</li>
+                        <li>Enerji kooperatifleri</li>
+                    </ul>
+
+                    <h2 style="margin-top: 40px;">Sistem Özellikleri</h2>
+                    <p>Arazi sistemleri, MW seviyelerinde enerji üretimi yapabilen, profesyonel mühendislik gerektiren büyük ölçekli projelerdir. Panel dizilimi, oryantasyon ve eğim açıları projeye özel hesaplanır.</p>
+                `,
+        techSpecs: [
+            { title: 'Kurulum Tipi', desc: 'Sabit veya güneş takip sistemli' },
+            { title: 'Kapasite', desc: 'MW seviyelerinde üretim' },
+            { title: 'Panel Tipi', desc: 'Bifasial veya monokristal' },
+            { title: 'Yapı Sistemi', desc: 'Çelik veya alüminyum konstrüksiyon' },
+            { title: 'İnverter', desc: 'Merkezi veya string inverter' },
+            { title: 'İzleme', desc: 'SCADA sistemi ile anlık takip' }
+        ],
+        quickInfo: [
+            'Büyük ölçekli üretim',
+            'Profesyonel proje yönetimi',
+            'EÜAŞ lisanslama desteği',
+            'Finansman çözümleri',
+            'İşletme ve bakım hizmeti',
+            'Performans garantisi'
+        ],
+        features: [
+            { icon: '📈', title: 'Yüksek Kapasite', desc: 'MW seviyelerinde enerji üretimi ile büyük yatırım getirisi.' },
+            { icon: '🎯', title: 'Özel Mühendislik', desc: 'Araziye özel tasarım ve mühendislik çözümleri.' },
+            { icon: '💼', title: 'Yatırım Danışmanlığı', desc: 'Finansman ve teşvik süreçlerinde kapsamlı destek.' },
+            { icon: '🛡️', title: 'Lisanslama', desc: 'EÜAŞ lisans başvuru ve onay süreçlerinde tam destek.' },
+            { icon: '⚙️', title: 'İşletme Yönetimi', desc: '7/24 uzaktan izleme ve profesyonel bakım hizmeti.' },
+            { icon: '📊', title: 'Performans Takibi', desc: 'SCADA sistemi ile anlık üretim ve performans takibi.' }
+        ]
+    },
+    tarim: {
+        title: 'Tarım Sistemleri',
+        headerDesc: 'Tarımsal alanlarda hem enerji üretimi hem de tarım yapın',
+        heroImage: 'https://images.unsplash.com/photo-1560493676-04071c5f467b?w=1200&h=600&fit=crop',
+        content: `
+                    <h2>Tarımsal Solar Sistemler (Agrivoltaics)</h2>
+                    <p>Tarım sistemleri, aynı arazide hem güneş enerjisi üretimi hem de tarımsal faaliyetlerin sürdürülmesini sağlayan yenilikçi bir çözümdür. Paneller, bitkilere gölge sağlayarak su tüketimini azaltır ve aynı zamanda elektrik üretir.</p>
+
+                    <h2 style="margin-top: 40px;">Uygulama Alanları</h2>
+                    <ul>
+                        <li>Bağ ve bahçe alanları</li>
+                        <li>Seralarda enerji üretimi</li>
+                        <li>Meyve bahçeleri</li>
+                        <li>Organik tarım alanları</li>
+                        <li>Hayvancılık tesisleri</li>
+                        <li>Tarımsal sulama sistemleri</li>
+                    </ul>
+
+                    <h2 style="margin-top: 40px;">Çift Kazanç Modeli</h2>
+                    <p>Tarım sistemleri ile hem tarımsal ürün yetiştirin, hem de temiz enerji üretin. Panellerin altında gölge seven bitkilerin yetiştirilmesi, su tasarrufu ve verim artışı sağlar. Üretilen elektrik ile sulama sistemleri ve tarımsal ekipmanlar çalıştırılabilir.</p>
+                `,
+        techSpecs: [
+            { title: 'Panel Yüksekliği', desc: '3-5 metre araç geçişi için' },
+            { title: 'Aralık', desc: 'Tarım makineleri için geniş aralıklar' },
+            { title: 'Şeffaflık', desc: '%30-40 ışık geçirgenliği' },
+            { title: 'Sulama Entegrasyonu', desc: 'Güneş enerjili sulama sistemi' },
+            { title: 'Yapı Malzemesi', desc: 'Paslanmaz çelik ve alüminyum' },
+            { title: 'Garanti', desc: '25 yıl panel, 15 yıl sistem garantisi' }
+        ],
+        quickInfo: [
+            'Çift gelir kaynağı',
+            'Su tasarrufu sağlar',
+            'Verim artışı',
+            'Çevre dostu üretim',
+            'Sulama sistemi entegrasyonu',
+            'Tarımsal danışmanlık'
+        ],
+        features: [
+            { icon: '🌾', title: 'Tarım + Enerji', desc: 'Aynı alanda hem tarım yapın hem de elektrik üretin.' },
+            { icon: '💧', title: 'Su Tasarrufu', desc: 'Gölgeleme sayesinde %30-40 daha az su kullanımı.' },
+            { icon: '🌡️', title: 'İklim Kontrolü', desc: 'Bitkiler için daha uygun mikro iklim oluşturur.' },
+            { icon: '🚜', title: 'Tarımsal İşlemler', desc: 'Yüksek yapı ile tarım makineleri rahatça geçer.' },
+            { icon: '♻️', title: 'Sürdürülebilir', desc: 'Organik ve sürdürülebilir tarım için ideal.' },
+            { icon: '📈', title: 'Verim Artışı', desc: 'Bazı ürünlerde %20-30 verim artışı sağlar.' }
+        ]
+    },
+    carport: {
+        title: 'Carport Sistemleri',
+        headerDesc: 'Araçlarınızı güneşten, yağmur ve kardan koruyarak enerji ihtiyacınızı karşılayın',
+        heroImage: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1200&h=600&fit=crop',
+        content: `
+                    <h2>Carport Solar Sistemleri Nedir?</h2>
+                    <p>Araçlarınızı güneşten, yağmur ve kardan koruyarak enerji ihtiyacınızı karşılayın! Yazın kavurucu sıcaklarından araçlarınızı korurken otopark alanlarınızı daha estetik ve doğa dostu bir çözüm ile değerlendirerek enerji ihtiyacınızı karşılayıp gelir elde edebilirsiniz. İster bir ister düzinelerce araçlık otopark alanları, düzgün bir geometriye sahip olmasalar dahi kolayca solar santrallere çevrilebilirler.</p>
+
+                    <h2 style="margin-top: 40px;">Uygulama Alanları</h2>
+                    <ul>
+                        <li>Katlı otoparklar</li>
+                        <li>Okulların otopark alanları</li>
+                        <li>Alışveriş merkezlerinin otopark alanları</li>
+                        <li>Hastanelerin otopark alanları</li>
+                        <li>Sitelerin & evlerin otopark alanları</li>
+                        <li>Fabrikaların otopark alanları</li>
+                        <li>Fuar alanlarının otopark alanları</li>
+                    </ul>
+
+                    <h2 style="margin-top: 40px;">Teknik Özellikler</h2>
+                    <p>Carport sistemlerimiz, yüksek kaliteli malzemeler ve mühendislik çözümleriyle uzun ömürlü kullanım için tasarlanmıştır. Modüler yapısı sayesinde her türlü alan için özelleştirilebilir.</p>
+                `,
+        techSpecs: [
+            { title: 'Yapı Sistemi', desc: 'Galvanizli çelik konstrüksiyon, korozyona dayanıklı' },
+            { title: 'Panel Kapasitesi', desc: '400W - 550W monokristal paneller' },
+            { title: 'Yükseklik', desc: 'Minimum 2.5m araç geçiş yüksekliği' },
+            { title: 'Rüzgar Dayanımı', desc: '150 km/s rüzgar hızına dayanıklı' },
+            { title: 'Kar Yükü', desc: '200 kg/m² kar yükü kapasitesi' },
+            { title: 'Garanti', desc: '25 yıl panel, 10 yıl konstrüksiyon garantisi' }
+        ],
+        quickInfo: [
+            'Modüler tasarım',
+            'Özelleştirilebilir boyutlar',
+            'Hızlı kurulum',
+            'Uzun ömürlü yapı',
+            'Profesyonel montaj',
+            '7/24 teknik destek'
+        ],
+        features: [
+            { icon: '🚗', title: 'Araç Koruması', desc: 'Araçlarınızı güneş, yağmur, kar ve doludan korur. Araç içi sıcaklığını düşürür.' },
+            { icon: '⚡', title: 'Enerji Üretimi', desc: 'Boş alanları değerlendirerek yüksek kapasiteli enerji üretimi sağlar.' },
+            { icon: '💰', title: 'Tasarruf', desc: 'Elektrik faturalarınızı düşürür, yatırım geri dönüşü 5-7 yıl arasındadır.' },
+            { icon: '🌱', title: 'Çevre Dostu', desc: 'Karbon ayak izinizi azaltır, sürdürülebilir enerji üretimi sağlar.' },
+            { icon: '🔧', title: 'Kolay Kurulum', desc: 'Modüler yapı sayesinde hızlı ve kolay montaj imkanı sunar.' },
+            { icon: '📊', title: 'Uzun Ömür', desc: '25+ yıl verimli çalışma garantisi ile uzun vadeli yatırım.' }
+        ]
+    },
+    cati: {
+        title: 'Çatı Sistemleri',
+        headerDesc: 'Çatınızı enerji üretim merkezine dönüştürün',
+        heroImage: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&h=600&fit=crop',
+        content: `
+                    <h2>Çatı Tipi Solar Sistemler</h2>
+                    <p>Çatılarınızın yenilenebilir enerji kaynaklarının en popüleri olan Güneş Enerjisi Sistemleri ile değerlendirerek kendi enerji ihtiyacınızı karşılayabilirsiniz. İşletme giderlerinizin önemli kısmını oluşturan enerji giderlerinizden kurtularak, rekabet gücünüzü arttırıp işletmenizin karlılığını arttırabilirsiniz.</p>
+
+                    <p>Çatınız ihtiyacınız olan kurulum alanından daha geniş ise faturanızı sıfırlamak ile kalmayıp ek gelir de elde edebilirsiniz.</p>
+
+                    <h2 style="margin-top: 40px;">Uygulama Alanları</h2>
+                    <ul>
+                        <li>Fabrikalar</li>
+                        <li>Hastaneler</li>
+                        <li>Okullar & üniversiteler</li>
+                        <li>Oteller</li>
+                        <li>Soğuk hava depoları</li>
+                        <li>Akaryakıt istasyonları</li>
+                        <li>Alışveriş merkezleri</li>
+                        <li>Stadyumlar</li>
+                        <li>Fuar alanları</li>
+                        <li>Havalimanları</li>
+                        <li>Depolar & antrepolar, Otobüs terminalleri, Kongre ve kültür merkezleri</li>
+                    </ul>
+
+                    <h2 style="margin-top: 40px;">Çatı Tipleri</h2>
+                    <p>Sandviç panel, trapez sac, shingle, kiremit, beton çatı gibi her türlü çatı tipine uygun montaj sistemleri mevcuttur. Çatı statik hesaplamaları yapılarak güvenli kurulum sağlanır.</p>
+                `,
+        techSpecs: [
+            { title: 'Çatı Tipleri', desc: 'Sandviç, trapez, kiremit, beton' },
+            { title: 'Montaj Sistemi', desc: 'Çatıya özel ray ve bağlantı sistemleri' },
+            { title: 'Panel Gücü', desc: '350W - 550W monokristal' },
+            { title: 'Eğim Açısı', desc: 'Çatı eğimine göre optimizasyon' },
+            { title: 'Su Yalıtımı', desc: 'IP68 sertifikalı su geçirmez' },
+            { title: 'Garanti', desc: '25 yıl panel, 12 yıl montaj garantisi' }
+        ],
+        quickInfo: [
+            'Her çatı tipine uygun',
+            'Çatı izolasyonu korunur',
+            'Statik hesaplama',
+            'Su yalıtımlı montaj',
+            'Hızlı kurulum',
+            'Bakım gerektirmez'
+        ],
+        features: [
+            { icon: '🏭', title: 'Endüstriyel Çözüm', desc: 'Fabrika ve tesisler için yüksek kapasiteli sistemler.' },
+            { icon: '💡', title: 'Enerji Bağımsızlığı', desc: 'Kendi enerjinizi üretin, faturalardan kurtulun.' },
+            { icon: '🛡️', title: 'Çatı Koruması', desc: 'Çatınızı UV ışınları ve hava koşullarından korur.' },
+            { icon: '📐', title: 'Özel Tasarım', desc: 'Çatı geometrisine özel mühendislik çözümleri.' },
+            { icon: '⚙️', title: 'Kolay Entegrasyon', desc: 'Mevcut elektrik sisteminize kolay entegre olur.' },
+            { icon: '💰', title: 'Hızlı Geri Dönüş', desc: '4-6 yıl içinde yatırım geri dönüşü sağlar.' }
+        ]
+    },
+    depolama: {
+        title: 'Enerji Depolama Sistemleri',
+        headerDesc: 'Ürettiğiniz enerjiyi depolayın, ihtiyaç duyduğunuzda kullanın',
+        heroImage: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&h=600&fit=crop',
+        content: `
+                    <h2>Enerji Depolama Sistemleri (ESS)</h2>
+                    <p>Gündüz üretilen güneş enerjisini depolayarak gece kullanım imkanı sağlayan akıllı enerji yönetim sistemleri. Kesintisiz güç kaynağı olarak da çalışabilen depolama sistemleri, enerji maliyetlerinizi minimize eder ve şebekeden tamamen bağımsız olmanızı sağlar.</p>
+
+                    <h2 style="margin-top: 40px;">Sistem Tipleri</h2>
+                    <ul>
+                        <li>Lityum İyon Batarya Sistemleri (LiFePO4)</li>
+                        <li>Hibrit İnverter Sistemleri</li>
+                        <li>Şebeke Bağlantılı Depolama (On-Grid ESS)</li>
+                        <li>Şebekeden Bağımsız Sistemler (Off-Grid)</li>
+                        <li>UPS Fonksiyonlu Sistemler</li>
+                        <li>Akıllı Enerji Yönetim Sistemleri (EMS)</li>
+                    </ul>
+
+                    <h2 style="margin-top: 40px;">Neden Enerji Depolama?</h2>
+                    <p>Solar panelleriniz gündüz elektrik üretirken, tüketiminiz gece daha fazla olabilir. Enerji depolama sistemleri ile gündüz üretilen fazla enerjiyi depolayarak gece kullanabilir, elektrik kesintilerinde kesintisiz güç sağlayabilir ve şebeke elektriğinin pahalı olduğu saatlerde depoladığınız enerjiyi kullanarak tasarruf edebilirsiniz.</p>
+                `,
+        techSpecs: [
+            { title: 'Batarya Tipi', desc: 'LiFePO4 (Lityum Demir Fosfat)' },
+            { title: 'Kapasite', desc: '5 kWh - 100+ kWh modüler' },
+            { title: 'Şarj Hızı', desc: '0.5C - 1C hızlı şarj' },
+            { title: 'Deşarj Derinliği', desc: '%90 DoD (Depth of Discharge)' },
+            { title: 'Ömür', desc: '6000+ şarj döngüsü (15+ yıl)' },
+            { title: 'Verimlilik', desc: '%95+ çift yönlü verim' }
+        ],
+        quickInfo: [
+            'Gece kullanım imkanı',
+            'Kesintisiz güç (UPS)',
+            'Akıllı enerji yönetimi',
+            'Modüler kapasite',
+            'Uzaktan izleme',
+            'Uzun ömürlü bataryalar'
+        ],
+        features: [
+            { icon: '🔋', title: 'Enerji Bağımsızlığı', desc: 'Şebekeden tamamen bağımsız olarak 7/24 kendi enerjinizi kullanın.' },
+            { icon: '🌙', title: 'Gece Kullanımı', desc: 'Gündüz depoladığınız enerjiyi gece kullanarak fatura tasarrufu.' },
+            { icon: '⚡', title: 'Kesintisiz Güç', desc: 'Elektrik kesintilerinde anında devreye girerek işleriniz aksatmaz.' },
+            { icon: '📱', title: 'Akıllı Yönetim', desc: 'Mobil uygulama ile enerji tüketiminizi izleyin ve yönetin.' },
+            { icon: '💰', title: 'Maliyet Optimizasyonu', desc: 'Elektriğin ucuz olduğu saatlerde şarj, pahalı saatlerde kullanım.' },
+            { icon: '🔒', title: 'Güvenli Teknoloji', desc: 'LiFePO4 bataryalar ile yangın ve patlama riski minimum.' }
+        ]
+    }
+};
+
+function changeSystem(systemType) {
+    const data = systemData[systemType];
+
+    // Update active button
+    document.querySelectorAll('.system-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
+
+    // Update header
+    document.getElementById('headerTitle').textContent = data.title;
+    document.getElementById('headerDesc').textContent = data.headerDesc;
+    document.getElementById('currentSystem').textContent = data.title;
+
+    // Update hero image
+    document.getElementById('heroImage').src = data.heroImage;
+
+    // Update main content
+    document.getElementById('mainContent').innerHTML = data.content;
+
+    // Update tech specs
+    const specsGrid = document.querySelector('.specs-grid');
+    specsGrid.innerHTML = '';
+    data.techSpecs.forEach(spec => {
+        specsGrid.innerHTML += `
+                    <div class="spec-item">
+                        <h4>${spec.title}</h4>
+                        <p>${spec.desc}</p>
+                    </div>
+                `;
+    });
+
+    // Update quick info
+    const quickInfo = document.getElementById('quickInfo');
+    quickInfo.innerHTML = '';
+    data.quickInfo.forEach(info => {
+        quickInfo.innerHTML += `<li>${info}</li>`;
+    });
+
+    // Update features
+    const featuresGrid = document.querySelector('.features-grid');
+    featuresGrid.innerHTML = '';
+    data.features.forEach(feature => {
+        featuresGrid.innerHTML += `
+                    <div class="feature-card">
+                        <div class="feature-icon">${feature.icon}</div>
+                        <h4>${feature.title}</h4>
+                        <p>${feature.desc}</p>
+                    </div>
+                `;
+    });
+
+    // Smooth scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Gallery lightbox functionality
+document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', function () {
+        const img = this.querySelector('img');
+        const lightbox = document.createElement('div');
+        lightbox.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.9);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 9999;
+                    cursor: pointer;
+                `;
+
+        const lightboxImg = document.createElement('img');
+        lightboxImg.src = img.src;
+        lightboxImg.style.cssText = `
+                    max-width: 90%;
+                    max-height: 90%;
+                    border-radius: 12px;
+                    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+                `;
+
+        lightbox.appendChild(lightboxImg);
+        document.body.appendChild(lightbox);
+
+        lightbox.addEventListener('click', function () {
+            document.body.removeChild(lightbox);
+        });
+    });
+});
+
+// Intersection Observer for animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.tech-specs, .gallery, .features').forEach(el => {
+    observer.observe(el);
+});

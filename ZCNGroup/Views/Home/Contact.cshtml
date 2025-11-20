@@ -1,0 +1,111 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Breadcrumbs-->
+<section class="breadcrumbs-custom bg-image" style="background-image: url(images/bg-image-6.jpg);">
+    <div class="container">
+        <h2 class="breadcrumbs-custom__title">Contacts</h2>
+        <ul class="breadcrumbs-custom__path">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Contacts</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Get in Touch-->
+<section class="section section-lg bg-default">
+    <div class="container">
+        <div class="layout-bordered">
+            <div class="layout-bordered__main text-center">
+                <div class="layout-bordered__main-inner">
+                    <h3>İletişim</h3>
+                    <p>Detaylar yakında..</p>
+                    <!-- RD Mailform-->
+                </div>
+            </div>
+            <div class="layout-bordered__aside">
+                <div class="layout-bordered__aside-item">
+                    <p class="heading-8">Get social </p>
+                    <ul class="list-inline-xs">
+                        <li><a class="icon icon-sm icon-default fa fa-facebook" href="#"></a></li>
+                        <li><a class="icon icon-sm icon-default fa fa-twitter" href="#"></a></li>
+                        <li><a class="icon icon-sm icon-default fa fa-google" href="#"></a></li>
+                        <li><a class="icon icon-sm icon-default fa fa-youtube" href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="layout-bordered__aside-item">
+                    <p class="heading-8">Phone</p>
+                    <div class="unit flex-row unit-spacing-xxs">
+                        <div class="unit__left"><span class="icon icon-sm icon-primary material-icons-local_phone"></span></div>
+                        <div class="unit__body"><a href="tel:#">0850 304 64 20</a></div> 
+                    </div>
+                    <div class="unit flex-row unit-spacing-xxs">
+                        <div class="unit__left"><span class="icon icon-sm icon-primary material-icons-local_phone"></span></div>
+                        <div class="unit__body"><a href="tel:#">+90 532 418 40 32 </a></div>
+                    </div>
+                </div>
+                <div class="layout-bordered__aside-item">
+                    <p class="heading-8">E-mail</p>
+                    <div class="unit flex-row unit-spacing-xxs">
+                        <div class="unit__left"><span class="icon icon-sm icon-primary mdi mdi-email-outline"></span></div>
+                        <div class="unit__body"><a href="mailto:#">info@zcngroup.com</a></div>
+                    </div>
+                </div>
+                <div class="layout-bordered__aside-item">
+                    <p class="heading-8">Address</p>
+                    <div class="unit flex-row unit-spacing-xxs">
+                        <div class="unit__left"><span class="icon icon-sm icon-primary material-icons-location_on"></span></div>
+                        <div class="unit__body"><a href="#">Bursa Organize Sanayi Bölgesi Ali Osman Sönmez Bulvarı No:2 <br> Nilüfer / BURSA</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- RD Google Map-->
+@* <section class="section">
+    <div class="google-map-container"
+         data-center="40.2259,28.8570"
+         data-zoom="10"
+         data-icon="images/gmap_marker.png"
+         data-icon-active="images/gmap_marker_active.png"
+         data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:60}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:40},{&quot;visibility&quot;:&quot;on&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;administrative.province&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;lightness&quot;:30}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ef8c25&quot;},{&quot;lightness&quot;:40}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#b6c54c&quot;},{&quot;lightness&quot;:40},{&quot;saturation&quot;:-40}]}]">
+
+        <div class="google-map"></div>
+        <ul class="google-map-markers">
+
+            <!-- Adres 1 -->
+            <li data-y="40.2259" data-x="28.8570"
+                data-description="Bursa Organize Sanayi Bölgesi<br>Ali Osman Sönmez Bulvarı No:2<br>Nilüfer / BURSA"></li>
+
+            <!-- Adres 2 -->
+            <li data-y="40.1910" data-x="29.0619"
+                data-description="Bursa Kent Meydanı AVM<br>Osmangazi / BURSA"></li>
+
+            <!-- Adres 3 -->
+            <li data-y="40.1986" data-x="29.0669"
+                data-description="Bursa Ulu Camii<br>Osmangazi / BURSA"></li>
+
+            <!-- Adres 4 -->
+            <li data-y="40.2139" data-x="28.9639"
+                data-description="Bursa Terminal<br>Osmangazi / BURSA"></li>
+
+        </ul>
+    </div>
+</section> *@
+
+<section class="section">
+    <div class="map-wrapper" style="width:100%; max-width:100%; height:450px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3045.6638592418017!2d28.967726875473776!3d40.238775466451884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca146f2cce427b%3A0xb23af43c19636c31!2sFethiye%20OSB%2C%20Ali%20Osman%20S%C3%B6nmez%20Blv.%20No%3A2%2C%2016140%20Organize%20Sanayi%20B%C3%B6lgesi%2FNi%CC%87l%C3%BCfer%2FBursa!5e0!3m2!1str!2str!4v1756732224636!5m2!1str!2str"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+

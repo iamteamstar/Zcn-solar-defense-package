@@ -1,0 +1,356 @@
+﻿@{
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+    var isProductSection = currentAction == "Defence" || currentAction == "Solar" || currentAction == "Packaging";
+}
+
+@{
+    var controller = ViewContext.RouteData.Values["controller"]?.ToString();
+    var action = ViewContext.RouteData.Values["action"]?.ToString();
+
+    string logoPath = "~/images/ZCN/logo.png"; // default logo
+
+    if (controller == "Solar" && action == "Index")
+    {
+        logoPath = "~/images/ZCN/yesillogo.png";
+    }
+    else if (controller == "Defense" && action == "Index")
+    {
+        logoPath = "~/images/ZCN/savunmalogo.png";
+    }
+    else if (controller == "Packaging" && action == "Index")
+    {
+        logoPath = "~/images/ZCN/mavimsilogo.png";
+    }
+}
+
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+<head>
+    <!-- Site Title-->
+    <title>ZCN GROUP</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="~/images/ZCN/favicon.jpg" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700">
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/animate.min.css">
+   
+    <link rel="stylesheet" href="~/css/icofont.min.css">
+    <link rel="stylesheet" href="~/css/fonts.css">
+    <link rel="stylesheet" href="~/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="~/css/meanmenu.css">
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/flickity.css">
+    <link rel="stylesheet" href="~/css/flickity-fade.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/stylesun.css">
+    <link rel="stylesheet" href="~/css/responsive.css">
+    @RenderSection("Styles", required: false)
+   
+</head>
+<body>
+    <!-- Page Loader-->
+    <div id="page-loader">
+        <div class="page-loader-logo">
+            <div class="brand">
+                <div class="brand__name">
+                    <img src="@Url.Content(logoPath)" alt="" width="141" height="65" />
+                </div>
+            </div>
+        </div>
+        <div class="page-loader-body">
+            <div id="loadingProgressG">
+                <div class="loadingProgressG" id="loadingProgressG_1"></div>
+            </div>
+        </div>
+    </div>
+    <style>
+
+        /* ==== NAVBAR YÜKSEKLİĞİNİ AZALT VE DÜZENLE ==== */
+        .rd-navbar.rd-navbar-creative {
+            padding: 0 !important;
+            min-height: 65px !important;
+            line-height: normal !important;
+        }
+
+        /* ==== LOGO ALANI ==== */
+        .rd-navbar .brand__name img {
+            height: 45px !important;
+            width: auto !important;
+            margin: 5px 0 !important;
+        }
+
+        /* ==== ÜSTTEKİ ZCN GROUP + TELEFON ALANI ==== */
+        .rd-navbar-aside {
+            padding: 3px 0 !important;
+            font-size: 13px !important;
+            line-height: 1.2 !important;
+        }
+
+        .rd-navbar-aside-outer {
+            margin-bottom: 0 !important;
+        }
+
+        /* ==== ANA MENÜ ==== */
+        .rd-navbar-main {
+            padding: 0 !important;
+        }
+
+        .rd-navbar-nav > .rd-nav-item {
+            margin: 0 10px !important;
+        }
+
+        .rd-navbar-nav .rd-nav-link {
+            padding: 8px 5px !important;
+            font-size: 10px !important;
+            line-height: 1 !important;
+        }
+
+        /* ==== İLETİŞİM BUTONU ==== */
+        .button.button-xs.button-lighter {
+            padding: 6px 14px !important;
+            font-size: 13px !important;
+            line-height: 1 !important;
+            border-radius: 0px !important;
+            margin-top: 5px !important;
+        }
+
+        /* ==== DROPDOWN MENÜ ==== */
+        .rd-navbar-dropdown {
+            padding: 4px 0 !important;
+        }
+
+            .rd-navbar-dropdown a {
+                font-size: 14px !important;
+                padding: 6px 12px !important;
+            }
+
+        /* ==== FAZLA BOŞLUKLARI SIFIRLA ==== */
+        .rd-navbar-main-outer,
+        .rd-navbar-aside-outer {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+    </style>
+    <!-- Page-->
+    <div class="page">
+
+        <!-- Page Header -->
+        <header class="page-header section">
+
+            <!-- RD Navbar-->
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar rd-navbar-creative" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-fullwidth" data-xxl-device-layout="rd-navbar-fullwidth" data-lg-layout="rd-navbar-fullwidth" data-xl-layout="rd-navbar-fullwidth" data-xxl-layout="rd-navbar-fullwidth" data-stick-up-clone="false" data-md-stick-up-offset="150px" data-lg-stick-up-offset="60px" data-md-stick-up="true" data-lg-stick-up="true">
+                    <div class="rd-navbar-aside-outer rd-navbar-content-outer">
+                        <div class="rd-navbar-content__toggle rd-navbar-fullwidth--hidden" data-rd-navbar-toggle=".rd-navbar-content"><span></span></div>
+                        <div class="rd-navbar-aside rd-navbar-content">
+                            <div class="rd-navbar-aside__item">
+                                <ul class="rd-navbar-items-list">
+
+                                    <li>
+                                        <div class="unit unit-spacing-xxs flex-row">
+                                            <div class="unit__left"><span class="icon icon-sm icon-primary fl-bigmug-line-circular220"></span></div>
+                                            <div class="unit__body">
+                                                <p>ZCN GROUP</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="rd-navbar-aside__item">
+                                <ul class="rd-navbar-items-list">
+                                    <li>
+                                        <div class="unit unit-spacing-xxs flex-row">
+                                            <div class="unit__left"><span class="text-primary">Telefon:</span></div>
+                                            <div class="unit__body"><a href="tel:#">0(850) 304–64 20</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rd-navbar-main-outer">
+                        <div class="rd-navbar-main">
+
+                            <!-- RD Navbar Panel -->
+                            <div class="rd-navbar-panel">
+                                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+
+                                <!-- RD Navbar Brand-->
+                                <div class="rd-navbar-brand">
+                                    <a class="brand" href="~/Home/Index">
+                                        <div class="brand__name">
+                                            <img src="@Url.Content(logoPath)" alt="" width="141" height="65" />
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- RD Navbar Nav -->
+                            <div class="rd-navbar-nav-wrap">
+                                <div class="rd-navbar-main-item"><a class="button button-xs button-lighter" href="~/Home/Contact">İletişim</a></div>
+                                <ul class="rd-navbar-nav">
+                                    <li class="rd-nav-item @(ViewContext.RouteData.Values["action"].ToString() == "Index" ? "active" : "")">
+                                        <a class="rd-nav-link" href="~/Home/Index">Home</a>
+                                    </li>
+                                    <li class="rd-nav-item @(ViewContext.RouteData.Values["action"].ToString() == "About" ? "active" : "")">
+                                        <a class="rd-nav-link" href="~/Home/About">Hakkımızda</a>
+                                    </li>
+                                    <li class="rd-nav-item @(isProductSection ? "active" : "")">
+                                        <a class="rd-nav-link" href="#">Sektörlerimiz</a>
+
+                                        <!-- RD Navbar Dropdown-->
+                                        <ul class="rd-navbar-dropdown">
+                                            <li>
+                                                <a href="~/Defense/Index">ZCN Savunma</a>
+                                            </li>
+                                            <li>
+                                                <a href="~/Solar/Index">IEF Solar</a>
+                                            </li>
+                                            <li>
+                                                <a href="~/Packaging/Index">NBC Ambalaj</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="rd-nav-item @(isProductSection ? "active" : "")">
+                                        <a class="rd-nav-link" href="#">Dil</a>
+
+                                        <!-- RD Navbar Dropdown-->
+                                        <ul class="rd-navbar-dropdown">
+                                            <li>
+                                                <a href="~/Defense/Index">Türkçe</a>
+                                            </li>
+                                            <li>
+                                                <a href="~/Solar/Index">English</a>
+                                            </li>
+                                            <li>
+                                                <a href="~/Packaging/Index">Français</a>
+                                            </li>
+                                            <li>
+                                                <a href="~/Packaging/Index">Deutsch</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        @RenderBody()
+        
+        
+        <footer class="footer-corporate">
+            <div class="footer-corporate__main bg-gray-7">
+                <div class="container container-wide">
+                    <div class="row justify-content-sm-center justify-content-lg-between row-50">
+                        <div class="col-sm-4 col-md-6 col-lg-3 col-xl-2 col-xxl-1 text-center footer-image-container">
+                            <img src="~/images/ZCNSTOCKS/harita2.png" alt="Footer Görseli" class="footer-image" />
+                        </div>
+
+                        <div class="col-sm-4 col-md-6 col-lg-3 col-xl-2 col-xxl-1">
+                            <h4 class="heading-bordered">Hızlı Bağlantılar</h4>
+                            <ul class="list-xxs list_darker">
+                                <li>@* <a href="~/Home/Index">Trapez & Sandviç Çatı Sistemleri</a> *@</li>
+                                <li>
+                                    @* <a href="~/Home/About">Düz Çatı Sistemleri</a> *@
+                                </li>
+                                <li>
+                                    @* <a href="~/Home/About">Kiremit Çatı Sistemleri</a> *@
+                                </li>
+                                <li>
+                                    @* <a href="~/Home/About">Kenet Çatı Sistemleri</a> *@
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-10 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                            <h4 class="heading-bordered">İletişim</h4>
+                            <ul class="list-md">
+                                <li>
+                                    <p class="address">İstanbul</p>
+                                </li>
+                                <li>
+                                    <dl class="list-terms-inline">
+                                        <dt>Mail Adress</dt>
+                                        <dd><a href="mailto:#">info@zcngroup.com</a></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="list-terms-inline">
+                                        <dt>Phone</dt>
+                                        <dd><a href="tel:#">0850 304 64 20</a></dd>
+                                    </dl>
+                                    <dl class="list-terms-inline">
+                                        <dt>GSM</dt>
+                                        <dd><a href="GSM:#">+90 532 418 40 32 </a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-corporate__aside bg-gray-8 text-center">
+                <div class="container container-wide">
+                    <div class="row row-20 row_xl-ten footer-corporate__range">
+                        <div class="col-md-8 col-xxl-6 footer-corporate__aside-column text-md-start">
+                            <!-- Rights-->
+                            <p class="rights"><span>Elsa Yazılım</span><span>&nbsp;&copy;&nbsp;</span><span class="copyright-year"></span>.&nbsp;</p>
+                        </div>
+                        <div class="col-md-4 col-xxl-4 footer-corporate__aside-column text-md-end">
+                            <ul class="list-inline-xxs">
+                                <li><a class="icon icon-xs icon-style-modern fa fa-twitter" href="#"></a></li>
+                                <li><a class="icon icon-xs icon-style-modern fa fa-facebook" href="#"></a></li>
+                                <li><a class="icon icon-xs icon-style-modern fa fa-instagram" href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+
+    <!-- Core JS (jQuery, temel kütüphaneler) -->
+    <script src="~/js/core.min.js"></script>
+
+    <!-- Popper (Bootstrap tooltips, popovers için) -->
+    <script src="~/js/popper.min.js"></script>
+
+    <!-- Bootstrap JS (Popper'dan sonra gelmeli) -->
+    <script src="~/js/bootstrap.min.js"></script>
+
+    <!-- Temel jQuery eklentileri -->
+    <script src="~/js/jquery.meanmenu.js"></script>            <!-- Responsive menü -->
+    <script src="~/js/jquery.appear.min.js"></script>          <!-- Scroll ile görünür hale gelen animasyonlar -->
+    <script src="~/js/jquery.waypoints.min.js"></script>       <!-- Scroll waypoint'leri -->
+    <script src="~/js/jquery.counterup.js"></script>           <!-- Sayı sayaçları -->
+    <!-- Slider / Carousel -->
+    <script src="~/js/owl.carousel.min.js"></script>           <!-- Owl Carousel -->
+    <script src="~/js/flickity.pkgd.min.js"></script>          <!-- Flickity slider -->
+    <script src="~/js/flickity-fade.js"></script>              <!-- Flickity fade efekti -->
+    <!-- Görsel ve arkaplanlar -->
+    <script src="~/js/bg-lazyload.js"></script>                <!-- Lazyload arka planlar -->
+    <!-- Popup ve scroll -->
+    <script src="~/js/jquery.magnific-popup.min.js"></script>  <!-- Lightbox popup -->
+    <script src="~/js/jquery-scrolltofixed.js"></script>       <!-- Scroll sabitleme -->
+    <!-- Animasyon -->
+    <script src="~/js/wow.min.js"></script>                    <!-- Scroll ile animasyon başlatıcı -->
+    <!-- Projeye özgü scriptler (en son olmalı) -->
+    <script src="~/js/main.js"></script>                       <!-- Tema ana scripti -->
+    <script src="~/js/script.js"></script>                     <!-- Özelleştirilmiş/ek script -->
+
+
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
