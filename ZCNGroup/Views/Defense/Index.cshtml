@@ -2,8 +2,10 @@
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
     <head>
-	<link rel="stylesheet" href="~/css/defense_machines.css" />
-    <link rel="stylesheet" href="~/css/package.css" />
+	<link rel="stylesheet" href="~/css/savunma/defense_machines.css" />
+    <link rel="stylesheet" href="~/css/savunma/package.css" />
+    <link href="~/css/savunma/savunmaSlider.css" rel="stylesheet" />
+    <link href="~/css/savunma/savunmaHakkimizda.css" rel="stylesheet" />
 	</head>
 
 <style>
@@ -56,175 +58,62 @@
 		color: #d51d27;
 	}
 </style>
-<style>
-	<style >
-	/*Görsel büyüklüğü düzenleme*/
-	.home-slider-single-item {
-		height: 85vh !important; /* 100vh → 85vh yaptık */
-		background-size: cover !important;
-		background-position: center !important;
-	}
-</style>
-<style>
-	/* 🔹 Slider başlığı (ZCN Savunma) */
-	.home-slider-title {
-		font-family: 'Poppins', 'Segoe UI', sans-serif;
-		font-weight: 700;
-		font-size: 58px;
-		color: #ffffff;
-		letter-spacing: 1.5px;
-		text-transform: uppercase;
-		text-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
-		margin-bottom: 12px;
-		animation: fadeDown 1.2s ease-out forwards;
-	}
 
-	/* 🔹 Motto (Tecrübe Sahadan...) */
-	.home-slider-description p {
-		font-family: 'Open Sans', sans-serif;
-		font-size: 20px;
-		font-weight: 400;
-		color: rgba(255, 255, 255, 0.9);
-		letter-spacing: 0.8px;
-		text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-		margin: 0;
-		animation: fadeUp 1.5s ease-out forwards;
-	}
 
-</style>
-<!-- Swiper-->
 <!-- Start Home Slider Area -->
 <div class="home-slider-area">
-	<div class="home-slider flickity-dots-absolute" data-flickity='{ "bgLazyLoad": 1, "bgLazyLoad": true, "wrapAround": true, "fade": false, "prevNextButtons": false, "autoPlay": 7000, "pauseAutoPlayOnHover": true }'>
-		<div class="home-slider-single-item" data-overlay-dark="2" data-flickity-bg-lazyload="@Url.Content("~/images/ZCNSTOCKS/savunmamainindex.webp")">
-			<div class="container">
-				<div class="row d-flex align-items-center">
-					<div class="col">
-						<div class="home-slider-content">
-							<h1 class="home-slider-title"> ZCN Savunma</h1>
-							<div class="home-slider-description">
-								<p>"Tecrübe Sahadan, Güç Üretimden"</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="home-slider flickity-dots-absolute" data-flickity='{ "wrapAround": true, "fade": false, "prevNextButtons": false, "autoPlay": 7000, "pauseAutoPlayOnHover": true }'>
+        <div class="home-slider-single-item" data-overlay-dark="2">
+            <img src="@Url.Content("~/images/ZCNSTOCKS/savunmamainindex.webp")" alt="ZCN Savunma" class="slider-bg-image">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col">
+                        <div class="home-slider-content">
+                            <div class="logo-container">
+                                <img src="@Url.Content("~/images/ZCN/savunmalogo.png")" alt="ZCN Group Logo" class="slider-logo">
+                                <h2 class="brand-tagline">Tecrübe Sahadan Güç Üretimden</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<style>
-	/* Savunma Sanayii Section - Mevcut HTML Yapısına Uygun CSS */
 
-/* Ana section container - Üst ve alt boşlukları azaltır (section elementi) */
-.section.section-md.bg-default {
-    padding: 30px 0 !important;
-}
-
-/* Gri arka plan container - İç boşlukları azaltır (bg-gray-4 div'i) */
-.section.section-md.bg-default .bg-gray-2 {
-    padding: 20px 0;
-}
-
-/* Bootstrap row - Sağ ve sol negatif margin'leri azaltarak kolonlar arası boşluğu daraltır */
-.section.section-md.bg-default .row.row-30 {
-    margin-left: -10px !important;
-    margin-right: 85px !important;
-}
-
-/* Tüm kolonlar (col-md-12, col-lg-6) - Sağ ve sol padding'leri azaltarak metin ile görsel arasındaki boşluğu daraltır */
-.section.section-md.bg-default .row.row-30 > [class*='col-'] {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-}
-
-/* Metin içeriğinin bulunduğu container - Tüm padding'i kaldırır (section-md div'i) */
-.section.section-md.bg-default .section-md.container-fluid-cell {
-    padding: 0 !important;
-}
-
-/* Metin kutusunun merkezi container - Genişliği %100 yapar ve minimal padding ekler */
-.section.section-md.bg-default .box-centered.box-width-1 {
-    max-width: 100%;
-    padding: 0 15px;
-}
-
-/* "Hakkımızda-Savunma Sanayii" başlığı - Boyut ve alt boşluğunu ayarlar */
-.section.section-md.bg-default h4 {
-    font-size: 1.25rem;
-    margin-bottom: 15px !important;
-	margin-top:35px !important;
-    font-weight: 600;
-}
-
-/* Başlık içindeki ilk span (başlık metni) - Inline-block yapar */
-.section.section-md.bg-default h4 span:first-child {
-    display: inline-block;
-}
-
-
-
-/* Paragraf metni - Boyut, satır arası, alt boşluk ve hizalama ayarları */
-.section.section-md.bg-default p {
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
-    margin-bottom: 0 !important;
-    text-align: justify;
-    color: #555;
-}
-
-/* Görsel container - Görseli metin yüksekliğine göre dikey hizalar */
-.section.section-md.bg-default .thumb-video {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-/* Asıl görsel elementi - Tam genişlikte görüntülenir ve oranını korur */
-.section.section-md.bg-default .thumb-video__image {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
-/* Görselin bulunduğu kolon - Flexbox ile içeriği dikey ortalar */
-.section.section-md.bg-default .col-lg-6.d-flex {
-    display: flex !important;
-    align-items: center !important;
-}
-
-
-</style>
 
 <!-- Experience since 1999-->
-<section class="section section-md bg-default">
-	<div class="bg-gray-4">
-		<div class="container-fluid container-condensed">
-			<div class="row row-30 flex-lg-row-reverse">
-				<div class="col-md-12 col-lg-6">
-					<div class="section-md container-fluid-cell">
-						<div class="box-centered box-width-1">
-							<h4 ><span>Hakkımızda-Savunma Sanayii</span><span class="object-decorated object-decorated_inline" style="max-width: 100x;"><span class="object-decorated__divider"></span><span class="heading-5"></span></span></h4>
-							<p>
-								Otomotiv sektöründeki mühendislik ve üretim tecrübemizi, askeri alandaki deneyimimizle birleştirerek <b>Türk Savunma Sanayii projelerinde yer almanın gururunu ve sorumluluğunu </b>taşıyoruz.
-								ZCN Group, ileri teknolojiye sahip <b>çok eksenli CNC takım tezgahları, CMM kalite kontrol ekipmanları </b> ve <b>etkin tedarik zinciri yapısı</b>yla titanyum, alüminyum, çelik, paslanmaz çelik, bakır alaşımları ve süper alaşımların işlenmesinde geniş bir üretim kapasitesine sahiptir.
-								Savunma ve havacılık projelerinde görev alan değerli mühendislerimiz ve güçlü makine parkurumuz sayesinde<b> yüksek hassasiyet gerektiren parçaların üretiminde</b> güvenilir bir çözüm ortağı olarak faaliyet göstermekteyiz.
-								Üretim gücümüzü sürekli geliştirerek, sistem entegrasyonu ve taşımada <b>yenilikçi çözümler sunmaya</b> devam ediyoruz.
-								<b>“Güçlü Ordu, Güçlü Türkiye.”</b>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12 col-lg-6 d-flex">
-					<div class="thumb-video">
-						<img class="thumb-video__image" src="/images/ZCNSTOCKS/savunma_hakkimizda.png" alt="" width="962" height="465" />
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<section class="section section-md bg-default about-area">
+    <div class="bg-gray-4">
+        <div class="container-fluid container-condensed">
+            <div class="row row-30 flex-lg-row-reverse">
+                <div class="col-md-12 col-lg-6">
+                    <div class="section-md container-fluid-cell">
+                        <div class="box-centered box-width-1 about-content">
+                            <h3>
+                                <span>Hakkımızda - Savunma Sanayii</span>
+                                <span class="object-decorated object-decorated_inline">
+                                    <span class="object-decorated__divider"></span>
+                                </span>
+                            </h3>
+                            <p>
+                                Otomotiv sektöründeki mühendislik ve üretim tecrübemizi, askeri alandaki deneyimimizle birleştirerek <b>Türk Savunma Sanayii projelerinde yer almanın gururunu ve sorumluluğunu</b> taşıyoruz.
+                                ZCN Group, ileri teknolojiye sahip <b>çok eksenli CNC takım tezgahları, CMM kalite kontrol ekipmanları</b> ve <b>etkin tedarik zinciri yapısı</b>yla titanyum, alüminyum, çelik, paslanmaz çelik, bakır alaşımları ve süper alaşımların işlenmesinde geniş bir üretim kapasitesine sahiptir.
+                                Savunma ve havacılık projelerinde görev alan değerli mühendislerimiz ve güçlü makine parkurumuz sayesinde <b>yüksek hassasiyet gerektiren parçaların üretiminde</b> güvenilir bir çözüm ortağı olarak faaliyet göstermekteyiz.
+                                Üretim gücümüzü sürekli geliştirerek, sistem entegrasyonu ve taşımada <b>yenilikçi çözümler sunmaya</b> devam ediyoruz.
+                                <b>"Güçlü Ordu, Güçlü Türkiye."</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 d-flex">
+                    <div class="thumb-video">
+                        <img class="thumb-video__image" src="/images/ZCNSTOCKS/savunma_hakkimizda.png" alt="Savunma Sanayii" width="962" height="505" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 @* <section class="feature-section bg-grey pt-100 pb-70">
 	<div class="container">

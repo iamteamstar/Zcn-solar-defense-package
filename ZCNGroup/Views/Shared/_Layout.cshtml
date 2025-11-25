@@ -135,6 +135,17 @@
             margin: 0 !important;
         }
 
+        .rd-navbar-dropdown img {
+            border-radius: 3px;
+            vertical-align: middle;
+        }
+
+        .rd-navbar-dropdown a {
+            display: flex;
+            align-items: center;
+        }
+
+
     </style>
     <!-- Page-->
     <div class="page">
@@ -145,7 +156,7 @@
             <!-- RD Navbar-->
             <div class="rd-navbar-wrap">
                 <nav class="rd-navbar rd-navbar-creative" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-fullwidth" data-xxl-device-layout="rd-navbar-fullwidth" data-lg-layout="rd-navbar-fullwidth" data-xl-layout="rd-navbar-fullwidth" data-xxl-layout="rd-navbar-fullwidth" data-stick-up-clone="false" data-md-stick-up-offset="150px" data-lg-stick-up-offset="60px" data-md-stick-up="true" data-lg-stick-up="true">
-                    <div class="rd-navbar-aside-outer rd-navbar-content-outer">
+                  @*   <div class="rd-navbar-aside-outer rd-navbar-content-outer">
                         <div class="rd-navbar-content__toggle rd-navbar-fullwidth--hidden" data-rd-navbar-toggle=".rd-navbar-content"><span></span></div>
                         <div class="rd-navbar-aside rd-navbar-content">
                             <div class="rd-navbar-aside__item">
@@ -172,7 +183,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> *@
                     <div class="rd-navbar-main-outer">
                         <div class="rd-navbar-main">
 
@@ -220,20 +231,15 @@
                                         <a class="rd-nav-link" href="#">Dil</a>
 
                                         <!-- RD Navbar Dropdown-->
+                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
                                         <ul class="rd-navbar-dropdown">
-                                            <li>
-                                                <a href="~/Defense/Index">Türkçe</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Solar/Index">English</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Packaging/Index">Français</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Packaging/Index">Deutsch</a>
-                                            </li>
+                                            <li><a href="~/Defense/Index"><span class="flag-icon flag-icon-tr"></span> Türkçe</a></li>
+                                            <li><a href="~/Solar/Index"><span class="flag-icon flag-icon-gb"></span> English</a></li>
+                                            <li><a href="~/Packaging/Index"><span class="flag-icon flag-icon-fr"></span> Français</a></li>
+                                            <li><a href="~/Packaging/Index"><span class="flag-icon flag-icon-de"></span> Deutsch</a></li>
                                         </ul>
+
                                     </li>
                                 </ul>
                             </div>
@@ -251,29 +257,14 @@
                 <div class="container container-wide">
                     <div class="row justify-content-sm-center justify-content-lg-between row-50">
                         <div class="col-sm-4 col-md-6 col-lg-3 col-xl-2 col-xxl-1 text-center footer-image-container">
-                            <img src="~/images/ZCNSTOCKS/harita2.png" alt="Footer Görseli" class="footer-image" />
+                            <img src="~/images/ZCNSTOCKS/footer2.png" alt="Footer Görseli" class="footer-image" />
                         </div>
 
                         <div class="col-sm-4 col-md-6 col-lg-3 col-xl-2 col-xxl-1">
-                            <h4 class="heading-bordered">Hızlı Bağlantılar</h4>
-                            <ul class="list-xxs list_darker">
-                                <li>@* <a href="~/Home/Index">Trapez & Sandviç Çatı Sistemleri</a> *@</li>
-                                <li>
-                                    @* <a href="~/Home/About">Düz Çatı Sistemleri</a> *@
-                                </li>
-                                <li>
-                                    @* <a href="~/Home/About">Kiremit Çatı Sistemleri</a> *@
-                                </li>
-                                <li>
-                                    @* <a href="~/Home/About">Kenet Çatı Sistemleri</a> *@
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-10 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                             <h4 class="heading-bordered">İletişim</h4>
                             <ul class="list-md">
                                 <li>
-                                    <p class="address">İstanbul</p>
+                                    <p class="address">İstanbul/Türkiye</p>
                                 </li>
                                 <li>
                                     <dl class="list-terms-inline">
@@ -290,8 +281,41 @@
                                         <dt>GSM</dt>
                                         <dd><a href="GSM:#">+90 532 418 40 32 </a></dd>
                                     </dl>
+                                    <dl class="list-terms-inline">
+                                        <dt>Adress</dt>
+                                        <dd><a href="GSM:#">Şenlikköy mh. Yeşilköy cd. No93/2 Bakırköy İstanbul </a></dd>
+                                    </dl>
                                 </li>
                             </ul>
+                        </div>
+                        <div class="col-sm-10 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                            <h4 class="heading-bordered" style="visibility: hidden;">sad</h4>
+                           
+                            <ul class="list-md">
+                                <li>
+                                    <p class="address">Zurich/Switzerland</p>
+                                </li>
+                                <li>
+                                    <dl class="list-terms-inline">
+                                        <dt>Mail Adress</dt>
+                                        <dd><a href="mailto:#">info@zcngroup.com</a></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="list-terms-inline">
+                                        <dt>Phone</dt>
+                                        <dd><a href="tel:#">0850 304 64 20</a></dd>
+                                    </dl>
+                                    <dl class="list-terms-inline">
+                                        <dt>GSM</dt>
+                                        <dd><a href="GSM:#">+41 77 413 82 00 </a></dd>
+                                    </dl>
+                                    <dl class="list-terms-inline">
+                                        <dt>Adress</dt>
+                                        <dd><a href="GSM:#">Badenerstrasse 47 CH-8004 Zurich/Swithzerland </a></dd>
+                                    </dl>
+                                </li>
+                            </ul> 
                         </div>
                     </div>
                 </div>

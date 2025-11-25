@@ -3,7 +3,7 @@
 }
 
 <!-- Breadcrumbs-->
-<section class="breadcrumbs-custom bg-image" style="background-image: url(~/images/bg-image-1.jpg);">
+@* <section class="breadcrumbs-custom bg-image" style="background-image: url(~/images/bg-image-1.jpg);">
     <div class="container">
         <h2 class="breadcrumbs-custom__title">About Us</h2>
         <ul class="breadcrumbs-custom__path">
@@ -11,29 +11,104 @@
             <li class="active">About Us</li>
         </ul>
     </div>
-</section>
+</section> *@
+<style>
+    .about-area.section-padding {
+        padding-top: 60px !important;
+        padding-bottom: 80px !important;
+    }
 
+    /* 🔹 Row yapısı - Flexbox ile hizalama */
+    .about-area .row {
+        display: flex !important;
+        align-items: stretch !important; /* Değişti: flex-start -> stretch */
+    }
+
+        /* 🔹 Kolonlar eşit yükseklikte */
+        .about-area .row .col-lg-6 {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+    /* 🔹 İçerik stili */
+    .about-area .about-content {
+        display: flex;
+        flex-direction: column;
+        height: auto; /* Değişti: 100% -> auto */
+    }
+
+        /* 🔹 Başlık Stili */
+        .about-area .about-content h3 {
+            margin-bottom: 25px !important;
+            margin-top: 0 !important;
+            font-size: 36px !important;
+            font-weight: 700 !important;
+            color: #1e3c72 !important;
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+
+        /* 🔹 Paragraf Stili */
+        .about-area .about-content p {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            line-height: 1.8 !important;
+            font-size: 16px !important;
+            color: #333 !important;
+            text-align: justify !important;
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+        }
+
+            /* 🔹 Bold metinler için */
+            .about-area .about-content p b {
+                font-weight: 600;
+                color: #1e3c72;
+            }
+
+    .about-area .about-image {
+        display: block !important;
+        position: relative !important;
+        width: 100% !important;
+        height: 510px !important; /* Metin yüksekliğine göre ayarlayın (örnek: 200px, 250px, 300px) */
+        overflow: hidden !important;
+    }
+
+        /* 🔹 Görsel - Container'ı tam olarak dolduracak */
+        .about-area .about-image img {
+            width: 100% !important;
+            height: 100% !important; /* Container'ın tam yüksekliği */
+            max-height: none !important; /* Sınırlamayı kaldır */
+            object-fit: cover !important;
+            object-position: center top !important;
+            border-radius: 10px !important;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
+            flex: 1 !important; /* Kalan alanı doldur */
+        }
+</style>
 <!-- Experience since 1999-->
-<section class="section section-md bg-default">
+<section class="about-area section-padding">
     <div class="container">
-        <div class="row row-70 justify-content-md-center justify-content-xl-between">
-            <div class="col-md-10 col-lg-6 col-xl-5">
-                <h4>ZCN GROUP San.Tic.Ltd.Şti.</h4>
-                <p>
-                    Firmamız metal ve ambalaj sektöründe farklı ürün gruplarını toplayarak ürünlere özel tasarımlarıyla en uygun, verimli ve ekonomik seçenekler sunarak sizlere katma değer kazandırmayı hedeflemektedir.
-
-
-                    Mükemmellik anlayışı ve geniş ürün yelpazemiz ile müşterilerimizin beklentilerini en üst düzeyde karşılamak ve bu sayede ülkesine değer katarak Türkiye’de ve Avrupa’da saygın şirketler içerisinde yer almak en öncül hedefimizdir.
-                </p>
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="about-content">
+                    <h3 style="color:darkblue; ">Hakkımızda</h3>
+                    <p style="text-align:justify;color:black;">
+                        <b>ZCN Group</b>, mükemmellik anlayışını merkezine alan yenilikçi bir üretim şirketidir.
+                        Geniş ürün yelpazemiz, güçlü üretim altyapımız ve mühendislik odaklı yaklaşımımızla, müşterilerimizin beklentilerini en üst düzeyde karşılamayı hedefliyoruz.
+                        Bu doğrultuda, ülkemize değer katarak <b>Türkiye’de ve Avrupa’da saygın, güvenilir ve sürdürülebilir bir marka</b> olmayı temel vizyonumuz olarak belirledik.
+                        Grubumuz; sahip olduğu teknik yetkinlikler, tecrübeli kadrosu ve güçlü iş ortaklarıyla <b>Savunma Sanayii, Solar Enerji Sistemleri</b> ve <b> Endüstriyel Ambalaj</b> alanlarında yüksek kalite standartlarında ürün ve hizmetler sunmaktadır.
+                        Her projede,<b>
+                            sürdürülebilirlik, güvenilirlik
+                        </b> ve <b>mühendislik mükemmeliyeti</b> ilkelerini önceliklendirerek, müşterilerimiz için kalıcı değer üretmeyi amaçlıyoruz.
+                        Metal ve Ambalaj Grubumuza ait yetkinliklerimiz, tecrübelerimiz ve güçlü partnerlerimiz ile Otomotiv Sanayi, Savunma Sanayi, Solar Enerji & Elektirk sanayi, Yol ve Ray Sanayilerine yüksek kalite de ürün ve hizmetler sunmaktayız.
+                    </p>
+                </div>
             </div>
-            <div class="col-md-10 col-lg-6">
-                <div class="row grid-2">
-                    <div class="col-6">
-                        <img src="~/images/about-1-273x214.jpg" alt="" width="273" height="214" /><img src="~/images/about-2-273x214.jpg" alt="" width="273" height="214" />
-                    </div>
-                    <div class="col-6">
-                        <img src="~/images/about-3-273x451.jpg" alt="" width="273" height="451" />
-                    </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="about-image">
+                    <img src="~/images/ZCNSTOCKS/hakkimizdaindex.png" alt="img">
+                    @* <a href="https://www.youtube.com/watch?v=K6q9hLnCZHc" class="video-btn popup-youtube"> <i class="fa fa-play"></i></a> *@
                 </div>
             </div>
         </div>

@@ -1,0 +1,142 @@
+﻿/* 🔹 SADECE Hakkımızda kısmı için */
+.about-area.section-padding {
+    padding-top: 60px !important;
+    padding-bottom: 80px !important;
+}
+
+/* 🔹 Row yapısı - Flexbox ile hizalama */
+.about-area .row {
+    display: flex !important;
+    align-items: stretch !important; /* Değişti: flex-start -> stretch */
+}
+
+    /* 🔹 Kolonlar eşit yükseklikte */
+    .about-area .row .col-lg-6 {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+/* 🔹 İçerik stili */
+.about-area .about-content {
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Değişti: 100% -> auto */
+}
+
+    /* 🔹 Başlık Stili */
+    .about-area .about-content h3 {
+        margin-bottom: 25px !important;
+        margin-top: 0 !important;
+        font-size: 36px !important;
+        font-weight: 700 !important;
+        color: #1e3c72 !important;
+        font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+    }
+
+    /* 🔹 Paragraf Stili */
+    .about-area .about-content p {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        line-height: 1.8 !important;
+        font-size: 16px !important;
+        color: #333 !important;
+        text-align: justify !important;
+        font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+    }
+
+        /* 🔹 Bold metinler için */
+        .about-area .about-content p b {
+            font-weight: 600;
+            color: #1e3c72;
+        }
+
+    /* 🔹 Üç nokta stili */
+    .about-area .about-content .dots {
+        margin-right: 4px;
+    }
+
+/* 🔹 Görsel container - Metin yüksekliğine göre ayarlanacak */
+.about-area .about-image {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    height: 250px !important; /* Metin yüksekliğine göre ayarlayın (örnek: 200px, 250px, 300px) */
+    overflow: hidden !important;
+}
+
+    /* 🔹 Görsel - Container'ı tam olarak dolduracak */
+    .about-area .about-image img {
+        width: 100% !important;
+        height: 100% !important; /* Container'ın tam yüksekliği */
+        max-height: none !important; /* Sınırlamayı kaldır */
+        object-fit: cover !important;
+        object-position: center top !important;
+        border-radius: 10px !important;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
+        flex: 1 !important; /* Kalan alanı doldur */
+    }
+
+/* 🔹 Devamını Oku Butonu */
+.about-area .inline-read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 14px;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white !important;
+    text-decoration: none !important;
+    border-radius: 18px;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(30, 60, 114, 0.25);
+    margin-left: 6px;
+    vertical-align: baseline;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+    .about-area .inline-read-more::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transition: left 0.5s ease;
+    }
+
+    .about-area .inline-read-more:hover::before {
+        left: 100%;
+    }
+
+    .about-area .inline-read-more:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(30, 60, 114, 0.35);
+        color: white !important;
+        text-decoration: none !important;
+    }
+
+    .about-area .inline-read-more svg {
+        transition: transform 0.3s ease;
+    }
+
+    .about-area .inline-read-more:hover svg {
+        transform: translateX(3px);
+    }
+
+/* 🔹 Responsive tasarım */
+@media (max-width: 991px) {
+    .about-area .about-image {
+        margin-top: 30px;
+        height: auto !important; /* Mobilde otomatik yükseklik */
+    }
+
+        .about-area .about-image img {
+            height: auto !important; /* Mobilde otomatik yükseklik */
+        }
+}

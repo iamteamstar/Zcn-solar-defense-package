@@ -1,53 +1,25 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<style>
-	/*Görsel büyüklüğü düzenleme*/
-	.home-slider-single-item {
-		height: 85vh !important; /* 100vh → 85vh yaptık */
-		background-size: cover !important;
-		background-position: center !important;
-	}
-	/* 🔹 Slider başlığı (ZCN Savunma) */
-.home-slider-title {
-    font-family: 'Poppins', 'Segoe UI', sans-serif;
-    font-weight: 700;
-    font-size: 58px;
-    color: #ffffff;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    text-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
-    margin-bottom: 12px;
-    animation: fadeDown 1.2s ease-out forwards;
-}
+<head>
+	<link href="~/css/anasayfa/anasayfaHakkimizda.css" rel="stylesheet" />
+	<link href="~/css/anasayfa/anasaydaSlider.css" rel="stylesheet" />
+</head>
 
-/* 🔹 Motto (Tecrübe Sahadan...) */
-.home-slider-description p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.9);
-    letter-spacing: 0.8px;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    margin: 0;
-    animation: fadeUp 1.5s ease-out forwards;
-}
-
-</style>
 <!-- Swiper-->
 <!-- Start Home Slider Area -->
 <div class="home-slider-area">
 	<div class="home-slider flickity-dots-absolute" data-flickity='{ "bgLazyLoad": 1, "bgLazyLoad": true, "wrapAround": true, "fade": false, "prevNextButtons": false, "autoPlay": 7000, "pauseAutoPlayOnHover": true }'>
-		<div class="home-slider-single-item" data-overlay-dark="2" data-flickity-bg-lazyload="@Url.Content("~/images/ZCN/anasayfa3.png")">
+		<div class="home-slider-single-item" data-overlay-dark="0" data-flickity-bg-lazyload="@Url.Content("~/images/ZCN/anasayfa3.png")">
 			<div class="container">
-				<div class="row d-flex align-items-center">
-					<div class="col">
+				<div class="row d-flex align-items-center justify-content-center">
+					<div class="col-12 text-center">
 						<div class="home-slider-content">
-							<h4 class="home-slider-title">Güvenli Gelecek, Sürdürülebilir Güç</h4>
-							<p style="color:white">
-								ZCN Group, savunma sanayi ve solar enerji alanlarında mühendislik mükemmeliyetini bir araya getirir.
-								Yüksek kalite standartları, yenilikçi üretim yaklaşımı ve sürdürülebilir çözümleriyle geleceğe güvenli bir enerji ve teknoloji mirası bırakır.
-							</p>
+							<!-- Logo -->
+							<div class="logo-container">
+								<img src="@Url.Content("~/images/ZCN/logo.png")" alt="ZCN Group Logo" class="slider-logo">
+								<h2 class="brand-tagline">Zenith Confidence Nexus</h2>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -57,82 +29,35 @@
 </div>
 
 <style>
-	/*
-	   🔹 SADECE Hakkımızda kısmı için
-	 */
-	.about-area.section-padding {
-		padding-top: 60px !important; /*hakkımızda kısmının yukarıdan boşluğu*/
-		padding-bottom: 80px !important; /*hakkımızda kısmının aşağıdan boşluğu*/
-	}
 
-	/* 🔹 İçerik hizalaması */
-	.about-area .about-content {
-		display: flex;
-		flex-direction: column;
-		justify-content: center; /* dikey ortalama */
-		height: 100%;
-	}
-
-	/* 🔹 Görsel hizalaması */
-	.about-area .about-image {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-		.about-area .about-image img {
-			width: 100%;
-			height: auto;
-			max-height: 500px; /* Görselin boyutunu sınırlıyoruz */
-			object-fit: cover; /* Taşmayı engeller */
-			border-radius: 10px;
-			/* 🔹 Sadece Hakkımızda bölümü için */
-			.about-area .about-content h2
-
-	{
-		margin-bottom: 10px !important; /* Başlık ile paragraf arasındaki boşluk */
-		font-size: 32px !important;
-		color: darkblue !important;
-	}
-
-	.about-area .about-content p {
-		margin-top: 0 !important; /* Paragrafın yukarıdan boşluk bırakmasını engeller */
-		line-height: 1.6;
-	}
-
-	}
 </style>
 <section class="about-area section-padding">
 	<div class="container">
-		<div class="row align-items-center">
+		<div class="row">
 			<div class="col-lg-6 col-md-12">
 				<div class="about-content">
-
-					<h3 style="color:darkblue; ">Hakkımızda</h3>
-					<p style="text-align:justify;color:black;">
+					<h3>Hakkımızda</h3>
+					<p>
 						<b>ZCN Group</b>, mükemmellik anlayışını merkezine alan yenilikçi bir üretim şirketidir.
 						Geniş ürün yelpazemiz, güçlü üretim altyapımız ve mühendislik odaklı yaklaşımımızla, müşterilerimizin beklentilerini en üst düzeyde karşılamayı hedefliyoruz.
-
-						Bu doğrultuda, ülkemize değer katarak <b>Türkiye’de ve Avrupa’da saygın, güvenilir ve sürdürülebilir bir marka</b> olmayı temel vizyonumuz olarak belirledik.
-
-						Grubumuz; sahip olduğu teknik yetkinlikler, tecrübeli kadrosu ve güçlü iş ortaklarıyla <b>Savunma Sanayii, Solar Enerji Sistemleri</b> ve <b> Endüstriyel Ambalaj</b> alanlarında yüksek kalite standartlarında ürün ve hizmetler sunmaktadır.
-
-						Her projede,<b>
-							sürdürülebilirlik, güvenilirlik
-						</b> ve <b>mühendislik mükemmeliyeti</b> ilkelerini önceliklendirerek, müşterilerimiz için kalıcı değer üretmeyi amaçlıyoruz.
-						Metal ve Ambalaj Grubumuza ait yetkinliklerimiz, tecrübelerimiz ve güçlü partnerlerimiz ile Otomotiv Sanayi, Savunma Sanayi, Solar Enerji & Elektirk sanayi, Yol ve Ray Sanayilerine yüksek kalite de ürün ve hizmetler sunmaktayız.
+						Bu doğrultuda, ülkemize değer katarak <b>Türkiye'de ve Avrupa'da saygın, güvenilir ve sürdürülebilir bir marka</b> olmayı temel vizyonumuz olarak belirledik<span class="dots">...</span><a href="/Home/About" class="inline-read-more">
+							<span>Devamını Oku</span>
+							<svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+								<path d="M8 1L15 8L8 15M15 8H1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</a>
 					</p>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-12">
 				<div class="about-image">
-					<img src="~/images/ZCNSTOCKS/hakkimizdaindex.png" alt="img">
-					@* <a href="https://www.youtube.com/watch?v=K6q9hLnCZHc" class="video-btn popup-youtube"> <i class="fa fa-play"></i></a> *@
+					<img src="~/images/ZCNSTOCKS/hakkimizdaindex8.png" alt="img">
 				</div>
 			</div>
 		</div>
 	</div>
-</section><!--silme-->
+</section>
+
 <style>
 	/* 🔹 SADECE Sektörlerimiz kısmını etkiler */
 	section.projects-area.section-padding {
@@ -141,6 +66,18 @@
 		margin-top: 0 !important;
 		margin-bottom: 0 !important;
 	}
+
+	/* 🔹 Görsellerin yüksekliğini kısaltır */
+	.project-img {
+		height: 350px !important; /* İstediğiniz yüksekliği ayarlayın (örn: 250px, 300px) */
+		overflow: hidden !important;
+	}
+
+		.project-img img {
+			width: 100% !important;
+			height: 100% !important;
+			object-fit: cover !important; /* Görseli kırpmadan kutuya sığdırır */
+		}
 
 	.category {
 		display: inline-flex !important;
@@ -154,10 +91,6 @@
 		height: 30px;
 		object-fit: contain;
 	}
-
-
-
-
 </style>
 
 <section class="projects-area section-padding">
@@ -177,7 +110,7 @@
 						</div>
 						<a href="~/Defense/Index" class="project-overlay-info">
 							<span class="category">
-								@*<img src="~/images/ZCN/savunmalogo_favicon.png" class="cat-icon">*@
+								<img src="~/images/ZCN/savunmalogo_favicon.png" class="cat-icon">
 								ZCN Savunma
 							</span>
 							<i class="fa fa-arrow-right"></i>
@@ -192,7 +125,7 @@
 						</div>
 						<a href="~/Solar/Index" class="project-overlay-info">
 							<span class="category">
-								@*<img src="~/images/ZCN/yesilllogo_favicon.png" class="cat-icon">*@IEF Solar
+								<img src="~/images/ZCN/yesillogo_favicon.png" class="cat-icon">IEF Solar
 							</span>
 							@*<h5>House Solar Panel</h5>*@
 							<i class="fa fa-arrow-right"></i>
@@ -204,7 +137,7 @@
 						</div>
 						<a href="~/Packaging/Index" class="project-overlay-info">
 							<span class="category">
-								@*<img src="~/images/ZCN/savunmalogo_favicon.png" class="cat-icon">*@
+								<img src="~/images/ZCN/mavimsilogo_faviocon.png" class="cat-icon">
 								NBC Ambalaj</span>
 							@*<h5>Ambalaj</h5>*@
 							<i class="fa fa-arrow-right"></i>
