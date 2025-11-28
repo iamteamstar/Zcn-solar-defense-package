@@ -36,7 +36,7 @@
         <div class="detail-container">
             <div class="system-selector">
                 <button class="system-btn" onclick="changeSystem('arazi')">Arazi Sistemleri</button>
-                <button class="system-btn" onclick="changeSystem('tarim')">Tarım Sistemleri</button>
+                @* <button class="system-btn" onclick="changeSystem('tarim')">Tarım Sistemleri</button> *@
                 <button class="system-btn active" onclick="changeSystem('carport')">Carport Sistemleri</button>
                 <button class="system-btn" onclick="changeSystem('cati')">Çatı Sistemleri</button>
                 <button class="system-btn" onclick="changeSystem('depolama')">Enerji Depolama</button>
@@ -47,7 +47,7 @@
         <div class="detail-container">
             <!-- Hero Image -->
             <div class="hero-image animate-in">
-                <img id="heroImage" src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1200&h=600&fit=crop" alt="Carport Sistemleri">
+                <img id="heroImage" src="/images/ZCNSTOCKS/carport.png" alt="Carport Sistemleri">
             </div>
 
             <div class="content-grid">
@@ -189,7 +189,7 @@
             arazi: {
                 title: 'Arazi Sistemleri',
                 headerDesc: 'Geniş arazilerde yüksek kapasiteli güneş enerjisi üretimi',
-                heroImage: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&h=600&fit=crop',
+                heroImage: '/images/projects/project-1.jpg',
                 content: `
                     <h2>Arazi Tipi Solar Sistemler</h2>
                     <p>Geniş arazilerde kurulum yapılan güneş enerjisi sistemleri, büyük ölçekli enerji üretimi için ideal çözümlerdir. Düz veya hafif eğimli arazilerde, sabit veya takip sistemli kurulumlar ile maksimum verimlilik sağlanır.</p>
@@ -232,56 +232,56 @@
                     { icon: '📊', title: 'Performans Takibi', desc: 'SCADA sistemi ile anlık üretim ve performans takibi.' }
                 ]
             },
-            tarim: {
-                title: 'Tarım Sistemleri',
-                headerDesc: 'Tarımsal alanlarda hem enerji üretimi hem de tarım yapın',
-                heroImage: 'https://images.unsplash.com/photo-1560493676-04071c5f467b?w=1200&h=600&fit=crop',
-                content: `
-                    <h2>Tarımsal Solar Sistemler (Agrivoltaics)</h2>
-                    <p>Tarım sistemleri, aynı arazide hem güneş enerjisi üretimi hem de tarımsal faaliyetlerin sürdürülmesini sağlayan yenilikçi bir çözümdür. Paneller, bitkilere gölge sağlayarak su tüketimini azaltır ve aynı zamanda elektrik üretir.</p>
+            // tarim: {
+            //     title: 'Tarım Sistemleri',
+            //     headerDesc: 'Tarımsal alanlarda hem enerji üretimi hem de tarım yapın',
+            //     heroImage: 'https://images.unsplash.com/photo-1560493676-04071c5f467b?w=1200&h=600&fit=crop',
+            //     content: `
+            //         <h2>Tarımsal Solar Sistemler (Agrivoltaics)</h2>
+            //         <p>Tarım sistemleri, aynı arazide hem güneş enerjisi üretimi hem de tarımsal faaliyetlerin sürdürülmesini sağlayan yenilikçi bir çözümdür. Paneller, bitkilere gölge sağlayarak su tüketimini azaltır ve aynı zamanda elektrik üretir.</p>
 
-                    <h2 style="margin-top: 40px;">Uygulama Alanları</h2>
-                    <ul>
-                        <li>Bağ ve bahçe alanları</li>
-                        <li>Seralarda enerji üretimi</li>
-                        <li>Meyve bahçeleri</li>
-                        <li>Organik tarım alanları</li>
-                        <li>Hayvancılık tesisleri</li>
-                        <li>Tarımsal sulama sistemleri</li>
-                    </ul>
+            //         <h2 style="margin-top: 40px;">Uygulama Alanları</h2>
+            //         <ul>
+            //             <li>Bağ ve bahçe alanları</li>
+            //             <li>Seralarda enerji üretimi</li>
+            //             <li>Meyve bahçeleri</li>
+            //             <li>Organik tarım alanları</li>
+            //             <li>Hayvancılık tesisleri</li>
+            //             <li>Tarımsal sulama sistemleri</li>
+            //         </ul>
 
-                    <h2 style="margin-top: 40px;">Çift Kazanç Modeli</h2>
-                    <p>Tarım sistemleri ile hem tarımsal ürün yetiştirin, hem de temiz enerji üretin. Panellerin altında gölge seven bitkilerin yetiştirilmesi, su tasarrufu ve verim artışı sağlar. Üretilen elektrik ile sulama sistemleri ve tarımsal ekipmanlar çalıştırılabilir.</p>
-                `,
-                techSpecs: [
-                    { title: 'Panel Yüksekliği', desc: '3-5 metre araç geçişi için' },
-                    { title: 'Aralık', desc: 'Tarım makineleri için geniş aralıklar' },
-                    { title: 'Şeffaflık', desc: '%30-40 ışık geçirgenliği' },
-                    { title: 'Sulama Entegrasyonu', desc: 'Güneş enerjili sulama sistemi' },
-                    { title: 'Yapı Malzemesi', desc: 'Paslanmaz çelik ve alüminyum' },
-                    { title: 'Garanti', desc: '25 yıl panel, 15 yıl sistem garantisi' }
-                ],
-                quickInfo: [
-                    'Çift gelir kaynağı',
-                    'Su tasarrufu sağlar',
-                    'Verim artışı',
-                    'Çevre dostu üretim',
-                    'Sulama sistemi entegrasyonu',
-                    'Tarımsal danışmanlık'
-                ],
-                features: [
-                    { icon: '🌾', title: 'Tarım + Enerji', desc: 'Aynı alanda hem tarım yapın hem de elektrik üretin.' },
-                    { icon: '💧', title: 'Su Tasarrufu', desc: 'Gölgeleme sayesinde %30-40 daha az su kullanımı.' },
-                    { icon: '🌡️', title: 'İklim Kontrolü', desc: 'Bitkiler için daha uygun mikro iklim oluşturur.' },
-                    { icon: '🚜', title: 'Tarımsal İşlemler', desc: 'Yüksek yapı ile tarım makineleri rahatça geçer.' },
-                    { icon: '♻️', title: 'Sürdürülebilir', desc: 'Organik ve sürdürülebilir tarım için ideal.' },
-                    { icon: '📈', title: 'Verim Artışı', desc: 'Bazı ürünlerde %20-30 verim artışı sağlar.' }
-                ]
-            },
+            //         <h2 style="margin-top: 40px;">Çift Kazanç Modeli</h2>
+            //         <p>Tarım sistemleri ile hem tarımsal ürün yetiştirin, hem de temiz enerji üretin. Panellerin altında gölge seven bitkilerin yetiştirilmesi, su tasarrufu ve verim artışı sağlar. Üretilen elektrik ile sulama sistemleri ve tarımsal ekipmanlar çalıştırılabilir.</p>
+            //     `,
+            //     techSpecs: [
+            //         { title: 'Panel Yüksekliği', desc: '3-5 metre araç geçişi için' },
+            //         { title: 'Aralık', desc: 'Tarım makineleri için geniş aralıklar' },
+            //         { title: 'Şeffaflık', desc: '%30-40 ışık geçirgenliği' },
+            //         { title: 'Sulama Entegrasyonu', desc: 'Güneş enerjili sulama sistemi' },
+            //         { title: 'Yapı Malzemesi', desc: 'Paslanmaz çelik ve alüminyum' },
+            //         { title: 'Garanti', desc: '25 yıl panel, 15 yıl sistem garantisi' }
+            //     ],
+            //     quickInfo: [
+            //         'Çift gelir kaynağı',
+            //         'Su tasarrufu sağlar',
+            //         'Verim artışı',
+            //         'Çevre dostu üretim',
+            //         'Sulama sistemi entegrasyonu',
+            //         'Tarımsal danışmanlık'
+            //     ],
+            //     features: [
+            //         { icon: '🌾', title: 'Tarım + Enerji', desc: 'Aynı alanda hem tarım yapın hem de elektrik üretin.' },
+            //         { icon: '💧', title: 'Su Tasarrufu', desc: 'Gölgeleme sayesinde %30-40 daha az su kullanımı.' },
+            //         { icon: '🌡️', title: 'İklim Kontrolü', desc: 'Bitkiler için daha uygun mikro iklim oluşturur.' },
+            //         { icon: '🚜', title: 'Tarımsal İşlemler', desc: 'Yüksek yapı ile tarım makineleri rahatça geçer.' },
+            //         { icon: '♻️', title: 'Sürdürülebilir', desc: 'Organik ve sürdürülebilir tarım için ideal.' },
+            //         { icon: '📈', title: 'Verim Artışı', desc: 'Bazı ürünlerde %20-30 verim artışı sağlar.' }
+            //     ]
+            // },
             carport: {
                 title: 'Carport Sistemleri',
                 headerDesc: 'Araçlarınızı güneşten, yağmur ve kardan koruyarak enerji ihtiyacınızı karşılayın',
-                heroImage: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1200&h=600&fit=crop',
+                heroImage: '/images/ZCNSTOCKS/carport.png',
                 content: `
                     <h2>Carport Solar Sistemleri Nedir?</h2>
                     <p>Araçlarınızı güneşten, yağmur ve kardan koruyarak enerji ihtiyacınızı karşılayın! Yazın kavurucu sıcaklarından araçlarınızı korurken otopark alanlarınızı daha estetik ve doğa dostu bir çözüm ile değerlendirerek enerji ihtiyacınızı karşılayıp gelir elde edebilirsiniz. İster bir ister düzinelerce araçlık otopark alanları, düzgün bir geometriye sahip olmasalar dahi kolayca solar santrallere çevrilebilirler.</p>
@@ -328,7 +328,7 @@
             cati: {
                 title: 'Çatı Sistemleri',
                 headerDesc: 'Çatınızı enerji üretim merkezine dönüştürün',
-                heroImage: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&h=600&fit=crop',
+                heroImage: '/images/ZCNSTOCKS/catı.jpg',
                 content: `
                     <h2>Çatı Tipi Solar Sistemler</h2>
                     <p>Çatılarınızın yenilenebilir enerji kaynaklarının en popüleri olan Güneş Enerjisi Sistemleri ile değerlendererek kendi enerji ihtiyacınızı karşılayabilirsiniz. İşletme giderlerinizin önemli kısmını oluşturan enerji giderlerinizden kurtularak, rekabet gücünüzü arttırıp işletmenizin karlılığını arttırabilirsiniz.</p>
@@ -381,7 +381,7 @@
             depolama: {
                 title: 'Enerji Depolama Sistemleri',
                 headerDesc: 'Ürettiğiniz enerjiyi depolayın, ihtiyaç duyduğunuzda kullanın',
-                heroImage: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&h=600&fit=crop',
+                heroImage: '/images/ZCNSTOCKS/enerji_depolama.png',
                 content: `
                     <h2>Enerji Depolama Sistemleri (ESS)</h2>
                     <p>Gündüz üretilen güneş enerjisini depolayarak gece kullanım imkanı sağlayan akıllı enerji yönetim sistemleri. Kesintisiz güç kaynağı olarak da çalışabilen depolama sistemleri, enerji maliyetlerinizi minimize eder ve şebekeden tamamen bağımsız olmanızı sağlar.</p>

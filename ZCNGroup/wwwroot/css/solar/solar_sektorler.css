@@ -1,8 +1,4 @@
-﻿* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+﻿
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -10,7 +6,7 @@ body {
     color: #333;
 }
 
-.container {
+.solar-sectors-section .container {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
@@ -251,12 +247,7 @@ body {
     transform: scaleX(1);
 }
 
-.footer-info {
-    text-align: center;
-    margin-top: 60px;
-    color: #999;
-    font-size: 14px;
-}
+
 
 @media (max-width: 768px) {
     .header h2 {
