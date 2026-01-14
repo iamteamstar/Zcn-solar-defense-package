@@ -1,110 +1,111 @@
-﻿/* 🔹 Başlık Stili */
+﻿/* 🔹 Ana Section Container */
+.section.section-md.bg-default {
+    padding: 40px 0 !important;
+}
+
+    /* 🔹 Gri Arka Plan Container */
+    .section.section-md.bg-default .bg-gray-2 {
+        padding: 30px 0;
+    }
+
+    /* 🔹 Bootstrap Row - Kolonlar Arası Boşluk */
+    .section.section-md.bg-default .row.row-30 {
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+        align-items: center; /* Görsel ve metin dikey ortada */
+    }
+
+        /* 🔹 Tüm Kolonlar - Eşit Padding */
+        .section.section-md.bg-default .row.row-30 > [class*='col-'] {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+        }
+
+    /* 🔹 Metin İçeriği Container */
+    .section.section-md.bg-default .section-md.container-fluid-cell {
+        padding: 0 !important;
+    }
+
+    /* 🔹 Metin Kutusu - Genişlik ve Padding */
+    .section.section-md.bg-default .box-centered.box-width-1 {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+/* 🔹 Başlık Stili */
 .about-area .about-content h3 {
-    margin-bottom: 25px !important;
+    margin-bottom: 20px !important;
     margin-top: 0 !important;
-    font-size: 33px !important;
+    font-size: 28px !important;
     font-weight: 700 !important;
     color: #1e3c72 !important;
     font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
     letter-spacing: -0.5px;
-    line-height: 1.2;
+    line-height: 1.3;
 }
+
+    /* 🔹 Başlık İçindeki Span Elementleri */
+    .about-area .about-content h3 span:first-child {
+        display: inline-block;
+    }
 
 /* 🔹 Paragraf Stili */
 .about-area .about-content p {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
-    line-height: 1.8 !important;
-    font-size: 16px !important;
-    color: #333 !important;
+    line-height: 1.75 !important;
+    font-size: 15px !important;
+    color: #444 !important;
     text-align: justify !important;
     font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
 }
 
-    /* 🔹 Bold metinler için */
+    /* 🔹 Bold Metinler */
     .about-area .about-content p b {
         font-weight: 600;
         color: #1e3c72;
     }
 
-/* Mevcut stiller */
-/* Savunma Sanayii Section - Mevcut HTML Yapısına Uygun CSS */
-
-/* Ana section container - Üst ve alt boşlukları azaltır (section elementi) */
-.section.section-md.bg-default {
-    padding: 30px 0 !important;
+/* 🔹 Görsel Container - Tam Yükseklik ve Ortalama */
+.section.section-md.bg-default .thumb-video {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-    /* Gri arka plan container - İç boşlukları azaltır (bg-gray-4 div'i) */
-    .section.section-md.bg-default .bg-gray-2 {
-        padding: 20px 0;
-    }
+/* 🔹 Görsel Elementi */
+.section.section-md.bg-default .thumb-video__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px; /* Hafif yuvarlatılmış köşeler */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Hafif gölge efekti */
+}
 
-    /* Bootstrap row - Sağ ve sol negatif margin'leri azaltarak kolonlar arası boşluğu daraltır */
-    .section.section-md.bg-default .row.row-30 {
-        margin-left: -10px !important;
-        margin-right: 85px !important;
-    }
+/* 🔹 Görselin Bulunduğu Kolon */
+.section.section-md.bg-default .col-lg-6.d-flex {
+    display: flex !important;
+    align-items: center !important;
+}
 
-        /* Tüm kolonlar (col-md-12, col-lg-6) - Sağ ve sol padding'leri azaltarak metin ile görsel arasındaki boşluğu daraltır */
-        .section.section-md.bg-default .row.row-30 > [class*='col-'] {
-            padding-left: 20px !important;
-            padding-right: 20px !important;
-        }
-
-    /* Metin içeriğinin bulunduğu container - Tüm padding'i kaldırır (section-md div'i) */
-    .section.section-md.bg-default .section-md.container-fluid-cell {
-        padding: 0 !important;
-    }
-
-    /* Metin kutusunun merkezi container - Genişliği %100 yapar ve minimal padding ekler */
-    .section.section-md.bg-default .box-centered.box-width-1 {
-        max-width: 100%;
-        padding: 0 15px;
-    }
-
-    /* "Hakkımızda-Savunma Sanayii" başlığı - Boyut ve alt boşluğunu ayarlar */
-    .section.section-md.bg-default h4 {
-        font-size: 1.25rem;
+/* 🔹 Mobil Responsive Ayarlar */
+@media (max-width: 991px) {
+    .about-area .about-content h3 {
+        font-size: 24px !important;
         margin-bottom: 15px !important;
-        margin-top: 35px !important;
-        font-weight: 600;
     }
 
-        /* Başlık içindeki ilk span (başlık metni) - Inline-block yapar */
-        .section.section-md.bg-default h4 span:first-child {
-            display: inline-block;
-        }
-
-
-
-    /* Paragraf metni - Boyut, satır arası, alt boşluk ve hizalama ayarları */
-    .section.section-md.bg-default p {
-        font-size: 1rem !important;
-        line-height: 1.5 !important;
-        margin-bottom: 0 !important;
-        text-align: justify;
-        color: #555;
+    .about-area .about-content p {
+        font-size: 14px !important;
+        line-height: 1.65 !important;
     }
 
-    /* Görsel container - Görseli metin yüksekliğine göre dikey hizalar */
-    .section.section-md.bg-default .thumb-video {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
+    .section.section-md.bg-default .row.row-30 > [class*='col-'] {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin-bottom: 20px;
     }
-
-    /* Asıl görsel elementi - Tam genişlikte görüntülenir ve oranını korur */
-    .section.section-md.bg-default .thumb-video__image {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-    }
-
-    /* Görselin bulunduğu kolon - Flexbox ile içeriği dikey ortalar */
-    .section.section-md.bg-default .col-lg-6.d-flex {
-        display: flex !important;
-        align-items: center !important;
-    }
+}

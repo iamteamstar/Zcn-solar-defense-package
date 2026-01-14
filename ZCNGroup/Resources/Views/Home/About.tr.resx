@@ -118,45 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutText" xml:space="preserve">
-    <value />
+    <value>mükemmellik anlayışını merkezine alan yenilikçi bir üretim şirketidir.
+                        Geniş ürün yelpazemiz, güçlü üretim altyapımız ve mühendislik odaklı yaklaşımımızla, müşterilerimizin beklentilerini en üst düzeyde karşılamayı hedefliyoruz.
+                        Bu doğrultuda, ülkemize değer katarak &lt;b&gt;Türkiye’de ve Avrupa’da saygın, güvenilir ve sürdürülebilir bir marka&lt;/b&gt; olmayı temel vizyonumuz olarak belirledik.
+                        Grubumuz; sahip olduğu teknik yetkinlikler, tecrübeli kadrosu ve güçlü iş ortaklarıyla &lt;b&gt;Savunma Sanayii, Solar Enerji Sistemleri&lt;/b&gt; ve &lt;b&gt; Endüstriyel Ambalaj&lt;/b&gt; alanlarında yüksek kalite standartlarında ürün ve hizmetler sunmaktadır.
+                        Her projede,&lt;b&gt;
+                            sürdürülebilirlik, güvenilirlik
+                        &lt;/b&gt; ve &lt;b&gt;mühendislik mükemmeliyeti&lt;/b&gt; ilkelerini önceliklendirerek, müşterilerimiz için kalıcı değer üretmeyi amaçlıyoruz.
+                        Metal ve Ambalaj Grubumuza ait yetkinliklerimiz, tecrübelerimiz ve güçlü partnerlerimiz ile Otomotiv Sanayi, Savunma Sanayi, Solar Enerji &amp; Elektirk sanayi, Yol ve Ray Sanayilerine yüksek kalite de ürün ve hizmetler sunmaktayız</value>
   </data>
   <data name="AboutUs" xml:space="preserve">
-    <value>About Us</value>
+    <value>Hakkımızda</value>
   </data>
-  <data name="AllRightsReserved" xml:space="preserve">
-    <value>All Rights Reserved</value>
+  <data name="DefenseIndustry" xml:space="preserve">
+    <value>ZCN Savunma</value>
   </data>
-  <data name="Contact" xml:space="preserve">
-    <value>Contact</value>
+  <data name="OurSectors" xml:space="preserve">
+    <value>Sektörlerimiz</value>
   </data>
-  <data name="ContactInfo" xml:space="preserve">
-    <value>Contact Information</value>
+  <data name="PackagingIndustry" xml:space="preserve">
+    <value>NBC Ambalaj</value>
   </data>
-  <data name="Defense" xml:space="preserve">
-    <value>Defense</value>
+  <data name="ReadMore" xml:space="preserve">
+    <value>Devamını Oku</value>
   </data>
-  <data name="GetContact" xml:space="preserve">
-    <value>Contact Us</value>
-  </data>
-  <data name="Home" xml:space="preserve">
-    <value>Home</value>
-  </data>
-  <data name="Language" xml:space="preserve">
-    <value>Language</value>
-  </data>
-  <data name="Packaging" xml:space="preserve">
-    <value>Packaging</value>
-  </data>
-  <data name="Services" xml:space="preserve">
-    <value>Services</value>
-  </data>
-  <data name="Solar" xml:space="preserve">
-    <value>Solar</value>
-  </data>
-  <data name="SupportMail" xml:space="preserve">
-    <value>Mail</value>
-  </data>
-  <data name="TelNo" xml:space="preserve">
-    <value>Phone Num</value>
+  <data name="SolarIndustry" xml:space="preserve">
+    <value>IEF Solar</value>
   </data>
 </root>

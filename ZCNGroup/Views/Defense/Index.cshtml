@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="~/css/savunma/package.css" />
     <link href="~/css/savunma/savunmaSlider.css" rel="stylesheet" />
     <link href="~/css/savunma/savunmaHakkimizda.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 	</head>
 
 <style>
@@ -85,7 +89,7 @@
 
 <!-- Experience since 1999-->
 <section class="section section-md bg-default about-area">
-    <div class="bg-gray-4">
+    <div class="bg-gray-2">
         <div class="container-fluid container-condensed">
             <div class="row row-30 flex-lg-row-reverse">
                 <div class="col-md-12 col-lg-6">
@@ -98,11 +102,7 @@
                                 </span>
                             </h3>
                             <p>
-                                Otomotiv sektöründeki mühendislik ve üretim tecrübemizi, askeri alandaki deneyimimizle birleştirerek <b>Türk Savunma Sanayii projelerinde yer almanın gururunu ve sorumluluğunu</b> taşıyoruz.
-                                ZCN Group, ileri teknolojiye sahip <b>çok eksenli CNC takım tezgahları, CMM kalite kontrol ekipmanları</b> ve <b>etkin tedarik zinciri yapısı</b>yla titanyum, alüminyum, çelik, paslanmaz çelik, bakır alaşımları ve süper alaşımların işlenmesinde geniş bir üretim kapasitesine sahiptir.
-                                Savunma ve havacılık projelerinde görev alan değerli mühendislerimiz ve güçlü makine parkurumuz sayesinde <b>yüksek hassasiyet gerektiren parçaların üretiminde</b> güvenilir bir çözüm ortağı olarak faaliyet göstermekteyiz.
-                                Üretim gücümüzü sürekli geliştirerek, sistem entegrasyonu ve taşımada <b>yenilikçi çözümler sunmaya</b> devam ediyoruz.
-                                <b>"Güçlü Ordu, Güçlü Türkiye."</b>
+                                Otomotiv sektöründeki mühendislik ve üretim tecrübemizi, askeri alandaki deneyimimizle birleştirerek <b>Türk Savunma Sanayii projelerinde yer almanın gururunu ve sorumluluğunu</b> taşıyoruz. ZCN Group, ileri teknolojiye sahip <b>çok eksenli CNC takım tezgahları, CMM kalite kontrol ekipmanları</b> ve <b>etkin tedarik zinciri yapısı</b>yla titanyum, alüminyum, çelik, paslanmaz çelik, bakır alaşımları ve süper alaşımların işlenmesinde geniş bir üretim kapasitesine sahiptir. Savunma ve havacılık projelerinde görev alan değerli mühendislerimiz ve güçlü makine parkurumuz sayesinde <b>yüksek hassasiyet gerektiren parçaların üretiminde</b> güvenilir bir çözüm ortağı olarak faaliyet göstermekteyiz. Üretim gücümüzü sürekli geliştirerek, sistem entegrasyonu ve taşımada <b>yenilikçi çözümler sunmaya</b> devam ediyoruz. <b>"Güçlü Ordu, Güçlü Türkiye."</b>
                             </p>
                         </div>
                     </div>
@@ -344,3 +344,17 @@
         </div> *@
     </div>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const tagline = document.querySelector('.brand-tagline');
+        if (tagline) {
+            // Türkçe'ye özel uppercase
+            const text = tagline.textContent;
+            const turkishUpper = text
+                .replace(/i/g, 'İ')
+                .replace(/ı/g, 'I')
+                .toLocaleUpperCase('tr-TR');
+            tagline.textContent = turkishUpper;
+        }
+    });
+</script>

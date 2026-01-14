@@ -110,14 +110,15 @@
 
 /* Tagline - Zenith Confidence Nexus */
 .brand-tagline {
-    font-family: 'Poppins', 'Segoe UI', sans-serif;
-    font-weight: 600;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, sans-serif;
+    font-weight: 700;
     font-size: 32px;
     color: #ffffff;
     letter-spacing: 3px;
     text-transform: uppercase;
-    margin-top: 0; /* margin-top'u sıfırla */
+    margin-top: 0;
     margin-bottom: 0;
     text-shadow: 0 3px 15px rgba(0, 0, 0, 0.6);
     animation: fadeUp 1.8s ease-out;
+    line-height: 1.3;
 }

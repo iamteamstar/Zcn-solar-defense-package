@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -92,16 +94,9 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <div class="about-content">
-                    <h3 style="color:darkblue; ">Hakkımızda</h3>
+                    <h3 style="color:darkblue; ">@Localizer["AboutUs"]</h3>
                     <p style="text-align:justify;color:black;">
-                        <b>ZCN Group</b>, mükemmellik anlayışını merkezine alan yenilikçi bir üretim şirketidir.
-                        Geniş ürün yelpazemiz, güçlü üretim altyapımız ve mühendislik odaklı yaklaşımımızla, müşterilerimizin beklentilerini en üst düzeyde karşılamayı hedefliyoruz.
-                        Bu doğrultuda, ülkemize değer katarak <b>Türkiye’de ve Avrupa’da saygın, güvenilir ve sürdürülebilir bir marka</b> olmayı temel vizyonumuz olarak belirledik.
-                        Grubumuz; sahip olduğu teknik yetkinlikler, tecrübeli kadrosu ve güçlü iş ortaklarıyla <b>Savunma Sanayii, Solar Enerji Sistemleri</b> ve <b> Endüstriyel Ambalaj</b> alanlarında yüksek kalite standartlarında ürün ve hizmetler sunmaktadır.
-                        Her projede,<b>
-                            sürdürülebilirlik, güvenilirlik
-                        </b> ve <b>mühendislik mükemmeliyeti</b> ilkelerini önceliklendirerek, müşterilerimiz için kalıcı değer üretmeyi amaçlıyoruz.
-                        Metal ve Ambalaj Grubumuza ait yetkinliklerimiz, tecrübelerimiz ve güçlü partnerlerimiz ile Otomotiv Sanayi, Savunma Sanayi, Solar Enerji & Elektirk sanayi, Yol ve Ray Sanayilerine yüksek kalite de ürün ve hizmetler sunmaktayız.
+                        <b>ZCN Group</b>, @Html.Raw(Localizer["AboutText"].Value)
                     </p>
                 </div>
             </div>

@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <head>
@@ -36,12 +38,10 @@
 		<div class="row">
 			<div class="col-lg-6 col-md-12">
 				<div class="about-content">
-					<h3>Hakkımızda</h3>
+					<h3>@Localizer["AboutUs"]</h3>
 					<p>
-						<b>ZCN Group</b>, mükemmellik anlayışını merkezine alan yenilikçi bir üretim şirketidir.
-						Geniş ürün yelpazemiz, güçlü üretim altyapımız ve mühendislik odaklı yaklaşımımızla, müşterilerimizin beklentilerini en üst düzeyde karşılamayı hedefliyoruz.
-						Bu doğrultuda, ülkemize değer katarak <b>Türkiye'de ve Avrupa'da saygın, güvenilir ve sürdürülebilir bir marka</b> olmayı temel vizyonumuz olarak belirledik<span class="dots">...</span><a href="/Home/About" class="inline-read-more">
-							<span>Devamını Oku</span>
+						<b>ZCN Group</b>, @Html.Raw(Localizer["AboutText"].Value)<span class="dots">...</span><a href="/Home/About" class="inline-read-more">
+							<span>@Localizer["ReadMore"]</span>
 							<svg width="14" height="14" viewBox="0 0 16 16" fill="none">
 								<path d="M8 1L15 8L8 15M15 8H1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 							</svg>
@@ -59,37 +59,125 @@
 </section>
 
 <style>
-	/* 🔹 SADECE Sektörlerimiz kısmını etkiler */
+	/* Bölüm genel ayarları */
 	section.projects-area.section-padding {
-		padding-top: 10px !important; /* üst boşluğu azaltır (varsayılan genelde 100px) */
-		padding-bottom: 10px !important; /* alt boşluğu azaltır */
-		margin-top: 0 !important;
-		margin-bottom: 0 !important;
+		padding-top: 10px !important;
+		padding-bottom: 0px !important;
+		margin: 0 !important;
+		margin-top: -60px !important; /* veya -60px daha da yaklaştırmak için */
 	}
 
-	/* 🔹 Görsellerin yüksekliğini kısaltır */
-	.project-img {
-		height: 350px !important; /* İstediğiniz yüksekliği ayarlayın (örn: 250px, 300px) */
+	/* Başlık düzenlemesi */
+	.section-title h2 {
+		color: #00205b !important; /* Koyu lacivert */
+		margin-bottom: -40px !important;
+		font-weight: 600 !important;
+	}
+
+	/* Kart container'ı için eşit boşluk */
+	#project-slide .owl-stage-outer {
+		padding: 15px 0 !important;
+	}
+
+	/* Her bir kart için düzenleme */
+	.project-single-item {
+		margin: 0 10px !important;
+		border-radius: 8px !important;
 		overflow: hidden !important;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+		transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+		height: 360px !important; /* Tüm kartlar aynı yükseklikte */
+	}
+
+		.project-single-item:hover {
+			transform: translateY(-5px) !important;
+			box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+		}
+
+	/* Görseller için düzenleme */
+	.project-img {
+		height: 260px !important;
+		overflow: hidden !important;
+		position: relative !important;
 	}
 
 		.project-img img {
 			width: 100% !important;
 			height: 100% !important;
-			object-fit: cover !important; /* Görseli kırpmadan kutuya sığdırır */
+			object-fit: cover !important;
+			transition: transform 0.3s ease !important;
 		}
 
-	.category {
-		display: inline-flex !important;
-		flex-direction: row !important;
-		align-items: center !important; /* Dikey ortalama */
-		gap: 6px; /* ikon ile yazı arası boşluk */
+	.project-single-item:hover .project-img img {
+		transform: scale(1.05) !important;
 	}
 
+	/* Overlay bilgi kutusu */
+	.project-overlay-info {
+		display: flex !important;
+		align-items: center !important;
+		justify-content: space-between !important;
+		padding: 18px 20px !important;
+		background: #fff !important;
+		height: 100px !important; /* Sabit yükseklik */
+		text-decoration: none !important;
+		transition: background 0.3s ease !important;
+	}
+
+		.project-overlay-info:hover {
+			background: #f8f9fa !important;
+		}
+
+	/* Kategori (logo + yazı) düzenlemesi */
+	.category {
+		display: flex !important;
+		align-items: center !important;
+		gap: 12px !important;
+		font-size: 16px !important;
+		font-weight: 600 !important;
+		color: #00205b !important;
+		flex: 1 !important;
+	}
+
+	/* Logo ikonları */
 	.cat-icon {
-		width: 30px;
-		height: 30px;
-		object-fit: contain;
+		width: 40px !important;
+		height: 40px !important;
+		object-fit: contain !important;
+		flex-shrink: 0 !important; /* Logo boyutu sabit kalsın */
+	}
+
+	/* Ok ikonu */
+	.project-overlay-info i {
+		font-size: 28px !important;
+		color: white !important;
+		transition: transform 0.3s ease, color 0.3s ease !important;
+		margin-left: 10px !important;
+		flex-shrink: 0 !important;
+	}
+
+	.project-overlay-info:hover i {
+		transform: translateX(5px) !important;
+		color: #003d82 !important;
+	}
+
+	/* Owl Carousel noktalar (dots) */
+	.owl-dots {
+		margin-top: 30px !important;
+		text-align: center !important;
+	}
+
+	.owl-dot {
+		width: 12px !important;
+		height: 12px !important;
+		background: #ddd !important;
+		border-radius: 50% !important;
+		margin: 0 5px !important;
+	}
+
+		.owl-dot.active {
+			background: #00205b !important;
+		
 	}
 </style>
 
@@ -99,7 +187,7 @@
 			<div class="col-md-12">
 				<div class="section-title">
 					
-					<h2 style="color:darkblue">Sektörlerimiz</h2>
+					<h2 style="color:darkblue">@Localizer["OurSectors"]</h2>
 				</div>
 			</div>
 			<div class="col-md-12">
@@ -111,21 +199,18 @@
 						<a href="~/Defense/Index" class="project-overlay-info">
 							<span class="category">
 								<img src="~/images/ZCN/savunmalogo_favicon.png" class="cat-icon">
-								ZCN Savunma
+                                @Localizer["DefenseIndustry"]
 							</span>
 							<i class="fa fa-arrow-right"></i>
 						</a>
-
-
-
-					</div>
+						</div>
 					<div class="project-single-item">
 						<div class="project-img">
 							<img src="~/images/projects/project-1.jpg" alt="">
 						</div>
 						<a href="~/Solar/Index" class="project-overlay-info">
 							<span class="category">
-								<img src="~/images/ZCN/yesillogo_favicon.png" class="cat-icon">IEF Solar
+								<img src="~/images/ZCN/yesillogo_favicon.png" class="cat-icon">@Localizer["SolarIndustry"]
 							</span>
 							@*<h5>House Solar Panel</h5>*@
 							<i class="fa fa-arrow-right"></i>
@@ -138,7 +223,8 @@
 						<a href="~/Packaging/Index" class="project-overlay-info">
 							<span class="category">
 								<img src="~/images/ZCN/mavimsilogo_faviocon.png" class="cat-icon">
-								NBC Ambalaj</span>
+								@Localizer["PackagingIndustry"]
+							</span>
 							@*<h5>Ambalaj</h5>*@
 							<i class="fa fa-arrow-right"></i>
 						</a>

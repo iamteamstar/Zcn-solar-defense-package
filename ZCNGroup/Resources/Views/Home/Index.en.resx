@@ -118,45 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutText" xml:space="preserve">
-    <value />
+    <value>It is an innovative manufacturing company that places the concept of excellence at its core.
+With our wide product range, strong production infrastructure, and engineering-oriented approach, we aim to meet our customers’ expectations at the highest level.
+In this direction, we have defined our core vision as becoming &lt;b&gt;a respected, reliable, and sustainable brand in Türkiye and Europe&lt;/b&gt; by It is an innovative manufacturing company that places the concept of excellence at its core.
+With our wide product range, strong production infrastructure, and engineering-oriented approach, we aim to meet our customers’ expectations at the highest level.
+In this direction, we have defined our core vision as becoming &lt;b&gt;a respected, reliable, and sustainable brand in Türkiye and Europe&lt;/b&gt; by adding value to our country.</value>
   </data>
   <data name="AboutUs" xml:space="preserve">
     <value>About Us</value>
   </data>
-  <data name="AllRightsReserved" xml:space="preserve">
-    <value>All Rights Reserved</value>
-  </data>
-  <data name="Contact" xml:space="preserve">
-    <value>Contact</value>
-  </data>
   <data name="ContactInfo" xml:space="preserve">
-    <value>Contact Information</value>
+    <value>Our Sectors</value>
   </data>
-  <data name="Defense" xml:space="preserve">
-    <value>Defense</value>
+  <data name="DefenseIndustry" xml:space="preserve">
+    <value>ZCN Defense</value>
   </data>
-  <data name="GetContact" xml:space="preserve">
-    <value>Contact Us</value>
+  <data name="OurSectors" xml:space="preserve">
+    <value>Our Sectors</value>
   </data>
-  <data name="Home" xml:space="preserve">
-    <value>Home</value>
+  <data name="PackagingIndustry" xml:space="preserve">
+    <value>NBC Packaging</value>
   </data>
-  <data name="Language" xml:space="preserve">
-    <value>Language</value>
+  <data name="ReadMore" xml:space="preserve">
+    <value>Read More</value>
   </data>
-  <data name="Packaging" xml:space="preserve">
-    <value>Packaging</value>
-  </data>
-  <data name="Services" xml:space="preserve">
-    <value>Services</value>
-  </data>
-  <data name="Solar" xml:space="preserve">
-    <value>Solar</value>
-  </data>
-  <data name="SupportMail" xml:space="preserve">
-    <value>Mail</value>
-  </data>
-  <data name="TelNo" xml:space="preserve">
-    <value>Phone Num</value>
+  <data name="SolarIndustry" xml:space="preserve">
+    <value>IEF Solar</value>
   </data>
 </root>

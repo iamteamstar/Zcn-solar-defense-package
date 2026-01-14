@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
     var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
     var isProductSection = currentAction == "Defence" || currentAction == "Solar" || currentAction == "Packaging";
 }
@@ -203,43 +205,50 @@
 
                             <!-- RD Navbar Nav -->
                             <div class="rd-navbar-nav-wrap">
-                                <div class="rd-navbar-main-item"><a class="button button-xs button-lighter" href="~/Home/Contact">İletişim</a></div>
+                                <div class="rd-navbar-main-item">
+                                    <a class="button button-xs button-lighter" href="~/Home/Contact">@Localizer["GetContact"]</a>
+                                </div>
+
                                 <ul class="rd-navbar-nav">
                                     <li class="rd-nav-item @(ViewContext.RouteData.Values["action"].ToString() == "Index" ? "active" : "")">
-                                        <a class="rd-nav-link" href="~/Home/Index">Home</a>
+                                        <a class="rd-nav-link" href="~/Home/Index">@Localizer["Home"]</a>
                                     </li>
                                     <li class="rd-nav-item @(ViewContext.RouteData.Values["action"].ToString() == "About" ? "active" : "")">
-                                        <a class="rd-nav-link" href="~/Home/About">Hakkımızda</a>
+                                        <a class="rd-nav-link" href="~/Home/About">@Localizer["AboutUs"]</a>
                                     </li>
                                     <li class="rd-nav-item @(isProductSection ? "active" : "")">
-                                        <a class="rd-nav-link" href="#">Sektörlerimiz</a>
-
-                                        <!-- RD Navbar Dropdown-->
+                                        <a class="rd-nav-link" href="#">@Localizer["Services"]</a>
                                         <ul class="rd-navbar-dropdown">
-                                            <li>
-                                                <a href="~/Defense/Index">ZCN Savunma</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Solar/Index">IEF Solar</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Packaging/Index">NBC Ambalaj</a>
-                                            </li>
+                                            <li><a href="~/Defense/Index">@Localizer["Defense"]</a></li>
+                                            <li><a href="~/Solar/Index">@Localizer["Solar"]</a></li>
+                                            <li><a href="~/Packaging/Index">@Localizer["Packaging"]</a></li>
                                         </ul>
                                     </li>
-                                    <li class="rd-nav-item @(isProductSection ? "active" : "")">
-                                        <a class="rd-nav-link" href="#">Dil</a>
 
-                                        <!-- RD Navbar Dropdown-->
-                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
-
+                                    <li class="rd-nav-item">
+                                        <a class="rd-nav-link" href="#">@Localizer["Language"]</a>
                                         <ul class="rd-navbar-dropdown">
-                                            <li><a href="~/Defense/Index"><span class="flag-icon flag-icon-tr"></span> Türkçe</a></li>
-                                            <li><a href="~/Solar/Index"><span class="flag-icon flag-icon-gb"></span> English</a></li>
-                                            <li><a href="~/Packaging/Index"><span class="flag-icon flag-icon-fr"></span> Français</a></li>
-                                            <li><a href="~/Packaging/Index"><span class="flag-icon flag-icon-de"></span> Deutsch</a></li>
+                                            <li>
+                                                <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="tr-TR">
+                                                    <span class="flag-icon flag-icon-tr"></span> Türkçe
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-US">
+                                                    <span class="flag-icon flag-icon-gb"></span> English
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="fr-FR">
+                                                    <span class="flag-icon flag-icon-fr"></span> Français
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="de-DE">
+                                                    <span class="flag-icon flag-icon-de"></span> Deutsch
+                                                </a>
+                                            </li>
                                         </ul>
-
                                     </li>
                                 </ul>
                             </div>
@@ -261,29 +270,18 @@
                         </div>
 
                         <div class="col-sm-4 col-md-6 col-lg-3 col-xl-2 col-xxl-1">
-                            <h4 class="heading-bordered">İletişim</h4>
+                            <h4 class="heading-bordered">@Localizer["Contact"]</h4>
                             <ul class="list-md">
                                 <li>
-                                    <p class="address">İstanbul/Türkiye</p>
-                                </li>
-                                <li>
                                     <dl class="list-terms-inline">
-                                        <dt>Mail Adress</dt>
-                                        <dd><a href="mailto:#">info@zcngroup.com</a></dd>
+                                        <dt>@Localizer["SupportMail"]</dt>
+                                        <dd><a href="mailto:info@zcngroup.com">info@zcngroup.com</a></dd>
                                     </dl>
                                 </li>
                                 <li>
                                     <dl class="list-terms-inline">
-                                        <dt>Phone</dt>
-                                        <dd><a href="tel:#">0850 304 64 20</a></dd>
-                                    </dl>
-                                    <dl class="list-terms-inline">
-                                        <dt>GSM</dt>
-                                        <dd><a href="GSM:#">+90 532 418 40 32 </a></dd>
-                                    </dl>
-                                    <dl class="list-terms-inline">
-                                        <dt>Adress</dt>
-                                        <dd><a href="GSM:#">Şenlikköy mh. Yeşilköy cd. No93/2 Bakırköy İstanbul </a></dd>
+                                        <dt>@Localizer["TelNo"]</dt>
+                                        <dd><a href="tel:08503046420">0850 304 64 20</a></dd>
                                     </dl>
                                 </li>
                             </ul>
