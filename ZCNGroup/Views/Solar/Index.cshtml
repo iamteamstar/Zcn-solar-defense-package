@@ -58,10 +58,10 @@
                 <div class="swiper-slide bg-gray-dark" data-slide-bg="/images/ZCN/solar.png">
                     <div class="swiper-slide-caption">
                         <div class="container">
-                            <h1 data-caption-animate="fadeInUpSmall" data-caption-delay="100">Enhancing <br> SOLAR </h1>
+                            <h1 data-caption-animate="fadeInUpSmall" data-caption-delay="100">Geliştirici <br> SOLAR </h1>
                             <div class="object-decorated">
                                 <span class="object-decorated__divider" data-caption-animate="fadeInRightSmall" data-caption-delay="300"></span>
-                                <h4 data-caption-animate="fadeInRightSmall" data-caption-delay="550">to Achieve More</h4>
+                                <h4 data-caption-animate="fadeInRightSmall" data-caption-delay="550">Daha Fazlasını Başarmak İçin</h4>
                             </div>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
         </div>
         <div class="section-layout-aside__item">
             <a class="thumb-modern" href="~/Solar/Index">
-                <img class="thumb-modern__image" src="~/images/ZCNSTOCKS/ambalajindex.jpg" alt="" width="590" height="200" />
+                <img class="thumb-modern__image" src="~/images/ZCNSTOCKS/enerji_depolama.png" alt="" width="590" height="200" />
                 <img class="corner-logo" src="~/images/ZCN/yesillogo.png" alt="Logo" />
                 <div class="thumb-modern__caption">
                     <p class="thumb-modern__title">Solar</p>
@@ -202,17 +202,30 @@
                     <div class="section-md container-fluid-cell">
                         <div class="box-centered box-width-1 about-content">
                             <h3>
-                                <span>Hakkımızda - Savunma Sanayii</span>
+                                <span>Hakkımızda - IEF Solar</span>
                                 <span class="object-decorated object-decorated_inline">
                                     <span class="object-decorated__divider"></span>
                                 </span>
                             </h3>
                             <p>
-                                Otomotiv sektöründeki mühendislik ve üretim tecrübemizi, askeri alandaki deneyimimizle birleştirerek <b>Türk Savunma Sanayii projelerinde yer almanın gururunu ve sorumluluğunu</b> taşıyoruz.
-                                ZCN Group, ileri teknolojiye sahip <b>çok eksenli CNC takım tezgahları, CMM kalite kontrol ekipmanları</b> ve <b>etkin tedarik zinciri yapısı</b>yla titanyum, alüminyum, çelik, paslanmaz çelik, bakır alaşımları ve süper alaşımların işlenmesinde geniş bir üretim kapasitesine sahiptir.
-                                Savunma ve havacılık projelerinde görev alan değerli mühendislerimiz ve güçlü makine parkurumuz sayesinde <b>yüksek hassasiyet gerektiren parçaların üretiminde</b> güvenilir bir çözüm ortağı olarak faaliyet göstermekteyiz.
-                                Üretim gücümüzü sürekli geliştirerek, sistem entegrasyonu ve taşımada <b>yenilikçi çözümler sunmaya</b> devam ediyoruz.
-                                <b>"Güçlü Ordu, Güçlü Türkiye."</b>
+                                <b>IEF Solar, ZCN Group’un</b>  bir iştiraki olarak güneş enerjisi sistemleri alanında faaliyet göstermektedir.
+                                Ana üretim tesislerimiz, İstanbul ve Bursa Organize Sanayi Bölgeleri’nde yer almakta olup, toplam<b>  7.000 m²’lik üretim alanında</b>  faaliyet göstermektedir.
+
+                                Yenilikçi tasarımlarımız ve üretim uzmanlığımızla, müşterilerimizin kalite beklentilerini karşılayan <b> yüksek katma değerli, komple solar sistem</b>  çözümleri sunuyoruz.
+
+                                Bünyemizde;
+                                <b>  3 rollform hattı, 2 lazer kesim tezgâhı, 2 abkant pres, 2 CNC punch tezgâhı ve kaynaklı imalat birimlerimiz</b>  ile güçlü makine parkurumuz ve deneyimli ekibimizle, yüksek üretim kapasitesiyle;.
+
+                                <b> Arazi ve PV sistemleri,
+
+                                Çatı uygulamaları,
+
+                                Carport sistemleri,
+
+                                Enerji depolama ve ısıtma çözümlerine </b> hizmet vermekteyiz.
+
+                                IEF Solar, mühendislik gücünü sürdürülebilirlik vizyonuyla birleştirerek <b> geleceğin enerji altyapısını bugünden şekillendirmektedir.</b>
+
                             </p>
                         </div>
                     </div>
@@ -352,65 +365,41 @@
 
     
 </div>
-         
 
-<script>
-    // Sistem adlarını URL parametrelerine dönüştüren mapping
-    const systemMapping = {
-        'Arazi Sistemleri': 'arazi',
-        'Tarım Sistemleri': 'tarim',
-        'Carport Sistemleri': 'carport',
-        'Çatı Sistemleri': 'cati',
-        'Enerji Depolama Sistemleri': 'depolama'
-    };
 
-    // Kartlara tıklama olayı
-    document.querySelectorAll('.card').forEach(card => {
-        card.addEventListener('click', function(e) {
-            if (!e.target.closest('.card-link')) {
-                const link = this.querySelector('.card-link');
-                if (link) {
-                    window.location.href = link.getAttribute('href');
+    <script>
+        // Kartlara tıklama olayı - doğrudan href linkini kullan
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function(e) {
+                // Eğer tıklanan yer link değilse, kartın içindeki linki bul ve yönlendir
+                if (!e.target.closest('.card-link')) {
+                    const link = this.querySelector('.card-link');
+                    if (link) {
+                        window.location.href = link.getAttribute('href');
+                    }
                 }
-            }
+            });
         });
-    });
 
-    // Link tıklama olayı
-    document.querySelectorAll('.card-link').forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const title = this.closest('.card').querySelector('.card-title').textContent;
-            const systemType = systemMapping[title];
+        // Scroll animasyonu için intersection observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
-            console.log('Detay sayfasına gidiliyor:', title, '- Sistem:', systemType);
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
 
-            // Details sayfasına sistem parametresi ile yönlendir
-            if (systemType) {
-                window.location.href = '/Solar/Details?system=' + systemType;
-            }
+        document.querySelectorAll('.card').forEach(card => {
+            observer.observe(card);
         });
-    });
-
-    // Scroll animasyonu için intersection observer
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.card').forEach(card => {
-        observer.observe(card);
-    });
-</script>
+    </script>
 
 <!-- Start Services Section -->
 @* <section class="services-section pt-100 pb-70">

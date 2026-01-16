@@ -117,27 +117,50 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AboutText" xml:space="preserve">
-    <value>mükemmellik anlayışını merkezine alan yenilikçi bir üretim şirketidir.
-						Geniş ürün yelpazemiz, güçlü üretim altyapımız ve mühendislik odaklı yaklaşımımızla, müşterilerimizin beklentilerini en üst düzeyde karşılamayı hedefliyoruz.
-						Bu doğrultuda, ülkemize değer katarak &lt;b&gt;Türkiye'de ve Avrupa'da saygın, güvenilir ve sürdürülebilir bir marka&lt;/b&gt; olmayı temel vizyonumuz olarak belirledik</value>
-  </data>
   <data name="AboutUs" xml:space="preserve">
-    <value>Hakkımızda</value>
+    <value>Über Uns – Verteidigungsindustrie</value>
   </data>
-  <data name="DefenseIndustry" xml:space="preserve">
-    <value>ZCN Savunma</value>
+  <data name="CompanySlogan" xml:space="preserve">
+    <value>Erfahrung aus dem Einsatz, Stärke aus der Produktion</value>
   </data>
-  <data name="OurSectors" xml:space="preserve">
-    <value>Sektörlerimiz</value>
+  <data name="DefenseDescription" xml:space="preserve">
+    <value>Durch die Kombination unserer Engineering- und Fertigungserfahrung im Automobilsektor mit unserer Expertise im militärischen Bereich tragen wir mit Stolz die Ehre und Verantwortung, &lt;b&gt;an Projekten der türkischen Verteidigungsindustrie mitzuwirken&lt;/b&gt;. Die ZCN Group verfügt über eine breite Produktionskapazität für die Bearbeitung von Titan, Aluminium, Stahl, Edelstahl, Kupferlegierungen und Superlegierungen, unterstützt durch &lt;b&gt;hochmoderne mehrachsige CNC-Werkzeugmaschinen, CMM-Qualitätskontrollsysteme&lt;/b&gt; sowie eine &lt;b&gt;effiziente Lieferkettenstruktur&lt;/b&gt;. Dank unserer geschätzten Ingenieure, die an Verteidigungs- und Luftfahrtprojekten beteiligt sind, und unseres leistungsstarken Maschinenparks agieren wir als zuverlässiger Lösungspartner bei der &lt;b&gt;Fertigung hochpräziser Bauteile&lt;/b&gt;. Durch die kontinuierliche Weiterentwicklung unserer Produktionsleistung bieten wir weiterhin &lt;b&gt;innovative Lösungen&lt;/b&gt; in den Bereichen Systemintegration und Transport. &lt;b&gt;"Starke Armee, Starkes Türkiye."&lt;/b&gt;</value>
   </data>
-  <data name="PackagingIndustry" xml:space="preserve">
-    <value>NBC Ambalaj</value>
+  <data name="Machine1Text" xml:space="preserve">
+    <value>Dank unserer mehrachsigen Bearbeitungsmöglichkeiten können Titan, auf über 60 HRC gehärtete Stähle, Keramiklegierungen und Halbleitermaterialien erfolgreich nach hohen Qualitäts- und Präzisionsstandards gefertigt werden.</value>
   </data>
-  <data name="ReadMore" xml:space="preserve">
-    <value>Devamını Oku</value>
+  <data name="Machine1Title" xml:space="preserve">
+    <value>Hochpräzise Fertigung von schwer zerspanbaren Werkstoffen</value>
   </data>
-  <data name="SolarIndustry" xml:space="preserve">
-    <value>IEF Solar</value>
+  <data name="Machine2Text" xml:space="preserve">
+    <value>Im Rahmen unserer neuen Maschineninvestitionen wurde zur Unterstützung hochpräziser, technologiegestützter Fertigung und der Herstellung hochwertiger Produkte die Ultraschall-Werkzeughaltertechnologie in unsere 5-Achsen- und 3-Achsen-CNC-Maschinen integriert.</value>
+  </data>
+  <data name="Machine2Title" xml:space="preserve">
+    <value>Getriebemechanismus-Komponenten</value>
+  </data>
+  <data name="Machine3Info" xml:space="preserve">
+    <value>Tischdurchmesser 320 mm – Mittenhöhe 210 mm</value>
+  </data>
+  <data name="Machine3Text" xml:space="preserve">
+    <value>&lt;li&gt;Große Werkstückunterstützung mit 320 mm Tischdurchmesser&lt;/li&gt;
+&lt;li&gt;210 mm Mittenhöhe&lt;/li&gt;
+&lt;li&gt;Präzise Winkelverstellung&lt;/li&gt;
+&lt;li&gt;CNC-Integration vorhanden&lt;/li&gt;
+&lt;li&gt;Hohe Haltbarkeit und Stabilität&lt;/li&gt;</value>
+  </data>
+  <data name="Machine3Title" xml:space="preserve">
+    <value>DEX RDS250R Rundtisch</value>
+  </data>
+  <data name="Machine4Text" xml:space="preserve">
+    <value>Wir haben unsere Präzisionsfertigungskompetenz durch die Integration der CMM-Messtechnologie (1000×600) in unseren Maschinenpark gekrönt. Mit unserem Koordinatenmessgerät der neuesten Generation, ausgestattet mit einem ZEISS-Tastersystem, gewährleisten wir selbst bei den komplexesten Bauteilen eine Maßgenauigkeit im Mikrometerbereich und schließen die digitale Transformation unserer Qualitätskontrollprozesse ab.</value>
+  </data>
+  <data name="Machine4Title" xml:space="preserve">
+    <value>Koordinatenmessgerät</value>
+  </data>
+  <data name="OurProjects" xml:space="preserve">
+    <value>Unsere Projekte</value>
+  </data>
+  <data name="ProjectText" xml:space="preserve">
+    <value>Ein weiterer starker Schritt für die High-Tech-Produktion</value>
   </data>
 </root>

@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
     <head>
@@ -76,7 +78,7 @@
                         <div class="home-slider-content">
                             <div class="logo-container">
                                 <img src="@Url.Content("~/images/ZCN/savunmalogo.png")" alt="ZCN Group Logo" class="slider-logo">
-                                <h2 class="brand-tagline">Tecrübe Sahadan Güç Üretimden</h2>
+                                <h2 class="brand-tagline">@Localizer["CompanySlogan"]</h2>
                             </div>
                         </div>
                     </div>
@@ -96,13 +98,13 @@
                     <div class="section-md container-fluid-cell">
                         <div class="box-centered box-width-1 about-content">
                             <h3>
-                                <span>Hakkımızda - Savunma Sanayii</span>
+                                <span>@Localizer["AboutUs"]</span>
                                 <span class="object-decorated object-decorated_inline">
                                     <span class="object-decorated__divider"></span>
                                 </span>
                             </h3>
                             <p>
-                                Otomotiv sektöründeki mühendislik ve üretim tecrübemizi, askeri alandaki deneyimimizle birleştirerek <b>Türk Savunma Sanayii projelerinde yer almanın gururunu ve sorumluluğunu</b> taşıyoruz. ZCN Group, ileri teknolojiye sahip <b>çok eksenli CNC takım tezgahları, CMM kalite kontrol ekipmanları</b> ve <b>etkin tedarik zinciri yapısı</b>yla titanyum, alüminyum, çelik, paslanmaz çelik, bakır alaşımları ve süper alaşımların işlenmesinde geniş bir üretim kapasitesine sahiptir. Savunma ve havacılık projelerinde görev alan değerli mühendislerimiz ve güçlü makine parkurumuz sayesinde <b>yüksek hassasiyet gerektiren parçaların üretiminde</b> güvenilir bir çözüm ortağı olarak faaliyet göstermekteyiz. Üretim gücümüzü sürekli geliştirerek, sistem entegrasyonu ve taşımada <b>yenilikçi çözümler sunmaya</b> devam ediyoruz. <b>"Güçlü Ordu, Güçlü Türkiye."</b>
+                                @Html.Raw(Localizer["DefenseDescription"].Value)
                             </p>
                         </div>
                     </div>
@@ -159,11 +161,10 @@
 	</div>
 </section><!--silme--> *@
 <!-- End Feature Section -->
-
 <div class="machine-park-section">
     <div class="section-header">
-        <h2 class="section-title">Makine Parkurumuz</h2>
-        <p class="section-subtitle">Yüksek teknolojili üretim için güçlü bir adım daha</p>
+        <h2 class="section-title">@Localizer["OurProjects"]</h2>
+        <p class="section-subtitle">@Localizer["ProjectText"]</p>
     </div>
 
     <div class="machine-timeline">
@@ -175,10 +176,10 @@
                 <div class="machine-number">01</div>
             </div>
             <div class="machine-details">
-                <h3 class="machine-name">Zor İşlenen Malzemelerde Yüksek Hassasiyetli Üretim</h3>
+                <h3 class="machine-name">@Localizer["Machine1Title"]</h3>
                 @* <div class="machine-basic-info">X2000 Y1200 Z762</div> *@
                 <ul class="specs-list">
-                    <li>Çok eksenli işleme kabiliyetimiz sayesinde titanyum, 60 HRC üzeri sertleştirilmiş çelikler, seramik alaşımları ve yarı iletken malzemeler, yüksek kalite ve hassasiyet standartlarında başarıyla üretilebilmektedir.</li>
+                    <li>@Localizer["Machine1Text"]</li>
                     @* <li>Geniş çalışma alanı: 2000x1200x762mm</li>
                     <li>Çift kolon yapısı ile maksimum stabilite</li>
                     <li>Ağır parça işleme kapasitesi</li>
@@ -195,10 +196,10 @@
                 <div class="machine-number">02</div>
             </div>
             <div class="machine-details">
-                <h3 class="machine-name">Yüksek Teknolojili Üretim İçin Güçlü Bir Adım Daha</h3>
+                <h3 class="machine-name">@Localizer["Machine2Title"]</h3>
                 @* <div class="machine-basic-info">Tabla Çapı 320mm - Merkez Yüksekliği 210mm</div> *@
                 <ul class="specs-list">
-                    <li>Yaptığımız yeni makine yatırımları kapsamında, yüksek teknolojiye dayalı hassas imalat ve kaliteli ürün üretimini desteklemek amacıyla 5 eksen ve 3 eksen CNC tezgahlarımıza ultrasonik takım tutucu teknolojisi entegre edilmiştir.</li>
+                    <li>@Localizer["Machine2Text"]</li>
                    @*  <li>210mm merkez yüksekliği</li>
                     <li>Hassas açı ayarlama özelliği</li>
                     <li>CNC entegrasyonu mevcut</li>
@@ -230,14 +231,10 @@
 
             <!-- Sonra metni koyun -->
             <div class="machine-details-2">
-                <h3 class="machine-name-2">DEX RDS250R Döner Tabla</h3>
-                <div class="machine-basic-info-2">Tabla Çapı 320mm - Merkez Yüksekliği 210mm</div>
+                <h3 class="machine-name-2">@Localizer["Machine3Title"]</h3>
+                <div class="machine-basic-info-2">@Localizer["Machine3Info"]</div>
                 <ul class="specs-list-2">
-                    <li>320mm tabla çapı ile geniş parça desteği</li>
-                    <li>210mm merkez yüksekliği</li>
-                    <li>Hassas açı ayarlama özelliği</li>
-                    <li>CNC entegrasyonu mevcut</li>
-                    <li>Yüksek dayanıklılık ve stabilite</li>
+                    @Html.Raw(Localizer["Machine3Text"].Value)
                 </ul>
             </div>
         </div>
@@ -250,10 +247,10 @@
                 <div class="machine-number">04</div>
             </div>
             <div class="machine-details">
-                <h3 class="machine-name">Yüksek Teknolojili Üretim İçin Güçlü Bir Adım Daha</h3>
+                <h3 class="machine-name">@Localizer["Machine4Title"]</h3>
                 @* <div class="machine-basic-info">Tabla Çapı 320mm - Merkez Yüksekliği 210mm</div> *@
                 <ul class="specs-list">
-                    <li>Yaptığımız yeni makine yatırımları kapsamında, yüksek teknolojiye dayalı hassas imalat ve kaliteli ürün üretimini desteklemek amacıyla 5 eksen ve 3 eksen CNC tezgahlarımıza ultrasonik takım tutucu teknolojisi entegre edilmiştir.</li>
+                    <li></li>
                     @*  <li>210mm merkez yüksekliği</li>
                     <li>Hassas açı ayarlama özelliği</li>
                     <li>CNC entegrasyonu mevcut</li>

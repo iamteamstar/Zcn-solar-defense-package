@@ -117,27 +117,50 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AboutText" xml:space="preserve">
-    <value>Es handelt sich um ein innovatives Produktionsunternehmen, das das Verständnis von Exzellenz in den Mittelpunkt stellt.
-Mit unserem breiten Produktsortiment, unserer starken Produktionsinfrastruktur und unserem ingenieurorientierten Ansatz streben wir danach, die Erwartungen unserer Kunden auf höchstem Niveau zu erfüllen.
-In diesem Sinne haben wir es uns zur grundlegenden Vision gemacht, durch die Schaffung von Mehrwert für unser Land &lt;b&gt;eine angesehene, zuverlässige und nachhaltige Marke in der Türkei und in Europa&lt;/b&gt; zu werden.</value>
-  </data>
   <data name="AboutUs" xml:space="preserve">
-    <value>Über uns</value>
+    <value>À Propos de Nous – Industrie de la Défense</value>
   </data>
-  <data name="DefenseIndustry" xml:space="preserve">
-    <value>ZCN Verteidigung</value>
+  <data name="CompanySlogan" xml:space="preserve">
+    <value>L’expérience du terrain, la force de la production</value>
   </data>
-  <data name="OurSectors" xml:space="preserve">
-    <value>Unsere Branchen</value>
+  <data name="DefenseDescription" xml:space="preserve">
+    <value>En combinant notre expérience en ingénierie et en production dans le secteur automobile avec notre expertise dans le domaine militaire, nous assumons avec fierté l’honneur et la responsabilité de &lt;b&gt;participer aux projets de l’Industrie de la Défense turque&lt;/b&gt;. ZCN Group dispose d’une large capacité de production pour l’usinage du titane, de l’aluminium, de l’acier, de l’acier inoxydable, des alliages de cuivre et des superalliages, grâce à &lt;b&gt;des machines-outils CNC multi-axes de haute technologie, des équipements de contrôle qualité CMM&lt;/b&gt; et une &lt;b&gt;structure de chaîne d’approvisionnement efficace&lt;/b&gt;. Grâce à nos ingénieurs expérimentés impliqués dans des projets de défense et d’aéronautique ainsi qu’à notre parc machines performant, nous opérons en tant que partenaire de solution fiable dans la &lt;b&gt;fabrication de pièces de haute précision&lt;/b&gt;. En améliorant continuellement notre puissance de production, nous continuons à &lt;b&gt;proposer des solutions innovantes&lt;/b&gt; en matière d’intégration de systèmes et de transport. &lt;b&gt;"Armée Forte, Türkiye Forte."&lt;/b&gt;</value>
   </data>
-  <data name="PackagingIndustry" xml:space="preserve">
-    <value>NBC Verpackung</value>
+  <data name="Machine1Text" xml:space="preserve">
+    <value>Grâce à nos capacités d’usinage multi-axes, le titane, les aciers trempés au-delà de 60 HRC, les alliages céramiques et les matériaux semi-conducteurs peuvent être fabriqués avec succès selon des normes élevées de qualité et de précision.</value>
   </data>
-  <data name="ReadMore" xml:space="preserve">
-    <value>Mehr erfahren</value>
+  <data name="Machine1Title" xml:space="preserve">
+    <value>Fabrication de haute précision de matériaux difficiles à usiner</value>
   </data>
-  <data name="SolarIndustry" xml:space="preserve">
-    <value>IEF Solar</value>
+  <data name="Machine2Text" xml:space="preserve">
+    <value>Dans le cadre de nos nouveaux investissements en machines, la technologie de porte-outils ultrasonique a été intégrée à nos machines CNC 5 axes et 3 axes afin de soutenir une fabrication de précision basée sur la haute technologie et la production de produits de haute qualité.</value>
+  </data>
+  <data name="Machine2Title" xml:space="preserve">
+    <value>Composants de mécanismes d’engrenages</value>
+  </data>
+  <data name="Machine3Info" xml:space="preserve">
+    <value>Diamètre de table 320 mm – Hauteur du centre 210 mm</value>
+  </data>
+  <data name="Machine3Text" xml:space="preserve">
+    <value>&lt;li&gt;Large prise en charge des pièces grâce à un diamètre de table de 320 mm&lt;/li&gt;
+&lt;li&gt;Hauteur du centre de 210 mm&lt;/li&gt;
+&lt;li&gt;Fonction de réglage d’angle de haute précision&lt;/li&gt;
+&lt;li&gt;Intégration CNC disponible&lt;/li&gt;
+&lt;li&gt;Haute durabilité et stabilité&lt;/li&gt;</value>
+  </data>
+  <data name="Machine3Title" xml:space="preserve">
+    <value>Table rotative DEX RDS250R</value>
+  </data>
+  <data name="Machine4Text" xml:space="preserve">
+    <value>Nous avons couronné notre savoir-faire en fabrication de précision en intégrant une technologie de mesure CMM (1000×600) à notre parc machines. Grâce à notre machine à mesurer tridimensionnelle de nouvelle génération équipée d’un système de palpage ZEISS, nous garantissons une précision dimensionnelle au micron près, même pour les pièces les plus complexes, et achevons la transformation numérique de nos processus de contrôle qualité.</value>
+  </data>
+  <data name="Machine4Title" xml:space="preserve">
+    <value>Machine à mesurer tridimensionnelle</value>
+  </data>
+  <data name="OurProjects" xml:space="preserve">
+    <value>Nos Projets</value>
+  </data>
+  <data name="ProjectText" xml:space="preserve">
+    <value>Un pas fort de plus vers une production de haute technologie</value>
   </data>
 </root>

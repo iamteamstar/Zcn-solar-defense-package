@@ -117,32 +117,50 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AboutText" xml:space="preserve">
-    <value>It is an innovative manufacturing company that places the concept of excellence at its core.
-With our wide product range, strong production infrastructure, and engineering-oriented approach, we aim to meet our customers’ expectations at the highest level.
-In this direction, we have defined our core vision as becoming &lt;b&gt;a respected, reliable, and sustainable brand in Türkiye and Europe&lt;/b&gt; by It is an innovative manufacturing company that places the concept of excellence at its core.
-With our wide product range, strong production infrastructure, and engineering-oriented approach, we aim to meet our customers’ expectations at the highest level.
-In this direction, we have defined our core vision as becoming &lt;b&gt;a respected, reliable, and sustainable brand in Türkiye and Europe&lt;/b&gt; by adding value to our country.</value>
-  </data>
   <data name="AboutUs" xml:space="preserve">
-    <value>About Us</value>
+    <value>Hakkımızda - Savunma Sanayii</value>
   </data>
-  <data name="ContactInfo" xml:space="preserve">
-    <value>Our Sectors</value>
+  <data name="CompanySlogan" xml:space="preserve">
+    <value>Tecrübe Sahadan Güç Üretimden</value>
   </data>
-  <data name="DefenseIndustry" xml:space="preserve">
-    <value>ZCN Defense</value>
+  <data name="DefenseDescription" xml:space="preserve">
+    <value>Otomotiv sektöründeki mühendislik ve üretim tecrübemizi, askeri alandaki deneyimimizle birleştirerek &lt;b&gt;Türk Savunma Sanayii projelerinde yer almanın gururunu ve sorumluluğunu&lt;/b&gt; taşıyoruz. ZCN Group, ileri teknolojiye sahip &lt;b&gt;çok eksenli CNC takım tezgahları, CMM kalite kontrol ekipmanları&lt;/b&gt; ve &lt;b&gt;etkin tedarik zinciri yapısı&lt;/b&gt;yla titanyum, alüminyum, çelik, paslanmaz çelik, bakır alaşımları ve süper alaşımların işlenmesinde geniş bir üretim kapasitesine sahiptir. Savunma ve havacılık projelerinde görev alan değerli mühendislerimiz ve güçlü makine parkurumuz sayesinde &lt;b&gt;yüksek hassasiyet gerektiren parçaların üretiminde&lt;/b&gt; güvenilir bir çözüm ortağı olarak faaliyet göstermekteyiz. Üretim gücümüzü sürekli geliştirerek, sistem entegrasyonu ve taşımada &lt;b&gt;yenilikçi çözümler sunmaya&lt;/b&gt; devam ediyoruz. &lt;b&gt;"Güçlü Ordu, Güçlü Türkiye."&lt;/b&gt;</value>
   </data>
-  <data name="OurSectors" xml:space="preserve">
-    <value>Our Sectors</value>
+  <data name="Machine1Text" xml:space="preserve">
+    <value>Çok eksenli işleme kabiliyetimiz sayesinde titanyum, 60 HRC üzeri sertleştirilmiş çelikler, seramik alaşımları ve yarı iletken malzemeler, yüksek kalite ve hassasiyet standartlarında başarıyla üretilebilmektedir.</value>
   </data>
-  <data name="PackagingIndustry" xml:space="preserve">
-    <value>NBC Packaging</value>
+  <data name="Machine1Title" xml:space="preserve">
+    <value>Zor İşlenen Malzemelerde Yüksek Hassasiyetli Üretim</value>
   </data>
-  <data name="ReadMore" xml:space="preserve">
-    <value>Read More</value>
+  <data name="Machine2Text" xml:space="preserve">
+    <value>Yaptığımız yeni makine yatırımları kapsamında, yüksek teknolojiye dayalı hassas imalat ve kaliteli ürün üretimini desteklemek amacıyla 5 eksen ve 3 eksen CNC tezgahlarımıza ultrasonik takım tutucu teknolojisi entegre edilmiştir.</value>
   </data>
-  <data name="SolarIndustry" xml:space="preserve">
-    <value>IEF Solar</value>
+  <data name="Machine2Title" xml:space="preserve">
+    <value>Dişli Dekanizma Bileşenleri</value>
+  </data>
+  <data name="Machine3Info" xml:space="preserve">
+    <value>Tabla Çapı 320mm - Merkez Yüksekliği 210mm</value>
+  </data>
+  <data name="Machine3Text" xml:space="preserve">
+    <value>&lt;li&gt;320mm tabla çapı ile geniş parça desteği&lt;/li&gt;
+&lt;li&gt;210mm merkez yüksekliği&lt;/li&gt;
+&lt;li&gt;Hassas açı ayarlama özelliği&lt;/li&gt;
+&lt;li&gt;CNC entegrasyonu mevcut&lt;/li&gt;
+&lt;li&gt;Yüksek dayanıklılık ve stabilite&lt;/li&gt;</value>
+  </data>
+  <data name="Machine3Title" xml:space="preserve">
+    <value>DEX RDS250R Döner Tabla</value>
+  </data>
+  <data name="Machine4Text" xml:space="preserve">
+    <value>Hassas imalat yeteneğimizi, parkurumuza eklediğimiz CMM (1000x600) ölçüm teknolojisi ile taçlandırdık. Zeiss prob sistemine sahip yeni nesil koordinat ölçme cihazımızla, en karmaşık parçaların bile boyutsal doğruluğunu mikron düzeyinde garanti altına alıyor, kalite kontrol süreçlerimizde dijital dönüşümü tamamlıyoruz.</value>
+  </data>
+  <data name="Machine4Title" xml:space="preserve">
+    <value>Koordinat Ölçme Cihazı</value>
+  </data>
+  <data name="OurProjects" xml:space="preserve">
+    <value>Projelerimiz</value>
+  </data>
+  <data name="ProjectText" xml:space="preserve">
+    <value>Yüksek teknolojili üretim için güçlü bir adım daha</value>
   </data>
 </root>

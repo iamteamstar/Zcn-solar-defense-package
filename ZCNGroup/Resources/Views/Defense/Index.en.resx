@@ -117,27 +117,50 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AboutText" xml:space="preserve">
-    <value>Il s’agit d’une entreprise de production innovante qui place la notion d’excellence au cœur de son activité.
-Grâce à notre large gamme de produits, à notre solide infrastructure de production et à notre approche orientée ingénierie, nous visons à répondre aux attentes de nos clients au plus haut niveau.
-Dans cette optique, nous avons défini comme vision fondamentale de devenir &lt;b&gt;une marque respectée, fiable et durable en Turquie et en Europe&lt;/b&gt;, en apportant de la valeur à notre pays.</value>
-  </data>
   <data name="AboutUs" xml:space="preserve">
-    <value>À propos de nous</value>
+    <value>About Us – Defense Industry</value>
   </data>
-  <data name="DefenseIndustry" xml:space="preserve">
-    <value>ZCN Défense</value>
+  <data name="CompanySlogan" xml:space="preserve">
+    <value>Experience on the Field, Power from Production</value>
   </data>
-  <data name="OurSectors" xml:space="preserve">
-    <value>Nos Secteurs</value>
+  <data name="DefenseDescription" xml:space="preserve">
+    <value>By combining our engineering and manufacturing experience in the automotive sector with our expertise in the military field, we proudly bear the honor and responsibility of &lt;b&gt;taking part in projects of the Turkish Defense Industry&lt;/b&gt;. ZCN Group has a broad production capacity in machining titanium, aluminum, steel, stainless steel, copper alloys, and super alloys, supported by &lt;b&gt;advanced multi-axis CNC machine tools, CMM quality control equipment&lt;/b&gt;, and an &lt;b&gt;efficient supply chain structure&lt;/b&gt;. With our valuable engineers involved in defense and aerospace projects and our strong machine park, we operate as a reliable solution partner in the &lt;b&gt;manufacturing of high-precision components&lt;/b&gt;. By continuously enhancing our production capabilities, we continue to &lt;b&gt;deliver innovative solutions&lt;/b&gt; in system integration and transportation. &lt;b&gt;"Strong Army, Strong Türkiye."&lt;/b&gt;</value>
   </data>
-  <data name="PackagingIndustry" xml:space="preserve">
-    <value>NBC Emballage</value>
+  <data name="Machine1Text" xml:space="preserve">
+    <value>Thanks to our multi-axis machining capabilities, titanium, hardened steels above 60 HRC, ceramic alloys, and semiconductor materials can be successfully manufactured in accordance with high quality and precision standards.</value>
   </data>
-  <data name="ReadMore" xml:space="preserve">
-    <value>Lire la suite</value>
+  <data name="Machine1Title" xml:space="preserve">
+    <value>High-Precision Manufacturing of Difficult-to-Machine Materials</value>
   </data>
-  <data name="SolarIndustry" xml:space="preserve">
-    <value>IEF Solaire</value>
+  <data name="Machine2Text" xml:space="preserve">
+    <value>As part of our new machinery investments, ultrasonic tool holder technology has been integrated into our 5-axis and 3-axis CNC machines in order to support high-technology-based precision manufacturing and the production of high-quality products.</value>
+  </data>
+  <data name="Machine2Title" xml:space="preserve">
+    <value>Gear Mechanism Components</value>
+  </data>
+  <data name="Machine3Info" xml:space="preserve">
+    <value>Table Diameter 320 mm – Center Height 210 mm</value>
+  </data>
+  <data name="Machine3Text" xml:space="preserve">
+    <value>&lt;li&gt;Wide workpiece support with a 320 mm table diameter&lt;/li&gt;
+&lt;li&gt;210 mm center height&lt;/li&gt;
+&lt;li&gt;Precision angle adjustment capability&lt;/li&gt;
+&lt;li&gt;CNC integration available&lt;/li&gt;
+&lt;li&gt;High durability and stability&lt;/li&gt;</value>
+  </data>
+  <data name="Machine3Title" xml:space="preserve">
+    <value>DEX RDS250R Rotary Table</value>
+  </data>
+  <data name="Machine4Text" xml:space="preserve">
+    <value>We have crowned our precision manufacturing capability by adding CMM (1000×600) measurement technology to our machine park. With our next-generation coordinate measuring machine equipped with a ZEISS probe system, we ensure micron-level dimensional accuracy even for the most complex parts, completing the digital transformation of our quality control processes.</value>
+  </data>
+  <data name="Machine4Title" xml:space="preserve">
+    <value>Coordinate Measuring Machine</value>
+  </data>
+  <data name="OurProjects" xml:space="preserve">
+    <value>Our Projects</value>
+  </data>
+  <data name="ProjectText" xml:space="preserve">
+    <value>Another Strong Step Towards High-Tech Manufacturing</value>
   </data>
 </root>
