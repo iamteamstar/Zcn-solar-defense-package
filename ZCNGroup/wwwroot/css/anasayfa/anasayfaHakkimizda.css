@@ -62,7 +62,7 @@
     display: block !important;
     position: relative !important;
     width: 100% !important;
-    height: 250px !important; /* Metin yüksekliğine göre ayarlayın (örnek: 200px, 250px, 300px) */
+    height: 425px !important; /* Metin yüksekliğine göre ayarlayın (örnek: 200px, 250px, 300px) */
     overflow: hidden !important;
 }
 
