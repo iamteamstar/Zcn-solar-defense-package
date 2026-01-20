@@ -1,235 +1,223 @@
-﻿* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+﻿/* Contact Page Specific Styles - ZCN Group */
+/* Tüm stiller .contact-page-wrapper içinde izole edildi */
 
-body {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.contact-page-wrapper {
 	background: linear-gradient(135deg, #f5f7fa 0%, #e8f0f7 100%);
-	color: #1e3a5f;
+	min-height: 100vh;
+	padding-bottom: 50px;
 }
 
-.navbar {
-	background: white;
-	padding: 1rem 5%;
-	box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.logo {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: #1e3a5f;
-}
-
-.nav-links {
-	display: flex;
-	gap: 2rem;
-	list-style: none;
-}
-
-	.nav-links a {
-		text-decoration: none;
-		color: #1e3a5f;
-		font-weight: 500;
-		transition: color 0.3s;
-	}
-
-		.nav-links a:hover {
-			color: #2563eb;
-		}
-
-.contact-btn {
-	background: #2563eb;
-	color: white;
-	padding: 0.7rem 1.5rem;
-	border-radius: 5px;
-	text-decoration: none;
-	font-weight: 600;
-	transition: background 0.3s;
-}
-
-	.contact-btn:hover {
-		background: #1d4ed8;
-	}
-
-.hero-section {
-	text-align: center;
-	padding: 4rem 5% 3rem;
-	background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
-	color: white;
-}
-
-	.hero-section h1 {
-		font-size: 3rem;
-		margin-bottom: 1rem;
-		font-weight: 700;
-	}
-
-	.hero-section p {
-		font-size: 1.2rem;
-		opacity: 0.95;
-		max-width: 700px;
-		margin: 0 auto;
-	}
-
-.contact-container {
-	max-width: 1400px;
-	margin: -50px auto 0;
-	padding: 0 5% 5%;
-	position: relative;
-	z-index: 10;
-}
-
-.offices-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	gap: 2rem;
-	margin-bottom: 3rem;
-}
-
-.office-card {
-	background: white;
-	border-radius: 15px;
-	padding: 2.5rem;
-	box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-	transition: transform 0.3s, box-shadow 0.3s;
-	border-top: 4px solid #2563eb;
-}
-
-	.office-card:hover {
-		transform: translateY(-10px);
-		box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-	}
-
-.office-header {
-	display: flex;
-	align-items: center;
-	gap: 1rem;
-	margin-bottom: 2rem;
-	padding-bottom: 1.5rem;
-	border-bottom: 2px solid #e8f0f7;
-}
-
-.flag-icon {
-	font-size: 2.5rem;
-}
-
-.office-title {
-	font-size: 1.8rem;
-	font-weight: 700;
-	color: #1e3a5f;
-}
-
-.office-subtitle {
-	font-size: 0.95rem;
-	color: #64748b;
-	margin-top: 0.3rem;
-}
-
-.contact-info {
-	display: flex;
-	flex-direction: column;
-	gap: 1.5rem;
-}
-
-.info-item {
-	display: flex;
-	align-items: flex-start;
-	gap: 1rem;
-}
-
-.info-icon {
-	width: 40px;
-	height: 40px;
-	background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: white;
-	font-size: 1.2rem;
-	flex-shrink: 0;
-}
-
-.info-content {
-	flex: 1;
-}
-
-.info-label {
-	font-size: 0.85rem;
-	color: #64748b;
-	margin-bottom: 0.3rem;
-	text-transform: uppercase;
-	font-weight: 600;
-	letter-spacing: 0.5px;
-}
-
-.info-text {
-	color: #1e3a5f;
-	font-size: 1.05rem;
-	font-weight: 500;
-	word-break: break-word;
-}
-
-	.info-text a {
-		color: #2563eb;
-		text-decoration: none;
-		transition: color 0.3s;
-	}
-
-		.info-text a:hover {
-			color: #1d4ed8;
-			text-decoration: underline;
-		}
-
-.map-section {
-	background: white;
-	border-radius: 15px;
-	padding: 2.5rem;
-	box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-	margin-top: 3rem;
-}
-
-	.map-section h2 {
-		color: #1e3a5f;
-		font-size: 2rem;
-		margin-bottom: 1.5rem;
+	/* Hero Section */
+	.contact-page-wrapper .hero-section {
 		text-align: center;
+		padding: 4rem 5% 3rem;
+		background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+		color: white;
+		margin: 0;
 	}
 
-.map-placeholder {
-	width: 100%;
-	height: 400px;
-	background: linear-gradient(135deg, #e8f0f7 0%, #cbd5e1 100%);
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #64748b;
-	font-size: 1.1rem;
-}
+		.contact-page-wrapper .hero-section h1 {
+			font-size: 3rem;
+			margin-bottom: 1rem;
+			font-weight: 700;
+			color: white;
+		}
 
+		.contact-page-wrapper .hero-section p {
+			font-size: 1.2rem;
+			opacity: 0.95;
+			max-width: 700px;
+			margin: 0 auto;
+			color: white;
+		}
+
+	/* Contact Container */
+	.contact-page-wrapper .contact-container {
+		max-width: 1400px;
+		margin: -50px auto 0;
+		padding: 0 5% 5%;
+		position: relative;
+		z-index: 10;
+	}
+
+	/* Offices Grid */
+	.contact-page-wrapper .offices-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+		margin-bottom: 3rem;
+	}
+
+	/* Office Card */
+	.contact-page-wrapper .office-card {
+		background: white;
+		border-radius: 15px;
+		padding: 2.5rem;
+		box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+		transition: transform 0.3s, box-shadow 0.3s;
+		border-top: 4px solid #2563eb;
+	}
+
+		.contact-page-wrapper .office-card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+		}
+
+	/* Office Header */
+	.contact-page-wrapper .office-header {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		margin-bottom: 2rem;
+		padding-bottom: 1.5rem;
+		border-bottom: 2px solid #e8f0f7;
+	}
+
+	.contact-page-wrapper .flag-icon {
+		font-size: 2.5rem;
+	}
+
+	.contact-page-wrapper .office-title {
+		font-size: 1.8rem;
+		font-weight: 700;
+		color: #1e3a5f;
+	}
+
+	.contact-page-wrapper .office-subtitle {
+		font-size: 0.95rem;
+		color: #64748b;
+		margin-top: 0.3rem;
+	}
+
+	/* Contact Info */
+	.contact-page-wrapper .contact-info {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.contact-page-wrapper .info-item {
+		display: flex;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+
+	.contact-page-wrapper .info-icon {
+		width: 40px;
+		height: 40px;
+		background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		font-size: 1.2rem;
+		flex-shrink: 0;
+	}
+
+	.contact-page-wrapper .info-content {
+		flex: 1;
+	}
+
+	.contact-page-wrapper .info-label {
+		font-size: 0.85rem;
+		color: #64748b;
+		margin-bottom: 0.3rem;
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+	}
+
+	.contact-page-wrapper .info-text {
+		color: #1e3a5f;
+		font-size: 1.05rem;
+		font-weight: 500;
+		word-break: break-word;
+	}
+
+		.contact-page-wrapper .info-text a {
+			color: #2563eb;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+
+			.contact-page-wrapper .info-text a:hover {
+				color: #1d4ed8;
+				text-decoration: underline;
+			}
+
+	/* Map Section */
+	.contact-page-wrapper .map-section {
+		background: white;
+		border-radius: 15px;
+		padding: 2.5rem;
+		box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+		margin-top: 3rem;
+	}
+
+		.contact-page-wrapper .map-section h2 {
+			color: #1e3a5f;
+			font-size: 2rem;
+			margin-bottom: 1.5rem;
+			text-align: center;
+		}
+
+	.contact-page-wrapper .map-container {
+		width: 100%;
+		height: 500px;
+		border-radius: 10px;
+		overflow: hidden;
+		box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+	}
+
+		.contact-page-wrapper .map-container iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+			border-radius: 10px;
+		}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-	.hero-section h1 {
+	.contact-page-wrapper .hero-section h1 {
 		font-size: 2rem;
 	}
 
-	.hero-section p {
+	.contact-page-wrapper .hero-section p {
 		font-size: 1rem;
 	}
 
-	.offices-grid {
+	.contact-page-wrapper .offices-grid {
 		grid-template-columns: 1fr;
 	}
 
-	.nav-links {
-		display: none;
+	.contact-page-wrapper .office-card {
+		padding: 1.5rem;
+	}
+
+	.contact-page-wrapper .map-section {
+		padding: 1.5rem;
+	}
+
+	.contact-page-wrapper .map-placeholder {
+		height: 300px;
+	}
+}
+
+@media (max-width: 480px) {
+	.contact-page-wrapper .hero-section {
+		padding: 3rem 5% 2rem;
+	}
+
+		.contact-page-wrapper .hero-section h1 {
+			font-size: 1.75rem;
+		}
+
+	.contact-page-wrapper .office-title {
+		font-size: 1.5rem;
+	}
+
+	.contact-page-wrapper .flag-icon {
+		font-size: 2rem;
 	}
 }
