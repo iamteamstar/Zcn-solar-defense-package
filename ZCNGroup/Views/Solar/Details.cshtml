@@ -15,21 +15,7 @@
 
 <body>
     <div class="solar-detail-page">
-        <!-- Breadcrumb -->
-        <div class="breadcrumb-content">
-            <span id="currentSystem" style="color:white">Carport Sistemleri</span>
-        </div>
-
-        <!-- Header -->
-        <div class="header">
-            <div class="header-content">
-                <h1 id="headerTitle" style="color:white">Carport Sistemleri</h1>
-                <p id="headerDesc" style="color:white">Araçlarınızı güneşten, yağmur ve kardan koruyarak enerji ihtiyacınızı karşılayın</p>
-            </div>
-        </div>
-
-        <!-- System Selector -->
-        <div class="detail-container">
+        <div class="detail-container" style="padding-top: 40px;">
             <div class="system-selector">
                 <button class="system-btn" onclick="changeSystem('arazi')">Arazi Sistemleri</button>
                 <button class="system-btn" onclick="changeSystem('carport')">Carport Sistemleri</button>
@@ -42,7 +28,7 @@
         <div class="detail-container">
             <!-- Hero Image -->
             <div class="hero-image animate-in">
-                <img id="heroImage" src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1200&h=600&fit=crop" alt="Solar Sistem">
+                <img id="heroImage" src=/images/carport.png alt="Solar Sistem">
             </div>
 
             <div class="content-grid">
@@ -228,7 +214,7 @@
             depolama: {
                 title: 'Enerji Depolama Sistemleri',
                 headerDesc: 'Ürettiğiniz enerjiyi depolayın, ihtiyaç duyduğunuzda kullanın',
-                heroImage: '/images/ZCNSTOCKS/enerji_depolama   .png',
+                heroImage: '/images/ZCNSTOCKS/enerji_depolama.png',
                 content: `
                     <h2>Enerji Depolama Sistemleri (ESS)</h2>
                     <p>Gündüz üretilen güneş enerjisini depolayarak gece kullanım imkanı sağlayan akıllı enerji yönetim sistemleri. Kesintisiz güç kaynağı olarak da çalışabilen depolama sistemleri, enerji maliyetlerinizi minimize eder.</p>
@@ -290,11 +276,6 @@
                     btn.classList.add('active');
                 }
             });
-
-            // Header güncelle
-            document.getElementById('headerTitle').textContent = data.title;
-            document.getElementById('headerDesc').textContent = data.headerDesc;
-            document.getElementById('currentSystem').textContent = data.title;
 
             // Hero image güncelle
             document.getElementById('heroImage').src = data.heroImage;
