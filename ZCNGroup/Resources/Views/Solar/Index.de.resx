@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutText" xml:space="preserve">
+    <value>&lt;b&gt;IEF Solar&lt;/b&gt; ist als Tochtergesellschaft der &lt;b&gt;ZCN Group&lt;/b&gt; im Bereich der Solarenergiesysteme tätig. 
+Unsere Hauptproduktionsstätten befinden sich in den Organisierten Industriezonen von Istanbul und Bursa und erstrecken sich über eine &lt;b&gt;Gesamtproduktionsfläche von 7.000 m²&lt;/b&gt;.
+
+Mit unseren innovativen Designs und unserer Fertigungskompetenz bieten wir &lt;b&gt;hochwertige Komplettlösungen für Solarsysteme&lt;/b&gt; an, die die Qualitätserwartungen unserer Kunden erfüllen.
+
+In unserem Haus; 
+mit einem starken Maschinenpark, bestehend aus &lt;b&gt;3 Rollformlinien, 2 Laserschneidmaschinen, 2 Abkantpressen, 2 CNC-Stanzmaschinen und Schweißkonstruktionseinheiten&lt;/b&gt;, sowie unserem erfahrenen Team, bieten wir hohe Produktionskapazitäten für:
+
+&lt;b&gt; Freiflächen- und PV-Systeme,
+
+Dachanwendungen,
+
+Carport-Systeme,
+
+Energiespeicher- und Heizlösungen.&lt;/b&gt;
+
+Durch die Kombination von Ingenieurskraft mit einer Vision für Nachhaltigkeit &lt;b&gt;gestaltet IEF Solar bereits heute die Energieinfrastruktur der Zukunft.&lt;/b&gt;</value>
+  </data>
+  <data name="AboutUs" xml:space="preserve">
+    <value>Über Uns - IEF Solar</value>
+  </data>
+  <data name="CompanySlogan" xml:space="preserve">
+    <value>Entwickler &lt;br&gt; SOLAR</value>
+  </data>
+  <data name="CompanyText" xml:space="preserve">
+    <value>Um mehr zu erreichen</value>
+  </data>
+  <data name="DetailInfo" xml:space="preserve">
+    <value>Detaillierte Informationen</value>
+  </data>
+  <data name="ProjectText" xml:space="preserve">
+    <value>Ein weiterer starker Schritt für die High-Tech-Produktion</value>
+  </data>
+  <data name="System1Text" xml:space="preserve">
+    <value>Unsere Freiflächensysteme vereinen Langlebigkeit und Funktionalität, stellen die effizienteste Flächennutzung sicher und schaffen durch langlebige Infrastrukturlösungen nachhaltige Werte.</value>
+  </data>
+  <data name="System1Title" xml:space="preserve">
+    <value>Landsysteme</value>
+  </data>
+  <data name="System2Text" xml:space="preserve">
+    <value>Unsere Carport-Systeme sind mit ihrem Fokus auf strukturelle Langlebigkeit und Sicherheit eine Doppellösung, die die Flächeneffizienz steigert und langfristigen Wert bietet.</value>
+  </data>
+  <data name="System2Title" xml:space="preserve">
+    <value>Carport-Systeme</value>
+  </data>
+  <data name="System3Text" xml:space="preserve">
+    <value>Unsere Dachsysteme verbinden Ästhetik und Langlebigkeit und bieten zuverlässige Konstruktionslösungen, die für Energieeffizienz und langanhaltenden Schutz sorgen.</value>
+  </data>
+  <data name="System3Title" xml:space="preserve">
+    <value>Dachsysteme</value>
+  </data>
+  <data name="System4Text" xml:space="preserve">
+    <value>Unsere Energiespeichersysteme basieren auf den Prinzipien hoher Effizienz und Zuverlässigkeit; sie sind innovative Lösungen, die die Energiekontinuität sicherstellen und zu einer nachhaltigen Zukunft beitragen.</value>
+  </data>
+  <data name="System4Title" xml:space="preserve">
+    <value>Energiespeichersysteme</value>
+  </data>
+  <data name="SystemName" xml:space="preserve">
+    <value>Unsere Solarenergiesysteme</value>
+  </data>
+  <data name="SystemSlogan" xml:space="preserve">
+    <value>Wir bieten innovative und nachhaltige Energielösungen, die speziell auf Ihre Bedürfnisse zugeschnitten sind</value>
+  </data>
+</root>

@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <head>
@@ -58,10 +60,10 @@
                 <div class="swiper-slide bg-gray-dark" data-slide-bg="/images/ZCN/solar.png">
                     <div class="swiper-slide-caption">
                         <div class="container">
-                            <h1 data-caption-animate="fadeInUpSmall" data-caption-delay="100">Geliştirici <br> SOLAR </h1>
+                            <h1 data-caption-animate="fadeInUpSmall" data-caption-delay="100">@Html.Raw(Localizer["CompanySlogan"].Value)</h1>
                             <div class="object-decorated">
                                 <span class="object-decorated__divider" data-caption-animate="fadeInRightSmall" data-caption-delay="300"></span>
-                                <h4 data-caption-animate="fadeInRightSmall" data-caption-delay="550">Daha Fazlasını Başarmak İçin</h4>
+                                <h4 data-caption-animate="fadeInRightSmall" data-caption-delay="550">@Localizer["CompanyText"]</h4>
                             </div>
                         </div>
                     </div>
@@ -76,7 +78,7 @@
                 <img class="thumb-modern__image" src="~/images/arazi.png" alt="" width="500" height="200" />
                 <img class="corner-logo" src="~/images/ZCN/yesillogo.png" alt="Logo" />
                 <div class="thumb-modern__caption">
-                    <p class="thumb-modern__title">Solar</p>
+                    <p class="thumb-modern__title">@Localizer["System1Title"]</p>
                 </div>
             </a>
         </div>
@@ -85,7 +87,7 @@
                 <img class="thumb-modern__image" src="~/images/carportSistemler.png" alt="" width="590" height="200" />
                 <img class="corner-logo" src="~/images/ZCN/yesillogo.png" alt="Logo" />
                 <div class="thumb-modern__caption">
-                    <p class="thumb-modern__title">Solar</p>
+                    <p class="thumb-modern__title">@Localizer["System2Title"]</p>
                 </div>
             </a>
         </div>
@@ -94,7 +96,7 @@
                 <img class="thumb-modern__image" src="~/images/ZCNSTOCKS/catı.jpg" alt="" width="590" height="200" />
                 <img class="corner-logo" src="~/images/ZCN/yesillogo.png" alt="Logo" />
                 <div class="thumb-modern__caption">
-                    <p class="thumb-modern__title">Solar</p>
+                    <p class="thumb-modern__title">@Localizer["System3Title"]</p>
                 </div>
             </a>
         </div>
@@ -103,7 +105,7 @@
                 <img class="thumb-modern__image" src="~/images/ZCNSTOCKS/enerji_depolama.png" alt="" width="590" height="200" />
                 <img class="corner-logo" src="~/images/ZCN/yesillogo.png" alt="Logo" />
                 <div class="thumb-modern__caption">
-                    <p class="thumb-modern__title">Solar</p>
+                    <p class="thumb-modern__title">@Localizer["System4Title"]</p>
                 </div>
             </a>
         </div>
@@ -202,31 +204,14 @@
                     <div class="section-md container-fluid-cell">
                         <div class="box-centered box-width-1 about-content">
                             <h3>
-                                <span>Hakkımızda - IEF Solar</span>
+                                <span>@Localizer["AboutUs"]</span>
                                 <span class="object-decorated object-decorated_inline">
                                     <span class="object-decorated__divider"></span>
                                 </span>
                             </h3>
                             <p>
-                                <b>IEF Solar, ZCN Group’un</b>  bir iştiraki olarak güneş enerjisi sistemleri alanında faaliyet göstermektedir.
-                                Ana üretim tesislerimiz, İstanbul ve Bursa Organize Sanayi Bölgeleri’nde yer almakta olup, toplam<b>  7.000 m²’lik üretim alanında</b>  faaliyet göstermektedir.
-
-                                Yenilikçi tasarımlarımız ve üretim uzmanlığımızla, müşterilerimizin kalite beklentilerini karşılayan <b> yüksek katma değerli, komple solar sistem</b>  çözümleri sunuyoruz.
-
-                                Bünyemizde;
-                                <b>  3 rollform hattı, 2 lazer kesim tezgâhı, 2 abkant pres, 2 CNC punch tezgâhı ve kaynaklı imalat birimlerimiz</b>  ile güçlü makine parkurumuz ve deneyimli ekibimizle, yüksek üretim kapasitesiyle;.
-
-                                <b> Arazi ve PV sistemleri,
-
-                                Çatı uygulamaları,
-
-                                Carport sistemleri,
-
-                                Enerji depolama ve ısıtma çözümlerine </b> hizmet vermekteyiz.
-
-                                IEF Solar, mühendislik gücünü sürdürülebilirlik vizyonuyla birleştirerek <b> geleceğin enerji altyapısını bugünden şekillendirmektedir.</b>
-
-                            </p>
+                                @Html.Raw(Localizer["AboutText"].Value)
+                                </p>
                         </div>
                     </div>
                 </div>
@@ -242,8 +227,8 @@
 <div class="solar-sectors-section">
 <div class="container">
     <div class="header">
-        <h2>Güneş Enerjisi Sistemlerimiz</h2>
-        <p>İhtiyaçlarınıza özel, yenilikçi ve sürdürülebilir enerji çözümleri sunuyoruz</p>
+        <h2>@Localizer["SystemName"]</h2>
+            <p>@Localizer["SystemSlogan"]</p>
     </div>
 
     <div class="grid-container">
@@ -258,10 +243,10 @@
                 </div>
             </div>
             <div class="card-content">
-                <h3 class="card-title">Arazi Sistemleri</h3>
-                    <p class="card-description">Arazi sistemlerimiz, dayanıklılık ve işlevselliği bir araya getirerek, alanın en verimli şekilde kullanılmasını ve uzun ömürlü altyapı çözümleriyle sürdürülebilir değer oluşturulmasını sağlar.</p>
+                    <h3 class="card-title">@Localizer["System1Title"]</h3>
+                    <p class="card-description">@Localizer["System1Text"]</p>
                 <a href="/Solar/Details?system=arazi" class="card-link">
-                    <span>Detaylı Bilgi</span>
+                        <span>@Localizer["DetailInfo"]</span>
                     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                     </svg>
@@ -304,10 +289,10 @@
                 </div>
             </div>
             <div class="card-content">
-                <h3 class="card-title">Carport Sistemleri</h3>
-                    <p class="card-description">Carport sistemlerimiz, yapısal dayanıklılık ve güvenlik odaklı tasarımıyla, alan verimliliğini artıran ve uzun vadeli değer sunan çift amaçlı bir çözümdür.  </p>
+                    <h3 class="card-title">@Localizer["System2Title"]</h3>
+                    <p class="card-description">@Localizer["System2Text"]</p>
                     <a href="/Solar/Details?system=carport" class="card-link">
-                    <span>Detaylı Bilgi</span>
+                        <span>@Localizer["DetailInfo"]</span>
                     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                     </svg>
@@ -327,10 +312,10 @@
                 </div>
             </div>
             <div class="card-content">
-                <h3 class="card-title">Çatı Sistemleri</h3>
-                    <p class="card-description">Çatı sistemlerimiz, estetik ve dayanıklılığı birleştirerek, enerji verimliliği ve uzun ömürlü koruma sağlayan güvenilir yapı çözümleridir.</p>
+                    <h3 class="card-title">@Localizer["System3Title"]</h3>
+                    <p class="card-description">@Localizer["System3Text"]</p>
                     <a href="/Solar/Details?system=cati" class="card-link">
-                    <span>Detaylı Bilgi</span>
+                        <span>@Localizer["DetailInfo"]</span>
                     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                     </svg>
@@ -350,10 +335,10 @@
                 </div>
             </div>
             <div class="card-content">
-                <h3 class="card-title">Enerji Depolama Sistemleri</h3>
-                    <p class="card-description">Enerji depolama sistemlerimiz, yüksek verimlilik ve güvenilirlik esasına dayanarak, enerji sürekliliğini sağlayan ve sürdürülebilir geleceğe katkı sunan yenilikçi çözümlerdir.</p>
+                    <h3 class="card-title">@Localizer["System4Title"]</h3>
+                    <p class="card-description">@Localizer["System4Text"]</p>
                     <a href="/Solar/Details?system=depolama" class="card-link">
-                    <span>Detaylı Bilgi</span>
+                    <span>@Localizer["DetailInfo"]</span>
                     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                     </svg>

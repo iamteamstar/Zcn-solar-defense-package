@@ -31,6 +31,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>_Layout.resx</DependentUpon>
     </Compile>
+    <Compile Update="Resources\Views\Solar\Index.Designer.cs">
+      <DependentUpon>Index.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -50,10 +55,13 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>_Layout.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Views\Solar\Index.resx">
+      <LastGenOutput>Index.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\Views\Solar\" />
     <Folder Include="Resources\Views\Packaging\" />
   </ItemGroup>
 
