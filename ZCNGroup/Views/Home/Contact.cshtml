@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -6,10 +8,10 @@
 
 <!-- Contact Page Wrapper - Tüm içerik bu div içinde izole -->
 <div class="contact-page-wrapper">
-
+    
     <section class="hero-section">
-        <h1>İletişim</h1>
-        <p>Dünya genelindeki ofislerimizden bizimle iletişime geçebilir, projeleriniz hakkında görüşebilirsiniz.</p>
+        <h1>@Localizer["Contact"]</h1>
+        <p>@Localizer["ContactSlogan"]</p>
     </section>
 
     <br>
@@ -22,28 +24,29 @@
                     <div class="flag-icon">🇹🇷</div>
                     <div>
                         <div class="office-title">Türkiye</div>
-                        <div class="office-subtitle">İstanbul Ofisi</div>
+                        <div class="office-subtitle">
+                            @Localizer["Office1Name"]</div>
                     </div>
                 </div>
                 <div class="contact-info">
                     <div class="info-item">
                         <div class="info-icon">📍</div>
                         <div class="info-content">
-                            <div class="info-label">Adres</div>
+                            <div class="info-label">@Localizer["OfficeAdress"]</div>
                             <div class="info-text">İstanbul/Türkiye</div>
                         </div>
                     </div>
                     <div class="info-item">
                         <div class="info-icon">✉️</div>
                         <div class="info-content">
-                            <div class="info-label">E-posta</div>
+                            <div class="info-label">@Localizer["OfficeEmail"]</div>
                             <div class="info-text"><a href="mailto:info@zcngroup.com">info@zcngroup.com</a></div>
                         </div>
                     </div>
                     <div class="info-item">
                         <div class="info-icon">📞</div>
                         <div class="info-content">
-                            <div class="info-label">Telefon</div>
+                            <div class="info-label">@Localizer["OfficePhone"]</div>
                             <div class="info-text">
                                 <a href="tel:08503046420">0850 304 64 20</a><br>
                                 <a href="tel:+905324184032">+90 532 418 40 32</a>
@@ -58,29 +61,29 @@
                 <div class="office-header">
                     <div class="flag-icon">🇨🇭</div>
                     <div>
-                        <div class="office-title">İsviçre</div>
-                        <div class="office-subtitle">Zurich Ofisi</div>
+                        <div class="office-title">@Localizer["Office2Name"]</div>
+                        <div class="office-subtitle">@Localizer["Office2Adress"]</div>
                     </div>
                 </div>
                 <div class="contact-info">
                     <div class="info-item">
                         <div class="info-icon">📍</div>
                         <div class="info-content">
-                            <div class="info-label">Adres</div>
+                            <div class="info-label">@Localizer["OfficeAdress"]</div>
                             <div class="info-text">Badenerstrasse 47<br>CH-8004 Zurich/Switzerland</div>
                         </div>
                     </div>
                     <div class="info-item">
                         <div class="info-icon">✉️</div>
                         <div class="info-content">
-                            <div class="info-label">E-posta</div>
+                            <div class="info-label">@Localizer["OfficeEmail"]</div>
                             <div class="info-text"><a href="mailto:info@zcngroup.ch">info@zcngroup.ch</a></div>
                         </div>
                     </div>
                     <div class="info-item">
                         <div class="info-icon">📞</div>
                         <div class="info-content">
-                            <div class="info-label">Telefon</div>
+                            <div class="info-label">@Localizer["OfficePhone"]</div>
                             <div class="info-text">
                                 <a href="tel:+41774138200">+41 77 413 82 00</a>
                             </div>
@@ -102,21 +105,21 @@
                     <div class="info-item">
                         <div class="info-icon">📍</div>
                         <div class="info-content">
-                            <div class="info-label">Adres</div>
+                            <div class="info-label">@Localizer["OfficeAdress"]</div>
                             <div class="info-text">Storgata 15<br>0155 Oslo/Norway</div>
                         </div>
                     </div>
                     <div class="info-item">
                         <div class="info-icon">✉️</div>
                         <div class="info-content">
-                            <div class="info-label">E-posta</div>
+                            <div class="info-label">@Localizer["OfficeEmail"]</div>
                             <div class="info-text"><a href="mailto:info@zcngroup.no">info@zcngroup.no</a></div>
                         </div>
                     </div>
                     <div class="info-item">
                         <div class="info-icon">📞</div>
                         <div class="info-content">
-                            <div class="info-label">Telefon</div>
+                            <div class="info-label">@Localizer["OfficePhone"]</div>
                             <div class="info-text">
                                 <a href="tel:+4712345678">+47 123 45 678</a>
                             </div>
@@ -127,7 +130,7 @@
         </div>
 
         <div class="map-section">
-            <h2>Ofis Lokasyonlarımız</h2>
+            <h2>@Localizer["MapSlogan"]</h2>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
 
@@ -143,7 +146,7 @@
 
                 <!-- İsviçre Haritası -->
                 <div class="map-container" style="height: 300px;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.2089419635147!2d8.539083!3d47.376887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a08cc0e6e41%3A0x3d7e1e1a1e1e1e1e!2sBadenerstrasse%2047%2C%208004%20Z%C3%BCrich%2C%20Switzerland!5e0!3m2!1sen!2str!4v1234567890"
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.988034928322!2d8.525784375871817!3d47.373152004069865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a1b661d6685%3A0x2bbd212e74fb3d3!2zQmFkZW5lcnN0cmFzc2UgNDcsIDgwMDQgWsO8cmljaCwgxLBzdmnDp3Jl!5e0!3m2!1str!2str!4v1768938629103!5m2!1str!2str"
                             allowfullscreen=""
                             loading="lazy"
                             style="width: 100%; height: 100%; border: 0; border-radius: 10px;">
