@@ -121,27 +121,69 @@
     z-index: 5;
 }
 
-.solar-thumb-item .thumb-modern__caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-    padding: 30px 20px 20px;
-    z-index: 5;
-}
+    .solar-thumb-item .thumb-modern__caption {
+        position: absolute;
+        bottom: 30px; /* Burası 0'dı, artır (örn: 30px, 40px, 50px) */
+        left: 0;
+        right: 0;
+        background: transparent;
+        padding: 40px 20px 20px;
+        z-index: 10;
+        pointer-events: none;
+    }
 
-.solar-thumb-item .thumb-modern__title {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-}
-
+    .solar-thumb-item .thumb-modern__title {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+        line-height: 1.4;
+        display: block;
+        position: relative;
+        z-index: 11;
+    }
 /* ========================================
    RESPONSIVE - TABLET (1400px ve altı)
    ======================================== */
+
+/* Tablet (768px - 1200px) */
+@media (max-width: 1200px) {
+    .solar-thumb-item .thumb-modern__caption {
+        bottom: 30px;
+        padding: 30px 15px 15px;
+    }
+
+    .solar-thumb-item .thumb-modern__title {
+        font-size: 16px;
+    }
+}
+
+/* Mobil (768px ve altı) */
+@media (max-width: 768px) {
+    .solar-thumb-item .thumb-modern__caption {
+        bottom: 15px;
+        padding: 20px 10px 10px;
+    }
+
+    .solar-thumb-item .thumb-modern__title {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+}
+
+/* Küçük Mobil (480px ve altı) */
+@media (max-width: 480px) {
+    .solar-thumb-item .thumb-modern__caption {
+        bottom: 10px;
+        padding: 15px 8px 8px;
+    }
+
+    .solar-thumb-item .thumb-modern__title {
+        font-size: 12px;
+    }
+}
 
 @media (max-width: 1400px) {
     .solar-thumbnails {
@@ -273,3 +315,4 @@
     height: calc(100vh - 120px);
 }
 */
+

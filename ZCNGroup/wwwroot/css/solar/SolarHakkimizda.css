@@ -4,7 +4,7 @@
     margin-top: 0 !important;
     font-size: 33px !important;
     font-weight: 700 !important;
-    color: #1e3c72 !important;
+    color: #058a4f !important;
     font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
     letter-spacing: -0.5px;
     line-height: 1.2;
@@ -24,7 +24,7 @@
     /* 🔹 Bold metinler için */
     .about-area .about-content p b {
         font-weight: 600;
-        color: #1e3c72;
+        color: #058a4f;
     }
 
 /* Mevcut stiller */

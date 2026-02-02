@@ -3,18 +3,13 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@* Index.cshtml veya ilgili sayfanızın EN BAŞINA bu kodu ekleyin *@
-@* HTML içeriğinden ÖNCE gelmelidir *@
 
-
-@* Buradan sonra normal HTML kodlarınız gelmelidir *@
 <head>
  
         <link rel="stylesheet" href="~/css/solar/solar_sektorler.css" />
     <link href="~/css/solar/SolarHakkimizda.css" rel="stylesheet" />
     <link href="~/css/solar/custom-slider-fix.css" rel="stylesheet" />
 </head>
-
 <div class="solar-hero-section">
     <!-- Ana Slider Alanı -->
     <div class="solar-slider-main">
@@ -332,3 +327,42 @@
             observer.observe(card);
         });
     </script>
+</div>
+
+<!-- FOOTER FIX - INLINE STYLE -->
+<style>
+    /* Solar sayfası için footer fix */
+    footer.footer-corporate,
+    .footer-corporate__main,
+    .footer-corporate__aside,
+    .bg-gray-7,
+    .bg-gray-8,
+    .footer-corporate .container,
+    .footer-corporate .container-wide,
+    .footer-corporate .row,
+    .footer-corporate [class*="col-"] {
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+    }
+
+        .footer-corporate__main.bg-gray-7 {
+            padding: 50px 0 !important;
+        }
+
+        .footer-corporate__aside.bg-gray-8 {
+            padding: 30px 0 !important;
+        }
+</style>
+
+<script>
+    // Ek JavaScript fix
+    $(document).ready(function() {
+        $('.footer-corporate, .footer-corporate__main, .footer-corporate__aside, .bg-gray-7, .bg-gray-8').css({
+            'height': 'auto',
+            'min-height': '0',
+            'max-height': 'none'
+        });
+    });
+</script>
+
