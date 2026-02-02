@@ -62,20 +62,20 @@
     display: block !important;
     position: relative !important;
     width: 100% !important;
-    height: 425px !important; /* Metin yüksekliğine göre ayarlayın (örnek: 200px, 250px, 300px) */
+    height: 300px !important;
     overflow: hidden !important;
+    border-radius: 10px !important; /* Border-radius'u buraya almak daha güvenli */
 }
 
-    /* 🔹 Görsel - Container'ı tam olarak dolduracak */
     .about-area .about-image img {
         width: 100% !important;
-        height: 100% !important; /* Container'ın tam yüksekliği */
-        max-height: none !important; /* Sınırlamayı kaldır */
+        height: 110% !important; /* Yüksekliği %100'den fazla yaparak siyahlıkları dışarı itiyoruz */
         object-fit: cover !important;
-        object-position: center top !important;
-        border-radius: 10px !important;
+        /* Görseli dikeyde tam ortalayarak üstteki ve alttaki siyah şeritleri kırpıyoruz */
+        object-position: center center !important;
+        display: block !important;
+        max-height: none !important;
         box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
-        flex: 1 !important; /* Kalan alanı doldur */
     }
 
 /* 🔹 Devamını Oku Butonu */

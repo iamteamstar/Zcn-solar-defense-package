@@ -1,13 +1,90 @@
-﻿@using Microsoft.AspNetCore.Mvc.Localization
+﻿﻿@using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer Localizer
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@* Index.cshtml veya ilgili sayfanızın EN BAŞINA bu kodu ekleyin *@
+@* HTML içeriğinden ÖNCE gelmelidir *@
+
+
+@* Buradan sonra normal HTML kodlarınız gelmelidir *@
 <head>
  
         <link rel="stylesheet" href="~/css/solar/solar_sektorler.css" />
     <link href="~/css/solar/SolarHakkimizda.css" rel="stylesheet" />
+    <link href="~/css/solar/custom-slider-fix.css" rel="stylesheet" />
 </head>
+
+<div class="solar-hero-section">
+    <!-- Ana Slider Alanı -->
+    <div class="solar-slider-main">
+        <div class="swiper-container swiper-slider swiper-slider_style-2" data-loop="true" data-autoplay="false" data-simulate-touch="false" data-slide-effect="fade">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bg-gray-dark" data-slide-bg="/images/ZCN/solar.png">
+                    <div class="swiper-slide-caption">
+                        <div class="container">
+                            <h1 data-caption-animate="fadeInUpSmall" data-caption-delay="100">@Html.Raw(Localizer["CompanySlogan"].Value)</h1>
+                            <div class="object-decorated">
+                                <span class="object-decorated__divider" data-caption-animate="fadeInRightSmall" data-caption-delay="300"></span>
+                                <h4 data-caption-animate="fadeInRightSmall" data-caption-delay="550">@Localizer["CompanyText"]</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- Yan Thumbnail Alanı -->
+    <div class="solar-thumbnails">
+        <!-- Arazi Sistemleri -->
+        <div class="solar-thumb-item">
+            <a class="thumb-modern" href="~/Solar/Index">
+                <img class="thumb-modern__image" src="~/images/arazi.png" alt="Arazi Sistemleri" />
+                <img class="corner-logo" src="~/images/ZCN/yesillogo.png" alt="Logo" />
+                <div class="thumb-modern__caption">
+                    <p class="thumb-modern__title">@Localizer["System1Title"]</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Carport Sistemleri -->
+        <div class="solar-thumb-item">
+            <a class="thumb-modern" href="~/Solar/Index">
+                <img class="thumb-modern__image" src="~/images/carportSistemler.png" alt="Carport Sistemleri" />
+                <img class="corner-logo" src="~/images/ZCN/yesillogo.png" alt="Logo" />
+                <div class="thumb-modern__caption">
+                    <p class="thumb-modern__title">@Localizer["System2Title"]</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Çatı Sistemleri -->
+        <div class="solar-thumb-item">
+            <a class="thumb-modern" href="~/Solar/Index">
+                <img class="thumb-modern__image" src="~/images/ZCNSTOCKS/catı.jpg" alt="Çatı Sistemleri" />
+                <img class="corner-logo" src="~/images/ZCN/yesillogo.png" alt="Logo" />
+                <div class="thumb-modern__caption">
+                    <p class="thumb-modern__title">@Localizer["System3Title"]</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Enerji Depolama -->
+        <div class="solar-thumb-item">
+            <a class="thumb-modern" href="~/Solar/Index">
+                <img class="thumb-modern__image" src="~/images/ZCNSTOCKS/enerji_depolama.png" alt="Enerji Depolama" />
+                <img class="corner-logo" src="~/images/ZCN/yesillogo.png" alt="Logo" />
+                <div class="thumb-modern__caption">
+                    <p class="thumb-modern__title">@Localizer["System4Title"]</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Marka Renkleri için Style -->
 <style>
     .single-services-box .services-btn a i {
         background: #058a4f;
@@ -21,7 +98,14 @@
         border-color: #058a4f;
     }
 
-    .rd-navbar-fullwidth .rd-navbar-nav > li.opened > a, .rd-navbar-fullwidth .rd-navbar-nav > li.active > a, .rd-navbar-fullwidth .rd-navbar-nav > li.focus > a, .rd-navbar-fullwidth .rd-navbar-nav > li > a:hover, .rd-navbar-static .rd-navbar-nav > li.opened > a, .rd-navbar-static .rd-navbar-nav > li.active > a, .rd-navbar-static .rd-navbar-nav > li.focus > a, .rd-navbar-static .rd-navbar-nav > li > a:hover {
+    .rd-navbar-fullwidth .rd-navbar-nav > li.opened > a,
+    .rd-navbar-fullwidth .rd-navbar-nav > li.active > a,
+    .rd-navbar-fullwidth .rd-navbar-nav > li.focus > a,
+    .rd-navbar-fullwidth .rd-navbar-nav > li > a:hover,
+    .rd-navbar-static .rd-navbar-nav > li.opened > a,
+    .rd-navbar-static .rd-navbar-nav > li.active > a,
+    .rd-navbar-static .rd-navbar-nav > li.focus > a,
+    .rd-navbar-static .rd-navbar-nav > li > a:hover {
         color: #058a4f;
     }
 
@@ -41,159 +125,22 @@
         border-left: 3px solid #058a4f;
     }
 
-    .bg-gray-dark .post-light__title a:hover, .bg-gray-3 .post-light__title a:hover, .bg-gray-7 .post-light__title a:hover, .bg-gray-8 .post-light__title a:hover, .bg-gray-10 .post-light__title a:hover, .breadcrumbs-custom .post-light__title a:hover {
+    .bg-gray-dark .post-light__title a:hover,
+    .bg-gray-3 .post-light__title a:hover,
+    .bg-gray-7 .post-light__title a:hover,
+    .bg-gray-8 .post-light__title a:hover,
+    .bg-gray-10 .post-light__title a:hover,
+    .breadcrumbs-custom .post-light__title a:hover {
         color: #058a4f;
     }
 
     .services-section::before {
         background: #ffffff;
     }
-
 </style>
 
-
-<!-- Swiper-->
-<section class="section section-layout-1">
-    <div class="section-layout-main">
-        <div class="swiper-container swiper-slider swiper-slider_style-2" data-loop="true" data-autoplay="false" data-simulate-touch="false" data-slide-effect="fade">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide bg-gray-dark" data-slide-bg="/images/ZCN/solar.png">
-                    <div class="swiper-slide-caption">
-                        <div class="container">
-                            <h1 data-caption-animate="fadeInUpSmall" data-caption-delay="100">@Html.Raw(Localizer["CompanySlogan"].Value)</h1>
-                            <div class="object-decorated">
-                                <span class="object-decorated__divider" data-caption-animate="fadeInRightSmall" data-caption-delay="300"></span>
-                                <h4 data-caption-animate="fadeInRightSmall" data-caption-delay="550">@Localizer["CompanyText"]</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
-    <div class="section-layout-aside">
-        <div class="section-layout-aside__item">
-            <a class="thumb-modern" href="~/Solar/Index">
-                <img class="thumb-modern__image" src="~/images/arazi.png" alt="" width="500" height="200" />
-                <img class="corner-logo" src="~/images/ZCN/yesillogo.png" alt="Logo" />
-                <div class="thumb-modern__caption">
-                    <p class="thumb-modern__title">@Localizer["System1Title"]</p>
-                </div>
-            </a>
-        </div>
-        <div class="section-layout-aside__item">
-            <a class="thumb-modern" href="~/Solar/Index">
-                <img class="thumb-modern__image" src="~/images/carportSistemler.png" alt="" width="590" height="200" />
-                <img class="corner-logo" src="~/images/ZCN/yesillogo.png" alt="Logo" />
-                <div class="thumb-modern__caption">
-                    <p class="thumb-modern__title">@Localizer["System2Title"]</p>
-                </div>
-            </a>
-        </div>
-        <div class="section-layout-aside__item">
-            <a class="thumb-modern" href="~/Solar/Index">
-                <img class="thumb-modern__image" src="~/images/ZCNSTOCKS/catı.jpg" alt="" width="590" height="200" />
-                <img class="corner-logo" src="~/images/ZCN/yesillogo.png" alt="Logo" />
-                <div class="thumb-modern__caption">
-                    <p class="thumb-modern__title">@Localizer["System3Title"]</p>
-                </div>
-            </a>
-        </div>
-        <div class="section-layout-aside__item">
-            <a class="thumb-modern" href="~/Solar/Index">
-                <img class="thumb-modern__image" src="~/images/ZCNSTOCKS/enerji_depolama.png" alt="" width="590" height="200" />
-                <img class="corner-logo" src="~/images/ZCN/yesillogo.png" alt="Logo" />
-                <div class="thumb-modern__caption">
-                    <p class="thumb-modern__title">@Localizer["System4Title"]</p>
-                </div>
-            </a>
-        </div>
-    </div>
-</section>
 <!-- Experience since 1999-->
-<style>
-    /* Savunma Sanayii Section - Mevcut HTML Yapısına Uygun CSS */
 
-    /* Ana section container - Üst ve alt boşlukları azaltır (section elementi) */
-    .section.section-md.bg-default {
-        padding: 30px 0 !important;
-    }
-
-        /* Gri arka plan container - İç boşlukları azaltır (bg-gray-4 div'i) */
-        .section.section-md.bg-default .bg-gray-2 {
-            padding: 20px 0;
-        }
-
-        /* Bootstrap row - Sağ ve sol negatif margin'leri azaltarak kolonlar arası boşluğu daraltır */
-        .section.section-md.bg-default .row.row-30 {
-            margin-left: -10px !important;
-            margin-right: 85px !important;
-        }
-
-            /* Tüm kolonlar (col-md-12, col-lg-6) - Sağ ve sol padding'leri azaltarak metin ile görsel arasındaki boşluğu daraltır */
-            .section.section-md.bg-default .row.row-30 > [class*='col-'] {
-                padding-left: 20px !important;
-                padding-right: 20px !important;
-            }
-
-        /* Metin içeriğinin bulunduğu container - Tüm padding'i kaldırır (section-md div'i) */
-        .section.section-md.bg-default .section-md.container-fluid-cell {
-            padding: 0 !important;
-        }
-
-        /* Metin kutusunun merkezi container - Genişliği %100 yapar ve minimal padding ekler */
-        .section.section-md.bg-default .box-centered.box-width-1 {
-            max-width: 100%;
-            padding: 0 15px;
-        }
-
-        /* "Hakkımızda-Savunma Sanayii" başlığı - Boyut ve alt boşluğunu ayarlar */
-        .section.section-md.bg-default h4 {
-            font-size: 1.25rem;
-            margin-bottom: 15px !important;
-            margin-top: 35px !important;
-            font-weight: 600;
-        }
-
-            /* Başlık içindeki ilk span (başlık metni) - Inline-block yapar */
-            .section.section-md.bg-default h4 span:first-child {
-                display: inline-block;
-            }
-
-
-
-        /* Paragraf metni - Boyut, satır arası, alt boşluk ve hizalama ayarları */
-        .section.section-md.bg-default p {
-            font-size: 1rem !important;
-            line-height: 1.5 !important;
-            margin-bottom: 0 !important;
-            text-align: justify;
-            color: #555;
-        }
-
-        /* Görsel container - Görseli metin yüksekliğine göre dikey hizalar */
-        .section.section-md.bg-default .thumb-video {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-        }
-
-        /* Asıl görsel elementi - Tam genişlikte görüntülenir ve oranını korur */
-        .section.section-md.bg-default .thumb-video__image {
-            width: 100%;
-            height: auto;
-            display: block;
-            object-fit: cover;
-        }
-
-        /* Görselin bulunduğu kolon - Flexbox ile içeriği dikey ortalar */
-        .section.section-md.bg-default .col-lg-6.d-flex {
-            display: flex !important;
-            align-items: center !important;
-        }
-</style>
 
 <!-- Experience since 1999-->
 <section class="section section-md bg-default about-area">
@@ -385,214 +332,3 @@
             observer.observe(card);
         });
     </script>
-
-<!-- Start Services Section -->
-@* <section class="services-section pt-100 pb-70">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title text-center">
-                    <h6>What We Provide</h6>
-                    <h2>Our Services</h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <!-- Çatı Sistemleri -->
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services-box">
-                    <div class="services-icon">
-                        <img src="~/images/icons/services-icon-1.svg" alt="svg icon">
-                    </div>
-                    <h3>Çatı Sistemleri</h3>
-                    <p>Kısa açıklama buraya gelecek.</p>
-                    <div class="services-btn">
-                        <a href="#"
-                           class="services-btn-one open-service-modal"
-                           data-title="Endüstriyel Çatı Güneş Enerji Sistemleri"
-                           data-desc="Kullanılan tesislerin çatısına güneş enerjisi konumlandırarak kendi enerji ihtiyacınızı karşılayabilirsiniz. Elektrik faturası öder gibi veya daha düşük bir ödeme planı ile sistemin taksitlerini ödeyerek anında tasarruf etmeye başlayabilirsiniz. İşletme giderlerinizin önemli kısmını oluşturan enerji giderlerinizden kurtularak, rekabet gücünüzü arttırıp işletmenizin karlılığını arttırabilirsiniz.
-                            Enerji maliyetlerinizi düşürür veya sıfıra indirir. 
- Modülerdir, taşınabilir ve sisteme ilaveler yapılabilir. 
- İşletme ve bakım maliyetleri yok denecek kadar azdır.
-"
-                           data-img="~/images/services/roof.jpg">
-                            <i class="fa fa-arrow-right"></i> Read More
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Arazi ve Tarım Sistemleri -->
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services-box">
-                    <div class="services-icon">
-                        <img src="~/images/icons/services-icon-2.svg" alt="svg icon">
-                    </div>
-                    <h3>Arazi ve Tarım Sistemleri</h3>
-                    <p>Kısa açıklama buraya gelecek.</p>
-                    <div class="services-btn">
-                        <a href="#"
-                           class="services-btn-one open-service-modal"
-                           data-title="Arazi ve Tarım Sistemleri"
-                           data-desc="Tarım sistemleri için detaylı açıklama. Paneller, sulama entegrasyonu vb."
-                           data-img="~/images/services/farm.jpg">
-                            <i class="fa fa-arrow-right"></i> Read More
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services-box">
-                    <div class="services-icon">
-                        <img src="~/images/icons/services-icon-3.svg" alt="svg icon">
-                    </div>
-                    <h3>Enerji Depolama Sistemleri</h3>
-                    <p>Kısa açıklama buraya gelecek.</p>
-                    <div class="services-btn">
-                        <a href="#"
-                           class="services-btn-one open-service-modal"
-                           data-title="Enerji Depolama Sistemleri"
-                           data-desc="Enerji depolama sistemleri ile ilgili detaylı içerik buraya gelecek. Örneğin; batarya teknolojileri, kullanım alanları, avantajlar."
-                           data-img="~/images/services/energy-storage.jpg">
-                            <i class="fa fa-arrow-right"></i> Read More
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services-box">
-                    <div class="services-icon">
-                        <img src="~/images/icons/services-icon-4.svg" alt="svg icon">
-                    </div>
-                    <h3>Isıtma Sistemleri</h3>
-                    <p>Kısa açıklama buraya gelecek.</p>
-                    <div class="services-btn">
-                        <a href="#"
-                           class="services-btn-one open-service-modal"
-                           data-title="Isıtma Sistemleri"
-                           data-desc="Isıtma sistemleri hakkında detaylı bilgi: Güneş enerjisi destekli ısıtma çözümleri, verimlilik ve maliyet avantajları."
-                           data-img="~/images/services/heating.jpg">
-                            <i class="fa fa-arrow-right"></i> Read More
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services-box">
-                    <div class="services-icon">
-                        <img src="~/images/icons/services-icon-4.svg" alt="svg icon">
-                    </div>
-                    <h3>Araba Garajı Sistemleri</h3>
-                    <p>Kısa açıklama buraya gelecek.</p>
-                    <div class="services-btn">
-                        <a href="#"
-                           class="services-btn-one open-service-modal"
-                           data-title="Araba Garajı Sistemleri"
-                           data-desc="Araba garajı sistemleri için detaylı bilgi: Güneş enerjisi destekli garaj çözümleri, dayanıklı malzemeler, uzun ömürlü kullanım."
-                           data-img="~/images/services/garage.jpg">
-                            <i class="fa fa-arrow-right"></i> Read More
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section> 
-
-<section class="services-section">
-    <div class="container text-center">
-        <div class="section-title">
-            <h2 style="color:#000000">Servislerimiz</h2>
-        </div>
-    </div>
-    <div class="postcard-container">
-
-        <div class="postcard-item" style="background-image: url('/images/projects/project-1.jpg');">
-            <div class="item-content-wrapper">
-                <div class="inactive-content"><h5>Arazi Sistemleri</h5></div>
-                <div class="active-content">
-                    <div class="text-content">
-                        <h3>Arazi Sistemleri</h3>
-                        <p style="color: #ffffff">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="postcard-item" style="background-image: url('/images/ZCNSTOCKS/carport.png');">
-            <div class="item-content-wrapper">
-                <div class="inactive-content"><h5>Tarım Sistemleri</h5></div>
-                <div class="active-content">
-                    <div class="text-content">
-                        <h3>Tarım Sistemleri</h3>
-                        <p style="color: #ffffff">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="postcard-item active" style="background-image: url('/images/ZCNSTOCKS/carport.png');">
-            <div class="item-content-wrapper">
-                <div class="inactive-content"><h5>Carport Sistemleri</h5></div>
-                <div class="active-content">
-                    <div class="text-content">
-                        <h3>Carport Sistemleri</h3>
-                        <p style="color: #ffffff">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="postcard-item" style="background-image: url('/images/ZCNSTOCKS/catı.jpg');">
-            <div class="item-content-wrapper">
-                <div class="inactive-content"><h5>Çatı Sistemleri</h5></div>
-                <div class="active-content">
-                    <div class="text-content">
-                        <h3>Çatı Sistemleri</h3>
-                        <p style="color: #ffffff">
-                            Kullanılan tesislerin çatısına güneş enerjisi konumlandırarak kendi enerji ihtiyacınızı karşılayabilirsiniz. Elektrik faturası öder gibi veya daha düşük bir ödeme planı ile sistemin taksitlerini ödeyerek anında tasarruf etmeye başlayabilirsiniz. İşletme giderlerinizin önemli kısmını oluşturan enerji giderlerinizden kurtularak, rekabet gücünüzü arttırıp işletmenizin karlılığını arttırabilirsiniz.
-                            Enerji maliyetlerinizi düşürür veya sıfıra indirir. 
-                            Modülerdir, taşınabilir ve sisteme ilaveler yapılabilir. 
-                            İşletme ve bakım maliyetleri yok denecek kadar azdır.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="postcard-item" style="background-image: url('/images/ZCNSTOCKS/carport.png');">
-            <div class="item-content-wrapper">
-                <div class="inactive-content"><h5>Enerji Depolama Sistemleri</h5></div>
-                <div class="active-content">
-                    <div class="text-content">
-                        <h3>Enerji Depolama Sistemleri</h3>
-                        <p style="color: #ffffff">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-</section>
-
-<script>
-        document.addEventListener("DOMContentLoaded", function() {
-        const container = document.querySelector('.postcard-container');
-        const items = document.querySelectorAll('.postcard-item');
-
-        container.addEventListener('click', (e) => {
-            const targetItem = e.target.closest('.postcard-item');
-            if (!targetItem || targetItem.classList.contains('active')) return;
-
-            items.forEach(item => item.classList.remove('active'));
-            targetItem.classList.add('active');
-        });
-    });
-</script>
-*@
-</div>
