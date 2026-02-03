@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <head>
@@ -52,9 +54,9 @@
 				<div class="row d-flex align-items-center">
 					<div class="col">
 						<div class="home-slider-content">
-							<h1 class="home-slider-title">Ambalaj</h1>
+                            <h1 class="home-slider-title">@Localizer["CompanyName"]</h1>
 							<div class="home-slider-description">
-                                <p>Ürünlere özel tasarımlarıyla en uygun, verimli ve ekonomik seçenekler sunarak sizlere katma değer kazandırmayı hedeflemektedir.</p>
+                                <p>@Localizer["AboutCompany"]</p>
 							</div>
 						</div>
 					</div>
@@ -71,8 +73,8 @@
 				<div class="col-md-12 col-lg-6">
 					<div class="section-md container-fluid-cell">
 						<div class="box-centered box-width-1">
-							<h2><span>Hakkımızda</span><span class="object-decorated object-decorated_inline" style="max-width: 125px;"><span class="object-decorated__divider"></span><span class="heading-5"></span></span></h2>
-                            <p>Ürünlere özel tasarımlarıyla en uygun, verimli ve ekonomik seçenekler sunarak sizlere katma değer kazandırmayı hedeflemektedir.</p>
+							<h2><span>@Localizer["AboutUs"]</span><span class="object-decorated object-decorated_inline" style="max-width: 125px;"><span class="object-decorated__divider"></span><span class="heading-5"></span></span></h2>
+                            <p>@Localizer["CompanyText"]</p>
 						</div>
 					</div>
 				</div>
@@ -87,15 +89,15 @@
 	</div>
 </section>
 <div class="showcase-section">
-    <h2 class="section-title">Hizmetlerimiz</h2>
-    <p class="section-subtitle">Ambalaj sektöründe yenilik olan petek paneller, hafif, yüksek performanslı, ekonomik ve tamamen atık kağıt geri dönüşümden elde edilmeleri bakımından da çevre dostu ürünlerdir.</p>
+    <h2 class="section-title">@Localizer["OurServices"]</h2>
+    <p class="section-subtitle">@Localizer["OurServicesText"]</p>
 
     <div class="showcase-container">
         <nav class="service-nav">
-            <button class="service-nav-item active" data-service="0">OLUKLU PETEK</button>
-            <button class="service-nav-item" data-service="1">POLİETİLEN</button>
-            <button class="service-nav-item" data-service="2">KARTONPLAST</button>
-            <button class="service-nav-item" data-service="3">STOKLAMA KASASI</button>
+            <button class="service-nav-item active" data-service="0">@Localizer["System1Title"]</button>
+            <button class="service-nav-item" data-service="1">@Localizer["System2Title"]</button>
+            <button class="service-nav-item" data-service="2">@Localizer["System3Title"]</button>
+            <button class="service-nav-item" data-service="3">@Localizer["System4Title"]</button>
         </nav>
 
         <div class="service-display">
@@ -223,34 +225,30 @@
 
             <div class="service-content">
                 <div class="service-info" data-service="0">
-                    <h3 class="service-title">Petek Panel</h3>
+                    <h3 class="service-title">@Localizer["SystemName"]</h3>
                     <div class="service-description active">
-                        <p>Ambalaj sektöründe yenilik olan petek paneller, hafif, yüksek performanslı, ekonomik ve tamamen atık kağıt geri dönüşümden elde edilmeleri bakımından da çevre dostu ürünlerdir.</p>
-                        <p>Ürünlerinize hitap edecek tasarımlar oluşturup özel kesim kutuları ve seperatörleri hazırlamaktayız. Ürünleriniz en az hacimde zarar görmeden hesaplı gönderimini sağlamak hedefimizdir.</p>
+                        @Html.Raw(Localizer["System5Text"].Value)
                     </div>
                 </div>
 
                 <div class="service-info" data-service="1" style="display: none;">
-                    <h3 class="service-title">POLİETİLEN</h3>
+                    <h3 class="service-title">@Localizer["System1Title"]</h3>
                     <div class="service-description">
-                        <p>Farklı yoğunluk ve dirençte ürün gamı mevcut olup kullanıma özel işlemeler sunmaktayız.</p>
-                        <p>Birim maliyetin azaltılması için gerekli çözümlerin yanında kıymetli ve hassas ürünlerin hasar görmeden muhafaza edilerek taşınmasını sağlamaktayız. Parçaların şeklince tasarımları yapılır, yuvalarına girmesi sağlanarak her türlü taşıma şartlarına uygun hale getirilebilir.</p>
+                        @Html.Raw(Localizer["System1Text"].Value)
                     </div>
                 </div>
 
                 <div class="service-info" data-service="2" style="display: none;">
-                    <h3 class="service-title">KartonPlast</h3>
+                    <h3 class="service-title">@Localizer["System3Title"]</h3>
                     <div class="service-description">
-                        <p>Karton plast, yapısından dolayı hafif, mukavettli, Özel ölçü, renk ve yoğunlukğa sahip olması farklı endüstriyellerde yaygın olarak kullanılmaktadır.</p>
-                        <p>Ürüne özel taşıma kutuları ve seperatör tasarım çözümleri yanı sıra UV ve alev geciktirici özelliği ile güneşe maruz kalan ve kıvılcımlı üretim alanlarında özellikle tercih edilmektedir.</p>
+                        @Html.Raw(Localizer["System3Text"].Value)
                     </div>
                 </div>
 
                 <div class="service-info" data-service="3" style="display: none;">
-                    <h3 class="service-title">Stoklama Kasası</h3>
+                    <h3 class="service-title">@Localizer["System4Title"]</h3>
                     <div class="service-description">
-                        <p>Dayanıklı ve uzun ömürlü stoklama kasaları ile depolama ve organizasyon ihtiyaçlarınıza profesyonel çözümler sunuyoruz.</p>
-                        <p>Farklı boyut ve kapasitelerde üretilen kasalarımız, endüstriyel kullanım için özel olarak tasarlanmıştır. İstifleme özelliği sayesinde alan tasarrufu sağlar.</p>
+                        @Html.Raw(Localizer["System4Text"].Value)
                     </div>
                 </div>
 

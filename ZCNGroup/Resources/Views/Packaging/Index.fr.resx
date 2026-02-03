@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutCompany" xml:space="preserve">
+    <value>Elle vise à vous apporter de la valeur ajoutée en proposant les options les plus adaptées, efficaces et économiques avec des designs personnalisés pour les produits.</value>
+  </data>
+  <data name="AboutUs" xml:space="preserve">
+    <value>À Propos de Nous</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Emballage</value>
+  </data>
+  <data name="CompanyText" xml:space="preserve">
+    <value>Elle vise à vous apporter une valeur ajoutée en proposant les options les plus adaptées, efficaces et économiques avec des designs personnalisés pour les produits.</value>
+  </data>
+  <data name="OurServices" xml:space="preserve">
+    <value>Nos Services</value>
+  </data>
+  <data name="OurServicesText" xml:space="preserve">
+    <value>Les panneaux en nids d'abeille, une innovation dans le secteur de l'emballage, sont des produits respectueux de l'environnement car ils sont légers, performants, économiques et entièrement fabriqués à partir de papier recyclé.</value>
+  </data>
+  <data name="System1Text" xml:space="preserve">
+    <value>&lt;p&gt;Une gamme de produits de différentes densités et résistances est disponible, et nous proposons des traitements personnalisés selon l'utilisation.&lt;/p&gt;
+&lt;p&gt;En plus des solutions pour réduire les coûts unitaires, nous assurons le stockage et le transport de produits précieux et sensibles sans aucun dommage. Les designs sont conçus selon la forme des pièces, garantissant leur insertion dans des logements adaptés à toutes les conditions de transport.&lt;/p&gt;</value>
+  </data>
+  <data name="System1Title" xml:space="preserve">
+    <value>NID D'ABEILLE ONDULÉ</value>
+  </data>
+  <data name="System2Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="System2Title" xml:space="preserve">
+    <value>POLYÉTHYLÈNE</value>
+  </data>
+  <data name="System3Text" xml:space="preserve">
+    <value>&lt;p&gt;Le carton plastique est largement utilisé dans diverses industries en raison de sa structure légère et résistante, ainsi que de sa disponibilité en tailles, couleurs et densités personnalisées.&lt;/p&gt;
+&lt;p&gt;En plus des solutions de conception de boîtes de transport et de séparateurs spécifiques aux produits, il est particulièrement privilégié dans les zones exposées au soleil ou aux étincelles de production, grâce à ses propriétés anti-UV et ignifuges.&lt;/p&gt;</value>
+  </data>
+  <data name="System3Title" xml:space="preserve">
+    <value>CARTON PLASTIQUE</value>
+  </data>
+  <data name="System4Text" xml:space="preserve">
+    <value>&lt;p&gt;Nous offrons des solutions professionnelles pour vos besoins de stockage et d'organisation avec des caisses de stockage durables et résistantes.&lt;/p&gt;
+&lt;p&gt;Nos caisses, produites en différentes tailles et capacités, sont spécialement conçues pour un usage industriel. Elles permettent un gain de place grâce à leur fonction d'empilage.&lt;/p&gt;</value>
+  </data>
+  <data name="System4Title" xml:space="preserve">
+    <value>CAISSE DE STOCKAGE</value>
+  </data>
+  <data name="System5Text" xml:space="preserve">
+    <value>&lt;p&gt;Les panneaux en nids d'abeille, une innovation dans le secteur de l'emballage, sont des produits respectueux de l'environnement car ils sont légers, performants, économiques et entièrement fabriqués à partir de papier recyclé.&lt;/p&gt;
+&lt;p&gt;Nous créons des designs adaptés à vos produits et préparons des boîtes et des séparateurs sur mesure. Notre objectif est d'assurer l'expédition économique de vos produits avec un volume minimal et sans aucun dommage.&lt;/p&gt;</value>
+  </data>
+  <data name="SystemName" xml:space="preserve">
+    <value>Panneau en Nid d'Abeille</value>
+  </data>
+</root>
